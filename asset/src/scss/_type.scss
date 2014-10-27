@@ -1,0 +1,39 @@
+$font-stack-header: 'Roboto Condensed', sans-serif;
+$font-stack-body: 'Bitter', serif;
+
+body {
+
+	font-family: $font-stack-body;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+
+}
+
+.main-nav {
+	font-family: $font-stack-header;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 90px;
+	letter-spacing: 3px;
+	//text-align: center;
+}
+
+.content-wrap {
+	text-align: center;
+
+	h1 {
+		font-family: $font-stack-header;
+		font-weight: 700;
+		font-size: 42px;
+		line-height: 48px;
+		letter-spacing: 8px;
+		text-align: center;
+	}
+
+	p {
+		margin: 40px 15%;
+		text-align: left;
+	}
+	
+}

@@ -1,0 +1,25 @@
+// CONTENTS
+// 1. Utils
+// 2. Colors
+// 3. Reset
+// 4. Basic structure
+// 5. Typography
+// 6. Header/sidebar
+// 7. Slider
+// 8. Content
+// 9. Work
+// 10. COLORS
+// 11. Media queries
+
+
+// source sans pro, exo
+
+@import "_utils.scss";
+@import "_colors.scss";
+@import "compass/reset";
+@import "_structure.scss";
+@import "_type.scss";
+@import "_sidebar.scss";
+@import "_slider.scss";
+@import "_content.scss";
+@import "_work.scss";
