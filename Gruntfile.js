@@ -36,7 +36,6 @@ module.exports = function(grunt) {
 		// JSHINT
 		jshint: {
 			beforeconcat: ['asset/src/js/bundle.js']
-			// afterconcat: ['asset/dist/js/bundle.min.js']
 		},
 
 		// COMPASS
@@ -71,7 +70,7 @@ module.exports = function(grunt) {
 			},
 			scripts: {
 				files: 'asset/src/js/**/*.js',
-				tasks: ['concat', 'uglify']
+				tasks: ['concat', 'jshint', 'uglify']
 			},
 			scss: {
 				files: 'asset/src/scss/*.scss',
@@ -85,7 +84,7 @@ module.exports = function(grunt) {
 	});
 
 	// CREATE TASK 'default'
-	grunt.registerTask('default', ['concat', 'uglify', 'jshint', 'compass', 'autoprefixer']);
+	grunt.registerTask('default', ['concat', 'jshint', 'uglify', 'compass', 'autoprefixer']);
 
 };
 

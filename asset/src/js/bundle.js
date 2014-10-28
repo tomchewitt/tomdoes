@@ -1,21 +1,19 @@
-var loader = (function () {
+var Loader = (function () {
 
     // VARS
     var doc = '';
     var title = '';
 
     // constructor
-    var loader = function () {
-
-    };
+    var Loader = {};
 
 	// LOAD THE DOC
-	loader.loadDoc = function (docurl, doctitle, iswork) {
+	Loader.loadDoc = function (docurl, doctitle, iswork) {
 		doc = docurl || '';
 		title = doctitle || '';
-		loader.work = iswork || false;
+		Loader.work = iswork || false;
 
-		console.log(doc, title, loader.work);
+		console.log(doc, title, Loader.work);
 
 		panelIn();
 	};
@@ -54,7 +52,7 @@ var loader = (function () {
 		    success: function(response) {
 		        $('.content-wrap').html(response);
 
-		        if (loader.work) {
+		        if (Loader.work) {
 					slider.setup(title);
 				}
 		        
@@ -70,30 +68,11 @@ var loader = (function () {
 	
 
     // RETURN
-    return loader;
-})();
-
-
-/*
-$(window).on('scroll', function () {
-               var scrolled = $(this).scrollTop();
-
-               $('#article-pagination-feed > li').filter(function () {
-                   return scrolled >= $(this).offset().top - 200;
-               }).addClass('read');
-               $('#article-pagination-feed > li').filter(function () {
-                   return scrolled < $(this).offset().top - 200;
-               }).removeClass('read');
-           });
-           */
-
-$(document).ready(function() {
-
-	// *****************************************************************
-	// INIT
-	// *****************************************************************
-
-	//loader.loadDoc('pages/home/index.html');
-
-
+    return Loader;
 });
+
+// *****************************************************************
+// INIT
+// *****************************************************************
+
+//loader.loadDoc('pages/home/index.html');
