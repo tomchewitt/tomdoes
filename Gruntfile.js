@@ -66,19 +66,31 @@ module.exports = function(grunt) {
 		// WATCH
 		watch: {
 			all: {
-				files: 'index.html'
+				files: 'index.html',
+				options: {
+					livereload: true
+				}
 			},
 			scripts: {
 				files: 'asset/src/js/**/*.js',
-				tasks: ['concat', 'jshint', 'uglify']
+				tasks: ['concat', 'jshint', 'uglify'],
+				options: {
+					livereload: true
+				}
 			},
 			scss: {
 				files: 'asset/src/scss/*.scss',
-				tasks: ['compass']
+				tasks: ['compass'],
+				options: {
+					livereload: true
+				}
 			},
 			css: {
 				files: 'asset/src/css/bundle-noprefix.css',
-				tasks: ['autoprefixer']
+				tasks: ['autoprefixer'],
+				options: {
+					livereload: true
+				}
 			},
 		}
 	});
