@@ -19,7 +19,13 @@
 
         <section class="header">
             <header>
-                <h1>TOM HEWITT</h1>
+                <h1>
+                    <span class="word">TOM HEWITT</span>
+                    <span class="icon">
+                        <svg><use xlink:href="asset/dist/img/svg-defs.svg#triangle"></use></svg>
+                        <svg><use xlink:href="asset/dist/img/svg-defs.svg#triangle"></use></svg>
+                    </span>
+                </h1>
                 <nav class="main-nav">
                     <ul>
                         <li>
@@ -51,6 +57,10 @@
             </header>
         </section>
         
+        <section>
+            <canvas class="hero__background" width="300" height="300" id="heroCanvas"></canvas>
+        </section>
+
 
         <section class="content">
                 <!--
@@ -64,6 +74,7 @@
 
         <!-- SCRIPTS 
         <script src="asset/dist/js/bundle.min.js"></script> -->
+        <script src="asset/src/js/vendor/StackBlur.js"></script>
         <script src="asset/src/js/bundle.js"></script>
 
         <!-- ANALYTICS -->

@@ -26,11 +26,12 @@ html, body {
 // *****************************************************************
 // NAV
 // *****************************************************************
-$headerHeight: 80px;
+$headerHeight: 60px;
 
 section.header {
 	width: 100%;
 	height: $headerHeight;
+	background: $midpurple;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -39,34 +40,43 @@ section.header {
 		width: 20%;
 		height: $headerHeight;
 		display: block;
-		background: #555;
 		position: absolute;
 		top: 0;
 		left: 40%;
 
-		$tri: $headerHeight / 2;
-
-		&::before, &::after {
-			content: '';
-		    width: 0;
-		    height: 0;
-		    position: absolute;
+		span {
+			width: 100%;
+			height: $headerHeight;
+			position: absolute;
+			top: 0;
+			left: 0;
 		}
 
-		&::before {
-		    bottom: 0;
-		    left: 25%;
-		    border-bottom: #{($tri) * 0.866} solid red;
-		    border-left: #{$tri/2} solid transparent;
-		    border-right: #{$tri/2} solid transparent;
+		.icon {
+			svg:nth-child(1) {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				fill: rgba(0, 0, 0, 0.5);
+				transform: rotate(180deg);
+			}
+
+			svg:nth-child(2) {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				fill: rgba(0, 0, 0, 0.5);
+				transform: scale(0.5);
+				transform-origin: center bottom;
+			}
 		}
 
-		&::after {
-		    top: 0;
-		    left: 0;
-		    border-top: #{($tri*2) * 0.866} solid blue;
-		    border-left: $tri solid transparent;
-		    border-right: $tri solid transparent;
+		.word {
+
 		}
 	}
 }
@@ -86,7 +96,6 @@ nav.main-nav {
 		height: 100%;
 		float: left;
 		display: block;
-		background: #CCC;
 		position: relative;
 
 		&:nth-child(2) {
@@ -102,7 +111,7 @@ nav.main-nav {
 
 	.icon {
 		$iconWidth: 70%;
-		$iconHeight: 50%;
+		$iconHeight: 45%;
 		width:  $iconWidth;
 		height: $iconHeight;
 		display: block;
@@ -121,3 +130,16 @@ nav.main-nav {
 	}
 }
 
+
+// HERO HOMEPAGE
+
+.hero__background {
+    // This stretches the canvas across the entire hero unit
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // This positions the canvas under the text
+    z-index: 1;
+  }
