@@ -1,13 +1,15 @@
 // CONTENTS
 // 1. Utils
-// 2. Colors
 // 3. Reset
 // 4. Basic structure
 // 5. Typography
-// 11. Media queries
+// 6. Loader
+// 7. Header/Nav
+
 
 
 @import "_utils.scss";
 @import "compass/reset";
 @import "_structure.scss";
 @import "_type.scss";
+@import "_loader.scss";

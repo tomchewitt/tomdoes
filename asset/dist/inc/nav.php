@@ -1,11 +1,13 @@
         <section class="header">
             <header>
                 <h1>
-                    <span class="word">TOM HEWITT</span>
-                    <span class="icon">
-                        <svg><use xlink:href="/asset/dist/img/svg-defs.svg#triangle"></use></svg>
-                        <svg><use xlink:href="/asset/dist/img/svg-defs.svg#triangle"></use></svg>
-                    </span>
+                    <a class="ajax-nav" href="/">
+                        <span class="word">TOM HEWITT</span>
+                        <span class="icon">
+                            <svg><use xlink:href="/asset/dist/img/svg-defs.svg#triangle"></use></svg>
+                            <svg><use xlink:href="/asset/dist/img/svg-defs.svg#triangle"></use></svg>
+                        </span>
+                    </a>
                 </h1>
                 <nav class="main-nav">
                     <ul>

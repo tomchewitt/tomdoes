@@ -15,7 +15,10 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 
 			<h2>WORK</h2>
 
-			<p><a class="ajax-nav" href="koozac/">KOOZAC</a> | <a class="ajax-nav" href="heroesandgenerals/">Heroes &amp; Generals</a>
+			<p>
+				<a class="ajax-work" href="koozac/">KOOZAC</a> |
+				<a class="ajax-work" href="heroesandgenerals/">Heroes &amp; Generals</a>
+			</p>
 
 		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

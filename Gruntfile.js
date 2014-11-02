@@ -13,7 +13,7 @@ module.exports = function(grunt) {
 		concat: {
 			dist: {
 				src: [
-					// 'asset/src/js/vendor/*/**.min.js',
+					'asset/src/js/vendor/gsap/TweenMax.min.js',
 					'asset/src/js/module/*.js',
 					'asset/src/js/script/init.js'],
 				dest: 'asset/src/js/bundle.js'
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
 			},
 			scripts: {
 				files: 'asset/src/js/**/*.js',
-				tasks: ['concat', 'jshint', 'uglify'],
+				tasks: ['concat', 'uglify'], // 'jshint', 
 				options: {
 					livereload: true
 				}
