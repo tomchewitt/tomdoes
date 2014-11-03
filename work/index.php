@@ -13,7 +13,10 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 
 		<section class="content work">
 
-			<h2>WORK</h2>
+			<h1>
+				<span class="word">WORK</span>
+				<span class="icon"><svg><use xlink:href="/asset/dist/img/svg-defs.svg#nav-work"></use></svg></span>
+			</h1>
 
 			<p>
 				<a class="ajax-work" href="koozac/">KOOZAC</a> |

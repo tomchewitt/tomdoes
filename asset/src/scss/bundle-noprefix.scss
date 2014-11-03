@@ -1,11 +1,11 @@
 // CONTENTS
 // 1. Utils
-// 3. Reset
+// 3. Compass Reset
 // 4. Basic structure
 // 5. Typography
 // 6. Loader
 // 7. Header/Nav
-
+// 8. Content
 
 
 @import "_utils.scss";
@@ -13,3 +13,5 @@
 @import "_structure.scss";
 @import "_type.scss";
 @import "_loader.scss";
+@import "_nav.scss";
+@import "_content.scss";

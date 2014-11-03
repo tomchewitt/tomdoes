@@ -1,5 +1,11 @@
 		</div>
 
+		<section class="footer">
+			<footer>
+				&copy;2014 Tom Hewitt. All content was created by Tom Hewitt unless otherwise stated.
+			</footer>
+		</section>
+
 		<section class="loader">
 			<svg class="cover"><use xlink:href="/asset/dist/img/svg-defs.svg#triangle"></use></svg>
 			

@@ -13,7 +13,10 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 
 		<section class="content about">
 
-			<h2>ABOUT</h2>
+			<h1>
+				<span class="word">ABOUT</span>
+				<span class="icon"><svg><use xlink:href="/asset/dist/img/svg-defs.svg#nav-about"></use></svg></span>
+			</h1>
 
 		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

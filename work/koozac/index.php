@@ -13,7 +13,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 
 		<section class="content work">
 
-			<h2>KOOZAC</h2>
+			<h1>KOOZAC</h1>
 
 			<p>Koozac...</p>
 

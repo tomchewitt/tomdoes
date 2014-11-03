@@ -1,0 +1,110 @@
+// *****************************************************************
+// HEADER & LOGO
+// *****************************************************************
+section.header {
+	width: 100%;
+	height: $headerHeight;
+	background: $midpurple;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9997;
+
+	h1 {
+		width: 20%;
+		height: $headerHeight;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 40%;
+		z-index: 2;
+
+		span {
+			width: 100%;
+			height: $headerHeight;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.icon {
+			svg:nth-child(1) {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				fill: rgba(0, 0, 0, 0.5);
+				transform: rotate(180deg);
+			}
+
+			svg:nth-child(2) {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				fill: rgba(0, 0, 0, 0.5);
+				transform: scale(0.5);
+				transform-origin: center bottom;
+			}
+		}
+
+		.word {
+
+		}
+	}
+}
+
+// *****************************************************************
+// MAIN NAV
+// *****************************************************************
+nav.main-nav {
+	width: 100%;
+	height: $headerHeight;
+	position: relative;
+	z-index: 1;
+
+	ul {
+		width: 100%;
+		height: 100%;
+	}
+
+	li {
+		width: 20%;
+		height: 100%;
+		float: left;
+		display: block;
+		position: relative;
+
+		&:nth-child(2) {
+			margin-right: 20%;
+		}
+	}
+
+	a {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+
+	.icon {
+		$iconWidth: 70%;
+		$iconHeight: 45%;
+		width:  $iconWidth;
+		height: $iconHeight;
+		display: block;
+		position: absolute;
+		top: (100 - $iconHeight) / 2;
+		left: (100 - $iconWidth) / 2;
+	}
+
+	.word {
+		display: none;
+	}
+
+	svg {
+		width: 100%;
+		height: 100%;
+	}
+}

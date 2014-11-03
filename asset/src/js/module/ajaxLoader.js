@@ -168,6 +168,7 @@ var ajaxLoader = (function () {
 	}
 
 	function midSpinner() {
+		window.scrollTo(0, 0);
 		oIsSpinning = false;
 		closeSpinner();
 	}
