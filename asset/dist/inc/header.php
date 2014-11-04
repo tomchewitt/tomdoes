@@ -13,3 +13,6 @@
         <link rel="stylesheet" href="/asset/dist/css/bundle.css">
     </head>
     <body>
+        <?php
+            include $_SERVER['DOCUMENT_ROOT']."/asset/dist/img/svg-defs.svg";
+        ?>
