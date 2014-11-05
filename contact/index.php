@@ -18,12 +18,24 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 				<span class="icon"><svg><use xlink:href="/asset/dist/img/svg-defs.svg#nav-contact"></use></svg></span>
 			</h1>
 
-		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class="block">
+		    	<p>I like hearing from other people. Whether you want to discuss working together, have a job vacancy, have a question, need an answer, want to say hi, or just have a chat - please use any of the below options. I promise I’ll say something nice back.</p>
+			</div>
+
+		    <h2>LET'S CHAT...</h2>
+
+		    <ul>
+		    	<li>hello (at) tomdoes (dot) digital</li>
+		    	<li>+44 (0) 7947 401 304</li>
+		    	<li>LinkedIN</li>
+		    	<li>Twitter</li>
+		    	<li>Skype</li>
+		    	<li>Behance</li>
+		    	<li>Codepen</li>
+		    	<li>GitHub</li>		    	
+		    </ul>
+
+		    <h2>THANKS &amp; HAVE A NICE DAY!</h2>
 
         </section>
 

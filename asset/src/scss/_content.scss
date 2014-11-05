@@ -11,7 +11,8 @@
 	h1 {
 		padding: 30px 0;
 		width: 100%;
-		background: #FFF;
+		background: $white;
+		color: $satpurple;
 		position: relative;
 
 		.word {
@@ -27,8 +28,77 @@
 			left: 50%;
 			z-index: 1;
 			transform: translateX(-50%);
-			fill: #EEE;
-
+			fill: #f7f7f7;
+			margin-left: 0.15em;
 		}
+	}
+}
+
+
+.block {
+	position: relative;
+	z-index: 10;
+	background: $white;
+	width: 100%;
+	padding: 30px 0 50px 0;
+}
+
+
+
+// *****************************************************************
+// HEROES
+// *****************************************************************
+.hero {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: #CCC;
+	overflow: hidden;
+	position: relative;
+
+	img {
+		min-height: 100%;
+		min-width: 100%;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		opacity: 0.5;
+		z-index: 0;	
+	}
+
+	svg {
+		width: 80%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+	}
+
+	.gradient {
+		width: 100%;
+		height: 100%;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		opacity: 0.6;
+		background-image: linear-gradient(to top right, $thered 10%, $theblue 100%);
+		filter: saturate(2);
+	}
+}
+
+
+
+
+// *****************************************************************
+// CONTACT
+// *****************************************************************
+.contact {
+	.block {
+		color: $white;
+		background: $newpurple;
 	}
 }

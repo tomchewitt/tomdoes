@@ -3,6 +3,10 @@
 // *****************************************************************
 $font-stack: 'Source Sans Pro', sans-serif;
 
+@font-face {
+	@include fontface('Frontage', frontage/frontage-outline-webfont);
+}
+
 
 // *****************************************************************
 // BASIC
@@ -12,16 +16,33 @@ body {
 	font-family: $font-stack;
 	font-weight: 400;
 	font-size: 1em;
-	line-height: 1.4em;
+	line-height: 1.8em;
+}
+
+p {
+	margin: 20px 10%;
 }
 
 .content {
 	h1 {
-		font-size: 3.2em;
-		line-height: 1em;
-		font-weight: 700;
-		letter-spacing: 0.18em;
+		
 		text-align: center;
+		
+		// font-family: 'Ostrich Sans Bold', sans-serif;
+		// letter-spacing: 0.12em;
+		// font-size: 4em;
+		// line-height: 1em;
+
+		font-family: 'Frontage', sans-serif;
+		letter-spacing: -0.12em;
+		font-size: 2.8em;
+		line-height: 1em;
+		margin-left: -0.15em;
+
+		// font-weight: 700;
+		// letter-spacing: 0.18em;
+		// font-size: 3.2em;
+		// line-height: 1em;
 	}
 }
 
@@ -30,7 +51,8 @@ body {
 // *****************************************************************
 section.header {
 	h1 {
-		text-indent: -9999px;
+		@include text-replacement();
+		// text-indent: -9999px;
 	}
 }
 
@@ -43,4 +65,16 @@ section.loader {
 	color: $white;
 	letter-spacing: 0.4em;
 	font-weight: 300;
+}
+
+
+
+// *****************************************************************
+// NAV
+// *****************************************************************
+section.footer {
+	letter-spacing: 0.04em;
+	font-size: 0.8em;
+	line-height: 1.6em;
+	text-align: center;
 }

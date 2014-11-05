@@ -13,34 +13,17 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 
 		<section class="content home">
 
-			<div class="hero">
+			<section class="hero">
 				<img src="/asset/dist/img/bg.jpg">
 				<span class="gradient"></span>
 				<svg class="logotype"><use xlink:href="#logotype"></use></svg>
-			</div>
+			</section>
 
-			<div class="text-block">
-			    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<section class="block">
+			    <h1>FEED</h1>
 
-			    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-			    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
+			    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quibusdam et iure odio saepe doloremque, ipsum, enim quod ut obcaecati veniam quidem, perferendis, officia officiis dolore iusto vitae. Expedita, magnam.</p>
+			</section>
 
         </section>
 

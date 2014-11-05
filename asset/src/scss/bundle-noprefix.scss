@@ -1,4 +1,5 @@
 // CONTENTS
+// 0. Mixins
 // 1. Utils
 // 3. Compass Reset
 // 4. Basic structure
@@ -8,6 +9,7 @@
 // 8. Content
 
 
+@import "_mixins.scss";
 @import "_utils.scss";
 @import "compass/reset";
 @import "_structure.scss";

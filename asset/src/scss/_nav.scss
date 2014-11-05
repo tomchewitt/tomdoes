@@ -4,7 +4,7 @@
 section.header {
 	width: 100%;
 	height: $headerHeight;
-	background: $midpurple;
+	background: $cNav;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -34,7 +34,7 @@ section.header {
 				position: absolute;
 				top: 0;
 				left: 0;
-				fill: rgba(0, 0, 0, 0.5);
+				fill: $cLogoBlue;
 				transform: rotate(180deg);
 			}
 
@@ -44,7 +44,7 @@ section.header {
 				position: absolute;
 				bottom: 0;
 				left: 0;
-				fill: rgba(0, 0, 0, 0.5);
+				fill: $cLogoRed;
 				transform: scale(0.5);
 				transform-origin: center bottom;
 			}
