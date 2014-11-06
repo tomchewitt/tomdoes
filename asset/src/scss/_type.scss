@@ -1,7 +1,7 @@
 // *****************************************************************
 // STACKS
 // *****************************************************************
-$font-stack: 'Source Sans Pro', sans-serif;
+$fontstack: 'Source Sans Pro', sans-serif;
 
 @font-face {
 	@include fontface('Frontage', frontage/frontage-outline-webfont);
@@ -13,7 +13,7 @@ $font-stack: 'Source Sans Pro', sans-serif;
 // *****************************************************************
 body {
 
-	font-family: $font-stack;
+	font-family: $fontstack;
 	font-weight: 400;
 	font-size: 1em;
 	line-height: 1.8em;
@@ -23,8 +23,23 @@ p {
 	margin: 20px 10%;
 }
 
-.content {
+
+// *****************************************************************
+// NAV
+// *****************************************************************
+section.header {
 	h1 {
+		@include text-replacement();
+		// text-indent: -9999px;
+	}
+}
+
+
+// *****************************************************************
+// CONTENT
+// *****************************************************************
+.content {
+	h1.main {
 		
 		text-align: center;
 		
@@ -46,13 +61,24 @@ p {
 	}
 }
 
-// *****************************************************************
-// NAV
-// *****************************************************************
-section.header {
+.block {
 	h1 {
-		@include text-replacement();
-		// text-indent: -9999px;
+		text-align: center;
+
+		font-family: $fontstack;
+		font-weight: 200;
+		letter-spacing: 0.3em;
+		font-size: 2em;
+		line-height: 1em;
+	}
+
+	h2 {
+		text-align: center;
+		font-weight: 400;
+		font-style: italic;
+		letter-spacing: 0.2em;
+		font-size: 1.1em;
+		line-height: 1em;
 	}
 }
 
@@ -68,9 +94,8 @@ section.loader {
 }
 
 
-
 // *****************************************************************
-// NAV
+// FOOTER
 // *****************************************************************
 section.footer {
 	letter-spacing: 0.04em;
