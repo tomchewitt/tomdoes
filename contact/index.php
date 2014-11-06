@@ -26,14 +26,14 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 				<h1>LET'S CHAT</h1>
 
 			    <ul class="social">
-			    	<li>hello (at) tomdoes (dot) digital</li>
-			    	<li>+44 (0) 7947 401 304</li>
-			    	<li class="icon linkedin"><a target="_blank" href="">LinkedIN</a></li>
-			    	<li class="icon twitter"><a target="_blank" href="">Twitter</a></li>
-			    	<li class="icon skype"><a target="_blank" href="">Skype</a></li>
-			    	<li class="icon behance"><a target="_blank" href="">Behance</a></li>
-			    	<li class="icon codepen"><a target="_blank" href="">Codepen</a></li>
-			    	<li class="icon github"><a target="_blank" href="">GitHub</a></li>		    	
+			    	<li class="noicon">hello <span class="accent">(at)</span> tomdoes <span class="accent">(dot)</span> digital</li>
+			    	<li class="noicon">+44 (0) 7947 401 304</li>
+			    	<li class="icon twitter"><a target="_blank" href=""><span class="word">Twitter</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#twitter"></use></svg></a></li>
+			    	<li class="icon linkedin"><a target="_blank" href=""><span class="word">LinkedIN</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#linkedin"></use></svg></a></li>
+			    	<li class="icon skype"><a target="_blank" href=""><span class="word">Skype</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#skype"></use></svg></a></li>
+			    	<li class="icon behance"><a target="_blank" href=""><span class="word">Behance</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#behance"></use></svg></a></li>
+			    	<li class="icon codepen"><a target="_blank" href=""><span class="word">Codepen</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#codepen"></use></svg></a></li>
+			    	<li class="icon github"><a target="_blank" href=""><span class="word">GitHub</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#github"></use></svg></a></li>
 			    </ul>
 				
 			    <h2>THANKS &amp; HAVE A NICE DAY!</h2>

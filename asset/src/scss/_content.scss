@@ -96,7 +96,30 @@
 	}
 }
 
+// *****************************************************************
+// ABOUT
+// *****************************************************************
+.about {
+	.lead {
+		background: $theblue;
 
+		h1 {
+			color: $white;
+			background: none;
+			width: 80%;
+			margin: 0 10%;
+		}
+	}
+}
+
+.toolbox {
+	color: $white;
+	background: $midpurple;
+
+	h1 {
+		background: none;
+	}
+}
 
 
 // *****************************************************************
@@ -117,32 +140,63 @@
 	$iconWidth: 80px;
 
 	text-align: center;
+	padding-bottom: 40px;
 
 
 
 	.icon {
 		
-		@include text-replacement();
+		// @include text-replacement();
 		width: $iconWidth;
-		height: $iconWidth * 0.866;
+		height: $iconWidth; // * 0.866;
 		// background: #CCC;
 		display: inline-block;
 		margin: 5px 12px;
 		position: relative;
+		border: solid 3px $thered;
   
-		&::before {
-			content: '';
-			width: 0; 
-			height: 0;
-			position: absolute;
-			top: 0;
-			left: 0;
-			border-bottom: #{$iconWidth * 0.866} solid $thered;
-			border-left: #{$iconWidth/2} solid transparent;
-			border-right: #{$iconWidth/2} solid transparent;
+  		/* FOR TRIANGLES */
+		// &::before {
+		// 	content: '';
+		// 	width: 0; 
+		// 	height: 0;
+		// 	position: absolute;
+		// 	top: 0;
+		// 	left: 0;
+		// 	border-top: #{$iconWidth * 0.866} solid $thered;
+		// 	border-left: #{$iconWidth/2} solid transparent;
+		// 	border-right: #{$iconWidth/2} solid transparent;
+		// 	z-index: 9;
+		// }
+  
+		a {
+			width: 100%;
+			height: 100%;
 		}
-  
 
+		svg {
+			width: 40%;
+			height: 40%;
+			position: absolute;
+			top: 20%;
+			left: 30%;
+			// z-index: 10;
+			fill: $thered;
+		}
 	}
-	
+
+	.word {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		color: $thered;
+	}
+
+	.noicon {
+		width: 100%;
+		padding: 0 0 20px 0;
+		color: $thered;
+	}
+
 }
