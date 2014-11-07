@@ -33,13 +33,47 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 							<li class="nav-project">
 								<a class="ajax-work" href="koozac/">
 									<img src="/asset/dist/img/bg.jpg">
-									<span class="word">KOOZAC</span>
-									<span class="subtext">Mobile game UI &amp; Web</span>
+									<span class="gradient"></span>
+									<span class="triangle"></span>
+									<h2>
+										<span class="word">KOOZAC</span>
+										<span class="subtext">Mobile game UI &amp; Web</span>
+									</h2>
 								</a>
 							</li>
-							<li class="nav-project"><a class="ajax-work" href="heroesandgenerals/">Heroes &amp; Generals</a></li>
-							<li class="nav-project"><a class="ajax-work" href="koozac/">KZ</a></li>
-							<li class="nav-project"><a class="ajax-work" href="heroesandgenerals/">HNG</a></li>
+							<li class="nav-project">
+								<a class="ajax-work" href="koozac/">
+									<img src="/asset/dist/img/bg.jpg">
+									<span class="gradient"></span>
+									<span class="triangle"></span>
+									<h2>
+										<span class="word">KOOZAC</span>
+										<span class="subtext">Mobile game UI &amp; Web</span>
+									</h2>
+								</a>
+							</li>
+							<li class="nav-project">
+								<a class="ajax-work" href="koozac/">
+									<img src="/asset/dist/img/bg.jpg">
+									<span class="gradient"></span>
+									<span class="triangle"></span>
+									<h2>
+										<span class="word">KOOZAC</span>
+										<span class="subtext">Mobile game UI &amp; Web</span>
+									</h2>
+								</a>
+							</li>
+							<li class="nav-project">
+								<a class="ajax-work" href="koozac/">
+									<img src="/asset/dist/img/bg.jpg">
+									<span class="gradient"></span>
+									<span class="triangle"></span>
+									<h2>
+										<span class="word">KOOZAC</span>
+										<span class="subtext">Mobile game UI &amp; Web</span>
+									</h2>
+								</a>
+							</li>
 						</ul>
 					</section>
 
@@ -55,7 +89,19 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			</section>
 			
 			<section class="block">
-				
+				<h1>SEE MORE</h1>
+
+			    <ul class="social">
+			    	<li class="icon behance"><a target="_blank" href=""><span class="word">Behance</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#behance"></use></svg></a></li>
+			    	<li class="icon codepen"><a target="_blank" href=""><span class="word">Codepen</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#codepen"></use></svg></a></li>
+			    	<li class="icon github"><a target="_blank" href=""><span class="word">GitHub</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#github"></use></svg></a></li>
+			    </ul>
+			</section>
+
+			<section class="block clients">
+				<h1>CLIENTS &amp; COMPANIES</h1>
+
+			    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aut eius, inventore impedit. Unde vel, reprehenderit sunt alias iusto tempore excepturi sit at, provident, nam esse debitis laborum, quasi quam.</p>
 			</section>
 
         </section>

@@ -62,37 +62,30 @@
 	position: relative;
 	z-index: 5;
 
-	img {
-		min-height: 100%;
-		min-width: 100%;
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		opacity: 0.5;
-		z-index: 0;	
-	}
+	.full {
+		img {
+			min-height: 100%;
+			min-width: 100%;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			opacity: 0.5;
+			z-index: 0;	
+		}
 
-	svg {
-		width: 80%;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		z-index: 2;
-	}
-
-	.gradient {
-		width: 100%;
-		height: 100%;
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 1;
-		opacity: 0.6;
-		background-image: linear-gradient(to top right, $thered 10%, $theblue 100%);
-		filter: saturate(2);
+		.gradient {
+			width: 100%;
+			height: 100%;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			opacity: 0.6;
+			background-image: linear-gradient(to top right, $thered 10%, $theblue 100%);
+			filter: saturate(2);
+		}
 	}
 }
 
@@ -102,6 +95,14 @@
 .work {
 	.lead {
 		background: #EcEcEc;
+	}
+
+	.clients {
+		background: $theblue;
+
+		h1 {
+			background: none;
+		}
 	}
 }
 
@@ -153,52 +154,89 @@
 }
 
 li.nav-project {
-	// width: 33.3333333333333333333%;
 	width: 50%;
 	position: relative;
 	float: left;
-	// background: #CCC;
 	overflow: hidden;
 
-	// responsive height - always a square
+	// RESPONSIVE HEIGHT
 	&::after {
 		content: '';
 		width: 100%;
 		padding-top: 100%;
 		display: block;
-		// background: $theblue;
 	}
-
-	&::before {
-		content: '';
-		width: 100%;
-		height: 60%;
-		display: block;
-		background: rgba($black, 0.5);
+	
+	// BACKGROUND IMAGE
+	img {
+		width: 150%;
+		height: 150%;
 		position: absolute;
-		bottom: 0;
-		left: 0;
-		z-index: 9;
-
-		/* TRIANGLES */
-		// $iconWidth: 150px;
-		// content: '';
-		// width: 0; 
-		// height: 0;
-		// position: absolute;
-		// top: 30%;
-		// left: 50%;
-		// border-top: #{$iconWidth * 0.866} solid rgba($thered, 0.4);
-		// border-left: #{$iconWidth/2} solid transparent;
-		// border-right: #{$iconWidth/2} solid transparent;
-		// z-index: 9;
-		// transform: translateX(-50%);
-	}
-
-	img, span {
-		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 		z-index: 1;
 	}
+
+	// GRADIENT
+	.gradient {
+		width: 100%;
+		height: 100%;
+		display: block;
+		background: rgba($theblue, 0.7);
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+
+	// TRIANGLE
+	.triangle {
+		width: 60%;
+		height: 60% * 0.866;
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		// background: #CCC;
+		border-top: solid 1px $white;
+		z-index: 2;
+
+		&::before, &::after {
+			content: '';
+			width: 100%;
+			height: 1px;
+			display: block;
+			background: $white;
+			position: absolute;
+			z-index: 3;
+			top: 0;
+			left: 0;
+		}
+
+		&::before {
+			transform-origin: left center;
+			transform: rotate(60deg);
+		}
+
+		&::after {
+			transform-origin: right center;
+			transform: rotate(-60deg);	
+		}
+	}
+	
+	// TEXT
+	h2 {
+		width: 80%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 5;
+	}
+
+
 }
 
 

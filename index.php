@@ -14,9 +14,10 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 		<section class="content home">
 
 			<section class="hero">
-				<img src="/asset/dist/img/bg.jpg">
-				<span class="gradient"></span>
-				<svg class="logotype"><use xlink:href="#logotype"></use></svg>
+				<div class="full">
+					<img src="/asset/dist/img/bg.jpg">
+					<span class="gradient"></span>
+				</div>
 			</section>
 
 			<section class="block">

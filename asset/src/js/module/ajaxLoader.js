@@ -1,3 +1,10 @@
+/**
+*
+* AUTHOR: Tom Hewitt | @tomchewitt
+* FORKED FROM: https://github.com/giabao/mdn-ajax-nav-example
+*
+**/
+
 var ajaxLoader = (function () {
 	console.log('ajaxLoader'); // my log
 
