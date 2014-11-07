@@ -31,14 +31,24 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			<section class="block toolbox">
 				<h1>TOOLBOX</h1>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas eum mollitia accusamus. Est sequi maxime ad nostrum impedit assumenda laudantium quae voluptate dignissimos, numquam iusto mollitia eius! Nisi, sit, enim.</p>
+				<ul class="tools">
+					<li class="icon"><span class="word">Photoshop</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#photoshop"></use></svg></li>
+					<li class="icon"><span class="word">Illustrator</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#illustrator"></use></svg></li>
+					<li class="icon"><span class="word">HTML5</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#html5"></use></svg></li>
+					<li class="icon"><span class="word">CSS3</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#css3"></use></svg></li>
+					<li class="icon"><span class="word">Javascript</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#javascript"></use></svg></li>
+					<li class="icon"><span class="word">jQuery</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#jquery"></use></svg></li>
+					<li class="icon"><span class="word">SASS</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#sass"></use></svg></li>
+					<li class="icon"><span class="word">Grunt</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#grunt"></use></svg></li>
+					<li class="icon"><span class="word">Github</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#githubfull"></use></svg></li>
+				</ul>
 
 				<h1>BONUS</h1>
 				<p>after effects, premiere, flash, AS3, php, minimal mySql</p>
 			</section>
 
 			<section class="block">
-				<h1>SOMETHING, SOMETHING, DANGERZONE!</h1>
+				<h1>DANGERZONE!</h1>
 
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas eum mollitia accusamus. Est sequi maxime ad nostrum impedit assumenda laudantium quae voluptate dignissimos, numquam iusto mollitia eius! Nisi, sit, enim.</p>
 
@@ -46,11 +56,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			    	<li class="icon behance"><a target="_blank" href=""><span class="word">Behance</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#behance"></use></svg></a></li>
 			    	<li class="icon codepen"><a target="_blank" href=""><span class="word">Codepen</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#codepen"></use></svg></a></li>
 			    	<li class="icon github"><a target="_blank" href=""><span class="word">GitHub</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#github"></use></svg></a></li>
-			    </ul>				
-			</section>
-
-			<section class="block">
-				<h1>SLAM DUNK</h1>
+			    </ul>
 
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas eum mollitia accusamus. Est sequi maxime ad nostrum impedit assumenda laudantium quae voluptate dignissimos, numquam iusto mollitia eius! Nisi, sit, enim.</p>				
 			</section>

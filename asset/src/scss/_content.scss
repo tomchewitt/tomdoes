@@ -97,6 +97,113 @@
 }
 
 // *****************************************************************
+// WORK
+// *****************************************************************
+.work {
+	.lead {
+		background: #EcEcEc;
+	}
+}
+
+.nav-work {
+	
+	li {
+		cursor: pointer;
+		width: 35%;
+		height: $navWorkHeight;
+		color: $black;
+		display: inline-block;
+		position: relative;
+		transition: all 0.3s ease-out;
+
+		&::before {
+			content: '';
+			width: 100%;
+			height: 1px;
+			display: block;
+			background: $black;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			transition: all 0.3s ease-out;
+		}
+
+		&.on {
+			color: $thered;
+
+			&::before {
+				height: 6px;
+				background: $thered;
+			}
+		}
+	}
+
+	li:nth-child(1) {
+		margin-right: 5%;
+	}
+}
+
+.projects {
+	width: 100%;
+	margin-top: 30px;
+
+	.rest {
+		display: none;
+	}
+}
+
+li.nav-project {
+	// width: 33.3333333333333333333%;
+	width: 50%;
+	position: relative;
+	float: left;
+	// background: #CCC;
+	overflow: hidden;
+
+	// responsive height - always a square
+	&::after {
+		content: '';
+		width: 100%;
+		padding-top: 100%;
+		display: block;
+		// background: $theblue;
+	}
+
+	&::before {
+		content: '';
+		width: 100%;
+		height: 60%;
+		display: block;
+		background: rgba($black, 0.5);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 9;
+
+		/* TRIANGLES */
+		// $iconWidth: 150px;
+		// content: '';
+		// width: 0; 
+		// height: 0;
+		// position: absolute;
+		// top: 30%;
+		// left: 50%;
+		// border-top: #{$iconWidth * 0.866} solid rgba($thered, 0.4);
+		// border-left: #{$iconWidth/2} solid transparent;
+		// border-right: #{$iconWidth/2} solid transparent;
+		// z-index: 9;
+		// transform: translateX(-50%);
+	}
+
+	img, span {
+		position: absolute;
+		z-index: 1;
+	}
+}
+
+
+
+// *****************************************************************
 // ABOUT
 // *****************************************************************
 .about {
@@ -114,13 +221,34 @@
 
 .toolbox {
 	color: $white;
-	background: $midpurple;
+	background: $theblue;
 
 	h1 {
 		background: none;
 	}
 }
 
+.tools {
+	text-align: center;
+	li {
+		width: 25%;
+		height: 80px;
+		display: inline-block;
+		margin: 15px 2.5%;
+		// background: #CCC;
+		position: relative;
+	}
+
+	.word {
+		@include text-replacement();
+	}
+
+	svg {
+		width: 100%;
+		height: 100%;
+		fill: $midpurple;
+	}
+}
 
 // *****************************************************************
 // CONTACT
@@ -155,19 +283,6 @@
 		position: relative;
 		border: solid 3px $thered;
   
-  		/* FOR TRIANGLES */
-		// &::before {
-		// 	content: '';
-		// 	width: 0; 
-		// 	height: 0;
-		// 	position: absolute;
-		// 	top: 0;
-		// 	left: 0;
-		// 	border-top: #{$iconWidth * 0.866} solid $thered;
-		// 	border-left: #{$iconWidth/2} solid transparent;
-		// 	border-right: #{$iconWidth/2} solid transparent;
-		// 	z-index: 9;
-		// }
   
 		a {
 			width: 100%;

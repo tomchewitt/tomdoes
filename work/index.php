@@ -13,22 +13,50 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 
 		<section class="content work">
 
-			<h1>
+			<h1 class="main">
 				<span class="word">WORK</span>
 				<span class="icon"><svg><use xlink:href="/asset/dist/img/svg-defs.svg#nav-work"></use></svg></span>
 			</h1>
 
-			<p>
-				<a class="ajax-work" href="koozac/">KOOZAC</a> |
-				<a class="ajax-work" href="heroesandgenerals/">Heroes &amp; Generals</a>
-			</p>
+			<section class="block lead">
+				<nav class="nav-work">
+					<ul>
+						<li class="nav-best on">The Best</li>
+						<li class="nav-rest">The Rest</li>
+					</ul>
+				</nav>
 
-		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="projects">
+
+					<section class="best">
+						<ul>
+							<li class="nav-project">
+								<a class="ajax-work" href="koozac/">
+									<img src="/asset/dist/img/bg.jpg">
+									<span class="word">KOOZAC</span>
+									<span class="subtext">Mobile game UI &amp; Web</span>
+								</a>
+							</li>
+							<li class="nav-project"><a class="ajax-work" href="heroesandgenerals/">Heroes &amp; Generals</a></li>
+							<li class="nav-project"><a class="ajax-work" href="koozac/">KZ</a></li>
+							<li class="nav-project"><a class="ajax-work" href="heroesandgenerals/">HNG</a></li>
+						</ul>
+					</section>
+
+					<section class="rest">
+						<ul>
+							<li class="nav-project"><a class="ajax-work" href="koozac/">KZ 2</a></li>
+							<li class="nav-project"><a class="ajax-work" href="heroesandgenerals/">HNG 2</a></li>
+						</ul>
+					</section>
+
+				</div>
+				
+			</section>
+			
+			<section class="block">
+				
+			</section>
 
         </section>
 
