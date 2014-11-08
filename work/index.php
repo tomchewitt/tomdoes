@@ -31,7 +31,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 					<section class="best">
 						<ul>
 							<li class="nav-project">
-								<a class="ajax-work" href="koozac/">
+								<a class="ajax-nav" href="koozac/">
 									<img src="/asset/dist/img/bg.jpg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
@@ -42,7 +42,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 								</a>
 							</li>
 							<li class="nav-project">
-								<a class="ajax-work" href="koozac/">
+								<a class="ajax-nav" href="koozac/">
 									<img src="/asset/dist/img/bg.jpg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
@@ -53,7 +53,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 								</a>
 							</li>
 							<li class="nav-project">
-								<a class="ajax-work" href="koozac/">
+								<a class="ajax-nav" href="koozac/">
 									<img src="/asset/dist/img/bg.jpg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
@@ -64,7 +64,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 								</a>
 							</li>
 							<li class="nav-project">
-								<a class="ajax-work" href="koozac/">
+								<a class="ajax-nav" href="koozac/">
 									<img src="/asset/dist/img/bg.jpg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
@@ -79,8 +79,8 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 
 					<section class="rest">
 						<ul>
-							<li class="nav-project"><a class="ajax-work" href="koozac/">KZ 2</a></li>
-							<li class="nav-project"><a class="ajax-work" href="heroesandgenerals/">HNG 2</a></li>
+							<li class="nav-project"><a class="ajax-nav" href="koozac/">KZ 2</a></li>
+							<li class="nav-project"><a class="ajax-nav" href="heroesandgenerals/">HNG 2</a></li>
 						</ul>
 					</section>
 

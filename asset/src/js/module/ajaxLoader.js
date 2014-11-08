@@ -8,6 +8,8 @@
 var ajaxLoader = (function () {
 	console.log('ajaxLoader'); // my log
 
+	var ajaxLoader = {};
+
 	// *****************************************************************
 	// CUSTOMIZABLE VARS
 	// *****************************************************************
@@ -32,6 +34,7 @@ var ajaxLoader = (function () {
 
 	// MESSAGE OBJ
 	var vMsg;
+	var vPageToLoad = '';
 
 	// LOADING GIF VARS
 	var bIsSpinning = false;
@@ -55,20 +58,20 @@ var ajaxLoader = (function () {
 	// *****************************************************************
 	// PUBLIC METHODS
 	// *****************************************************************
-	this.open = requestPage;
-	this.stop = abortReq;
-	this.rebuildLinks = init;
+	ajaxLoader.completed = function() {
+		closeSpinner();
+	}
 
 
 	// *****************************************************************
 	// FUNCTIONS
 	// *****************************************************************
 	function closeReq () {
-		console.log('closeReq'); // my log
+		console.log('closeReq', vMsg.content); // my log
 		bIsLoading = false;
-		// SPINNER
-		closeSpinner();
-		
+
+		// LOAD HEROES ETC
+		heroLoader.setup(vPageToLoad);		
 	}
 
 	function abortReq () {
@@ -145,9 +148,10 @@ var ajaxLoader = (function () {
 	function processLink () {
 		console.log('processLink'); // my log
 		if (this.className === sAjaxClass) {
-			requestPage(this.href);
-			return false;
-		} else if (this.className === sWorkClass) {
+
+			// insert page data-pageid variable
+			vPageToLoad = this.getAttribute('data-pageid');
+
 			requestPage(this.href);
 			return false;
 		}
@@ -177,11 +181,12 @@ var ajaxLoader = (function () {
 	function midSpinner() {
 		window.scrollTo(0, 0);
 		oIsSpinning = false;
+		// SPINNER
 		closeSpinner();
 	}
 
 	function closeSpinner() {
-		if (!bIsLoading && !oIsSpinning) {
+		if (!bIsLoading && !oIsSpinning && heroLoader.loading == true) {
 			document.title = oPageInfo.title = vMsg.page;
 			document.getElementById(sTargetId).innerHTML = vMsg.content;
 			if (bUpdateURL) {
@@ -199,5 +204,10 @@ var ajaxLoader = (function () {
 	function postSpinner() {
 		$loader.style.display = 'none';
 	}
+
+
+
+	// RETURN
+	return ajaxLoader;
 
 })();
