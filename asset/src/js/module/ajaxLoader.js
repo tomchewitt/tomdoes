@@ -6,7 +6,7 @@
 **/
 
 var ajaxLoader = (function () {
-	console.log('ajaxLoader'); // my log
+	// console.log('ajaxLoader'); // my log
 
 	var ajaxLoader = {};
 
@@ -70,8 +70,7 @@ var ajaxLoader = (function () {
 		console.log('closeReq'); // my log
 		bIsLoading = false;
 
-		// LOAD HEROES ETC
-		heroLoader.setup(vPageToLoad);		
+		placePage();
 	}
 
 	function abortReq () {
@@ -164,6 +163,11 @@ var ajaxLoader = (function () {
 		oPageInfo.url = filterURL(document.URL);
 		history.pushState(oPageInfo, oPageInfo.title, oPageInfo.url);
 		for (var oLink, nIdx = 0, nLen = document.links.length; nIdx < nLen; document.links[nIdx++].onclick = processLink);
+
+		// preload spinner
+		vPageToLoad = document.querySelector('section.content').getAttribute('data-pageid');
+		console.log(vPageToLoad);
+		heroLoader.setup(vPageToLoad);
 	}
 
 
@@ -182,11 +186,11 @@ var ajaxLoader = (function () {
 		window.scrollTo(0, 0);
 		oIsSpinning = false;
 		// SPINNER
-		closeSpinner();
+		placePage();
 	}
 
-	function closeSpinner() {
-		if (!bIsLoading && !oIsSpinning && heroLoader.loading == true) {
+	function placePage() {
+		if (!bIsLoading && !oIsSpinning) { // && heroLoader.loading == true
 			document.title = oPageInfo.title = vMsg.page;
 			document.getElementById(sTargetId).innerHTML = vMsg.content;
 			if (bUpdateURL) {
@@ -196,9 +200,15 @@ var ajaxLoader = (function () {
 
 			for (var oLink, nIdx = 0, nLen = document.links.length; nIdx < nLen; document.links[nIdx++].onclick = processLink);
 			
-			TweenLite.to('.loader .cover', 0.5, {scale: 0, ease:Quad.easeOut, onComplete:postSpinner});
-			TweenLite.to('.loader .spinner', 0.3, {opacity: 0, ease:Quad.easeOut});
+
+			// LOAD HEROES & SETUP PAGE
+			heroLoader.setup(vPageToLoad);		
 		}
+	}
+
+	function closeSpinner() {
+		TweenLite.to('.loader .cover', 0.5, {scale: 0, ease:Quad.easeOut, onComplete:postSpinner});
+		TweenLite.to('.loader .spinner', 0.3, {opacity: 0, ease:Quad.easeOut});
 	}
 
 	function postSpinner() {

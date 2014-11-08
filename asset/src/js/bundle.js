@@ -23,7 +23,7 @@ var s,r,n,a,o,h,l,_,u;if((c(e)||M(e))&&"number"!=typeof e[0])for(s=e.length;--s>
 **/
 
 var ajaxLoader = (function () {
-	console.log('ajaxLoader'); // my log
+	// console.log('ajaxLoader'); // my log
 
 	var ajaxLoader = {};
 
@@ -87,8 +87,7 @@ var ajaxLoader = (function () {
 		console.log('closeReq'); // my log
 		bIsLoading = false;
 
-		// LOAD HEROES ETC
-		heroLoader.setup(vPageToLoad);		
+		placePage();
 	}
 
 	function abortReq () {
@@ -181,6 +180,11 @@ var ajaxLoader = (function () {
 		oPageInfo.url = filterURL(document.URL);
 		history.pushState(oPageInfo, oPageInfo.title, oPageInfo.url);
 		for (var oLink, nIdx = 0, nLen = document.links.length; nIdx < nLen; document.links[nIdx++].onclick = processLink);
+
+		// preload spinner
+		vPageToLoad = document.querySelector('section.content').getAttribute('data-pageid');
+		console.log(vPageToLoad);
+		heroLoader.setup(vPageToLoad);
 	}
 
 
@@ -199,11 +203,11 @@ var ajaxLoader = (function () {
 		window.scrollTo(0, 0);
 		oIsSpinning = false;
 		// SPINNER
-		closeSpinner();
+		placePage();
 	}
 
-	function closeSpinner() {
-		if (!bIsLoading && !oIsSpinning && heroLoader.loading == true) {
+	function placePage() {
+		if (!bIsLoading && !oIsSpinning) { // && heroLoader.loading == true
 			document.title = oPageInfo.title = vMsg.page;
 			document.getElementById(sTargetId).innerHTML = vMsg.content;
 			if (bUpdateURL) {
@@ -213,9 +217,15 @@ var ajaxLoader = (function () {
 
 			for (var oLink, nIdx = 0, nLen = document.links.length; nIdx < nLen; document.links[nIdx++].onclick = processLink);
 			
-			TweenLite.to('.loader .cover', 0.5, {scale: 0, ease:Quad.easeOut, onComplete:postSpinner});
-			TweenLite.to('.loader .spinner', 0.3, {opacity: 0, ease:Quad.easeOut});
+
+			// LOAD HEROES & SETUP PAGE
+			heroLoader.setup(vPageToLoad);		
 		}
+	}
+
+	function closeSpinner() {
+		TweenLite.to('.loader .cover', 0.5, {scale: 0, ease:Quad.easeOut, onComplete:postSpinner});
+		TweenLite.to('.loader .spinner', 0.3, {opacity: 0, ease:Quad.easeOut});
 	}
 
 	function postSpinner() {
@@ -238,20 +248,21 @@ var heroLoader = (function() {
 	var heroLoader = {};
 
 	// PRIVATE VARS
-	var $ = function (selector) { return document.querySelector(selector) };
+	// var $ = function (selector) { return document.querySelector(selector) };
 	var vPageToLoad;
+	var aImgs;
+	var nImgsLoaded;
 
 	// PRIVATE METHODS
 	function preloadHero() {
-
-
-		/************************************************************/
-		// can't load because it's not been placed into the DOM yet :S
-		/************************************************************/
-
+		aImgs = [];
 		switch (vPageToLoad) {
 			case 'home':
-
+				// PUSH IMAGE TO ARR
+				var heroSrc = document.querySelector('.hero img').src;
+				aImgs.push(heroSrc);
+				// SET HEIGHT OF HERO
+				document.querySelector('.hero').style.height = (window.innerHeight - document.querySelector('section.header').clientHeight) + 'px';
 			break;
 			case 'about':
 
@@ -267,21 +278,36 @@ var heroLoader = (function() {
 			break;
 		}
 
-		heroLoader.loading = true;
-
-		heroesReady();
+		preloadImg(aImgs);
+		
 	}
 
+
+	function preloadImg(aImgs) {
+		console.log(aImgs, aImgs.length);
+		
+		if (aImgs.length == 0) {
+			ajaxLoader.completed();
+			return;
+		}
+
+		nImgsLoaded = 0;
+		for(var i = 0; i < aImgs.length; i++ ) {
+	        var oImg = new Image();
+	        oImg.src = aImgs[i];
+	        oImg.onload = heroesReady;
+
+	    }
+	}
+
+
 	function heroesReady() {
-		if (heroLoader.loading) {
+		nImgsLoaded++;
+		if (nImgsLoaded == aImgs.length) {
 			ajaxLoader.completed();
 		}
 	}
 
-
-
-	// PUBLIC VARS
-	heroLoader.loading = false;
 
 
 	// PUBLIC FUNCTIONS
@@ -298,8 +324,6 @@ var heroLoader = (function() {
 
 
 /*
-// HERO
-document.querySelector('.hero').style.height = (window.innerHeight - document.querySelector('section.header').clientHeight) + 'px';
 
 
 // NAV SWITCHER FOR WORK

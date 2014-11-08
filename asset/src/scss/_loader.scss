@@ -9,7 +9,7 @@
 	left: 0;
 	overflow: hidden;
 	z-index: 9998;
-	display: none;
+	display: block; // none
 
 	.cover {
 		width: 500%;
@@ -17,7 +17,7 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -50%) scale(0);
+		transform: translate(-50%, -50%) scale(1); // scale(0)
 		fill: $midpurple;
 	}
 
@@ -26,7 +26,7 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		opacity: 0;
+		opacity: 1; // 0
 	}
 
 	.triangle {

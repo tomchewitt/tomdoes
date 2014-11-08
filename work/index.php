@@ -11,7 +11,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 }
 ?>
 
-		<section class="content work">
+		<section class="content work" data-pageid="work">
 
 			<h1 class="main">
 				<span class="word">WORK</span>
@@ -19,12 +19,12 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			</h1>
 
 			<section class="block lead">
-				<nav class="nav-work">
+				<!-- <nav class="nav-work">
 					<ul>
 						<li class="nav-best on">The Best</li>
 						<li class="nav-rest">The Rest</li>
 					</ul>
-				</nav>
+				</nav> -->
 
 				<div class="projects">
 

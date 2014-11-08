@@ -7,20 +7,21 @@ var heroLoader = (function() {
 	var heroLoader = {};
 
 	// PRIVATE VARS
-	var $ = function (selector) { return document.querySelector(selector) };
+	// var $ = function (selector) { return document.querySelector(selector) };
 	var vPageToLoad;
+	var aImgs;
+	var nImgsLoaded;
 
 	// PRIVATE METHODS
 	function preloadHero() {
-
-
-		/************************************************************/
-		// can't load because it's not been placed into the DOM yet :S
-		/************************************************************/
-
+		aImgs = [];
 		switch (vPageToLoad) {
 			case 'home':
-
+				// PUSH IMAGE TO ARR
+				var heroSrc = document.querySelector('.hero img').src;
+				aImgs.push(heroSrc);
+				// SET HEIGHT OF HERO
+				document.querySelector('.hero').style.height = (window.innerHeight - document.querySelector('section.header').clientHeight) + 'px';
 			break;
 			case 'about':
 
@@ -36,21 +37,36 @@ var heroLoader = (function() {
 			break;
 		}
 
-		heroLoader.loading = true;
-
-		heroesReady();
+		preloadImg(aImgs);
+		
 	}
 
+
+	function preloadImg(aImgs) {
+		console.log(aImgs, aImgs.length);
+		
+		if (aImgs.length == 0) {
+			ajaxLoader.completed();
+			return;
+		}
+
+		nImgsLoaded = 0;
+		for(var i = 0; i < aImgs.length; i++ ) {
+	        var oImg = new Image();
+	        oImg.src = aImgs[i];
+	        oImg.onload = heroesReady;
+
+	    }
+	}
+
+
 	function heroesReady() {
-		if (heroLoader.loading) {
+		nImgsLoaded++;
+		if (nImgsLoaded == aImgs.length) {
 			ajaxLoader.completed();
 		}
 	}
 
-
-
-	// PUBLIC VARS
-	heroLoader.loading = false;
 
 
 	// PUBLIC FUNCTIONS
@@ -67,8 +83,6 @@ var heroLoader = (function() {
 
 
 /*
-// HERO
-document.querySelector('.hero').style.height = (window.innerHeight - document.querySelector('section.header').clientHeight) + 'px';
 
 
 // NAV SWITCHER FOR WORK

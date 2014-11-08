@@ -11,7 +11,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 }
 ?>
 
-		<section class="content work">
+		<section class="content work" data-pageid="project">
 
 			<h1 class="main">
 				<span class="word">KOOZAC</span>
