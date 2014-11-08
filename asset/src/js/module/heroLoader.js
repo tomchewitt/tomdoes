@@ -6,10 +6,47 @@ var heroLoader = (function() {
 	// constructor
 	var heroLoader = {};
 
-	// selector (jquery style)
-	var $ = function (selector) {
-		return document.querySelector(selector);
-	};
+	// PRIVATE VARS
+	var $ = function (selector) { return document.querySelector(selector) };
+	var vPageToLoad;
+
+	// PRIVATE METHODS
+	function preloadHero() {
+
+
+		/************************************************************/
+		// can't load because it's not been placed into the DOM yet :S
+		/************************************************************/
+
+		switch (vPageToLoad) {
+			case 'home':
+
+			break;
+			case 'about':
+
+			break;
+			case 'contact':
+
+			break;
+			case 'work':
+
+			break;
+			case 'project':
+
+			break;
+		}
+
+		heroLoader.loading = true;
+
+		heroesReady();
+	}
+
+	function heroesReady() {
+		if (heroLoader.loading) {
+			ajaxLoader.completed();
+		}
+	}
+
 
 
 	// PUBLIC VARS
@@ -17,16 +54,10 @@ var heroLoader = (function() {
 
 
 	// PUBLIC FUNCTIONS
-	heroLoader.setup = function(vPageToLoad) {
-
-		console.log(vPageToLoad);
-
-		heroLoader.loading = true;
-
-		ajaxLoader.completed();
+	heroLoader.setup = function(page) {
+		vPageToLoad = page;
+		preloadHero();		
 	}
-
-
 
 
 	// RETURN MODULE

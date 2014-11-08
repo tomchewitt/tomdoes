@@ -67,7 +67,7 @@ var ajaxLoader = (function () {
 	// FUNCTIONS
 	// *****************************************************************
 	function closeReq () {
-		console.log('closeReq', vMsg.content); // my log
+		console.log('closeReq'); // my log
 		bIsLoading = false;
 
 		// LOAD HEROES ETC
