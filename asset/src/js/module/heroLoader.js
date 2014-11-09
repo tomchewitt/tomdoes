@@ -24,7 +24,12 @@ var heroLoader = (function() {
 				document.querySelector('.hero').style.height = (window.innerHeight - document.querySelector('section.header').clientHeight) + 'px';
 			break;
 			case 'about':
-
+				// PUSH IMAGE TO ARR
+				var heroSrc = document.querySelector('.hero img').src;
+				aImgs.push(heroSrc);
+				// SET HEIGHT OF HERO
+				var $hero = document.querySelector('.hero');
+				$hero.style.height = (window.innerHeight - $hero.offsetTop) + 'px';
 			break;
 			case 'contact':
 
@@ -33,7 +38,12 @@ var heroLoader = (function() {
 
 			break;
 			case 'project':
-
+				// PUSH IMAGE TO ARR
+				var heroSrc = document.querySelector('.hero img').src;
+				aImgs.push(heroSrc);
+				// SET HEIGHT OF HERO
+				var $hero = document.querySelector('.hero');
+				$hero.style.height = (window.innerHeight - $hero.offsetTop) + 'px';
 			break;
 		}
 
@@ -44,7 +54,7 @@ var heroLoader = (function() {
 
 	function preloadImg(aImgs) {
 		console.log(aImgs, aImgs.length);
-		
+
 		if (aImgs.length == 0) {
 			ajaxLoader.completed();
 			return;

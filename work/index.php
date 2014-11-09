@@ -15,7 +15,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 
 			<h1 class="main">
 				<span class="word">WORK</span>
-				<span class="icon"><svg><use xlink:href="/asset/dist/img/svg-defs.svg#nav-work"></use></svg></span>
+				<span class="icon"><svg><use xlink:href="#nav-work"></use></svg></span>
 			</h1>
 
 			<section class="block lead">
@@ -92,9 +92,9 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 				<h1>SEE MORE</h1>
 
 			    <ul class="social">
-			    	<li class="icon behance"><a target="_blank" href=""><span class="word">Behance</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#behance"></use></svg></a></li>
-			    	<li class="icon codepen"><a target="_blank" href=""><span class="word">Codepen</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#codepen"></use></svg></a></li>
-			    	<li class="icon github"><a target="_blank" href=""><span class="word">GitHub</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#github"></use></svg></a></li>
+			    	<li class="icon behance"><a target="_blank" href=""><span class="word">Behance</span><svg><use xlink:href="#behance"></use></svg></a></li>
+			    	<li class="icon codepen"><a target="_blank" href=""><span class="word">Codepen</span><svg><use xlink:href="#codepen"></use></svg></a></li>
+			    	<li class="icon github"><a target="_blank" href=""><span class="word">GitHub</span><svg><use xlink:href="#github"></use></svg></a></li>
 			    </ul>
 			</section>
 

@@ -15,10 +15,14 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 
 			<h1 class="main">
 				<span class="word">ABOUT</span>
-				<span class="icon"><svg><use xlink:href="/asset/dist/img/svg-defs.svg#nav-about"></use></svg></span>
+				<span class="icon"><svg><use xlink:href="#nav-about"></use></svg></span>
 			</h1>
 
-		    <section class="block lead">
+		    <section class="block lead hero">
+		    	<div class="full">
+					<img src="/asset/dist/img/bg.jpg">
+					<span class="gradient"></span>
+				</div>
 		    	<h1>SHAPES + CODE.<br>
 		    	MUSIC + GAMES.<br>
 		    	BASKETBALL + PIZZA.</h1>
@@ -32,15 +36,15 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 				<h1>TOOLBOX</h1>
 
 				<ul class="tools">
-					<li class="icon"><span class="word">Photoshop</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#photoshop"></use></svg></li>
-					<li class="icon"><span class="word">Illustrator</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#illustrator"></use></svg></li>
-					<li class="icon"><span class="word">HTML5</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#html5"></use></svg></li>
-					<li class="icon"><span class="word">CSS3</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#css3"></use></svg></li>
-					<li class="icon"><span class="word">Javascript</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#javascript"></use></svg></li>
-					<li class="icon"><span class="word">jQuery</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#jquery"></use></svg></li>
-					<li class="icon"><span class="word">SASS</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#sass"></use></svg></li>
-					<li class="icon"><span class="word">Grunt</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#grunt"></use></svg></li>
-					<li class="icon"><span class="word">Github</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#githubfull"></use></svg></li>
+					<li class="icon"><span class="word">Photoshop</span><svg><use xlink:href="#photoshop"></use></svg></li>
+					<li class="icon"><span class="word">Illustrator</span><svg><use xlink:href="#illustrator"></use></svg></li>
+					<li class="icon"><span class="word">HTML5</span><svg><use xlink:href="#html5"></use></svg></li>
+					<li class="icon"><span class="word">CSS3</span><svg><use xlink:href="#css3"></use></svg></li>
+					<li class="icon"><span class="word">Javascript</span><svg><use xlink:href="#javascript"></use></svg></li>
+					<li class="icon"><span class="word">jQuery</span><svg><use xlink:href="#jquery"></use></svg></li>
+					<li class="icon"><span class="word">SASS</span><svg><use xlink:href="#sass"></use></svg></li>
+					<li class="icon"><span class="word">Grunt</span><svg><use xlink:href="#grunt"></use></svg></li>
+					<li class="icon"><span class="word">Github</span><svg><use xlink:href="#githubfull"></use></svg></li>
 				</ul>
 
 				<h1>BONUS</h1>
@@ -53,9 +57,9 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas eum mollitia accusamus. Est sequi maxime ad nostrum impedit assumenda laudantium quae voluptate dignissimos, numquam iusto mollitia eius! Nisi, sit, enim.</p>
 
 				<ul class="social">
-			    	<li class="icon behance"><a target="_blank" href=""><span class="word">Behance</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#behance"></use></svg></a></li>
-			    	<li class="icon codepen"><a target="_blank" href=""><span class="word">Codepen</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#codepen"></use></svg></a></li>
-			    	<li class="icon github"><a target="_blank" href=""><span class="word">GitHub</span><svg><use xlink:href="/asset/dist/img/svg-defs.svg#github"></use></svg></a></li>
+			    	<li class="icon behance"><a target="_blank" href=""><span class="word">Behance</span><svg><use xlink:href="#behance"></use></svg></a></li>
+			    	<li class="icon codepen"><a target="_blank" href=""><span class="word">Codepen</span><svg><use xlink:href="#codepen"></use></svg></a></li>
+			    	<li class="icon github"><a target="_blank" href=""><span class="word">GitHub</span><svg><use xlink:href="#github"></use></svg></a></li>
 			    </ul>
 
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas eum mollitia accusamus. Est sequi maxime ad nostrum impedit assumenda laudantium quae voluptate dignissimos, numquam iusto mollitia eius! Nisi, sit, enim.</p>				
