@@ -99,19 +99,19 @@ section.hero {
 
 	// PROJECT
 	.blur {
-		width: 90%;
+		width: 120%;
 		position: fixed;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		z-index: 1;
-		filter: blur(50px); 
-		-webkit-filter: blur(50px); 
-		-moz-filter: blur(50px);
-		-o-filter: blur(50px); 
-		-ms-filter: blur(50px);
-		filter: url(#blur);
-		filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+		-webkit-filter: blur(15px); 
+		// -webkit-filter: blur(50px); 
+		// -moz-filter: blur(50px);
+		// -o-filter: blur(50px); 
+		// -ms-filter: blur(50px);
+		// filter: url(#blur);
+		// filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
 	}
 
 	.project-lead {
