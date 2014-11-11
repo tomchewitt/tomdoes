@@ -200,6 +200,7 @@ var ajaxLoader = (function () {
 
 			for (var oLink, nIdx = 0, nLen = document.links.length; nIdx < nLen; document.links[nIdx++].onclick = processLink);
 			
+			console.log('ERROR REP: ' + vPageToLoad);
 
 			// LOAD HEROES & SETUP PAGE
 			heroLoader.setup(vPageToLoad);		

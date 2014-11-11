@@ -217,6 +217,7 @@ var ajaxLoader = (function () {
 
 			for (var oLink, nIdx = 0, nLen = document.links.length; nIdx < nLen; document.links[nIdx++].onclick = processLink);
 			
+			console.log('ERROR REP: ' + vPageToLoad);
 
 			// LOAD HEROES & SETUP PAGE
 			heroLoader.setup(vPageToLoad);		
@@ -256,36 +257,18 @@ var heroLoader = (function() {
 	// PRIVATE METHODS
 	function preloadHero() {
 		aImgs = [];
-		switch (vPageToLoad) {
-			case 'home':
-				// PUSH IMAGE TO ARR
-				var heroSrc = document.querySelector('.hero img').src;
-				aImgs.push(heroSrc);
-				// SET HEIGHT OF HERO
-				document.querySelector('.hero').style.height = (window.innerHeight - document.querySelector('section.header').clientHeight) + 'px';
-			break;
-			case 'about':
-				// PUSH IMAGE TO ARR
-				var heroSrc = document.querySelector('.hero img').src;
-				aImgs.push(heroSrc);
-				// SET HEIGHT OF HERO
-				var $hero = document.querySelector('.hero');
-				$hero.style.height = (window.innerHeight - $hero.offsetTop) + 'px';
-			break;
-			case 'contact':
 
-			break;
-			case 'work':
+		if (document.querySelector('.hero')) {
+			console.log('HERO: true');
+			// PUSH IMAGE TO ARR
+			var heroSrc = document.querySelector('.hero img').src;
+			aImgs.push(heroSrc);
+		}
 
-			break;
-			case 'project':
-				// PUSH IMAGE TO ARR
-				var heroSrc = document.querySelector('.hero img').src;
-				aImgs.push(heroSrc);
-				// SET HEIGHT OF HERO
-				var $hero = document.querySelector('.hero');
-				$hero.style.height = (window.innerHeight - $hero.offsetTop) + 'px';
-			break;
+		if (document.querySelector('section.hero')) {
+			// SET HEIGHT OF HERO
+			var $hero = document.querySelector('.hero');
+			$hero.style.height = (window.innerHeight - $hero.offsetTop) + 'px';
 		}
 
 		preloadImg(aImgs);

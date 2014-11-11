@@ -20,9 +20,9 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 
 			<section class="hero">
 				<div class="gradient"></div>
-				<img class="blur" src="/asset/dist/img/work/koozac/01a.jpg">
+				<img class="blur" src="/asset/dist/img/work/koozac/hero.jpg">
 				<div class="project-lead">
-					<img src="/asset/dist/img/work/koozac/01a.jpg">
+					<img src="/asset/dist/img/work/koozac/hero.jpg">
 				</div>
 			</section>
 
@@ -34,10 +34,10 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			</section>
 
 			<section class="img-wrap">
-				<img src="/asset/dist/img/work/ctm-travel/01.jpg">
-				<img src="/asset/dist/img/work/koozac/koozac-02.jpg">
-				<img src="/asset/dist/img/work/koozac/koozac-03.jpg">
-				<img src="/asset/dist/img/work/koozac/koozac-04.jpg">
+				<img src="/asset/dist/img/work/koozac/02.jpg">
+				<img src="/asset/dist/img/work/koozac/04.jpg">
+				<img src="/asset/dist/img/work/koozac/03.jpg">
+				<img src="/asset/dist/img/work/koozac/01.jpg">
 			</section>
 
 			<section class="block palette">
