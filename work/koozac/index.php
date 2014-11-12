@@ -16,7 +16,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			<section class="hero">
 				<div class="gradient"></div>
 				<img class="blur" src="/asset/dist/img/work/koozac/hero.jpg">
-				<header class="project-header">
+				<header class="page-header">
 					<h1 class="title">KOOZAC</h1>
 					<span class="icon-wrap">
 						<span class="icon"><svg><use xlink:href="#spinner"></use></svg></span>	
