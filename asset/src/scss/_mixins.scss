@@ -1,5 +1,28 @@
 // MIXINS
 
+
+// *****************************************************************
+// WEBKIT TEXT GRADIENT
+// *****************************************************************
+@mixin textgradient($color1, $color2) {
+    color: $color1;
+    // TYPE
+    background: transparent;
+    background: -webkit-gradient(linear, bottom left, top right, color-stop(0%, $color1), color-stop(100%, $color2));
+    background: -webkit-linear-gradient(45deg, $color1 0%, $color2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+/* USAGE
+.selector {
+    @include textgradient(#color, #color2);
+}
+*/
+
+
 // *****************************************************************
 // FONTS
 // *****************************************************************
@@ -15,8 +38,8 @@
 }
 
 /* USAGE
-.selector {
-    @include fontface(fontname, font/path/name)
+@fontface {
+    @include fontface(fontname, font/path/name);
 }
 */
 

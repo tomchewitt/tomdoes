@@ -1,19 +1,23 @@
-// CONTENTS
-// 0. Mixins
-// 1. Utils
-// 3. Compass Reset
-// 4. Basic structure
-// 5. Typography
-// 6. Loader
-// 7. Header/Nav
-// 8. Content
-
-
+// MIXIN SHEET
 @import "_mixins.scss";
+
+// VARIABLES & KEYFRAMES
 @import "_utils.scss";
+
+// RESET
 @import "compass/reset";
+
+// BASIC STRUCTURE
 @import "_structure.scss";
-@import "_type.scss";
+
+// PRELOADER
 @import "_loader.scss";
+
+// HEADER & NAV
 @import "_nav.scss";
+
+// MAIN CONTENET BLOCKS
 @import "_content.scss";
+
+// PAGE SPECIFICS
+@import "_pages.scss";

@@ -7,49 +7,7 @@
 
 .content {
 	margin-top: $headerHeight;
-
-	h1 {
-		padding: 30px 0;
-		width: 100%;
-		background: $white;
-		color: $satpurple;
-		position: relative;
-		z-index: 10;
-
-		.word {
-			position: relative;
-			z-index: 2;
-		}
-
-		svg {
-			width: 40%;
-			height: 80%;
-			position: absolute;
-			top: 10%;
-			left: 50%;
-			z-index: 1;
-			transform: translateX(-50%);
-			fill: #f7f7f7;
-			margin-left: 0.15em;
-		}
-	}
 }
-
-
-.block {
-	position: relative;
-	z-index: 10;
-	background: $white;
-	width: 100%;
-	padding: 30px 0;
-
-	h1 {
-		padding-top: 10px;
-		// color: $thered;
-	}
-}
-
-
 
 // *****************************************************************
 // HEROES
@@ -63,68 +21,15 @@ section.hero {
 	position: relative;
 	z-index: 5;
 
-	.full {
-		img {
-			min-height: 100%;
-			min-width: 100%;
-			position: fixed;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			opacity: 0.5;
-			z-index: 0;	
-		}
-
-		.gradient {
-			width: 100%;
-			height: 100%;
-			display: block;
-			position: absolute;
-			top: 0;
-			left: 0;
-			z-index: 1;
-			opacity: 0.6;
-			background-image: linear-gradient(to top right, $thered 10%, $theblue 100%);
-			filter: saturate(2);
-		}
-	}
-
-// background: transparent;
-// background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #61c2ff), color-stop(100%, #cd4444));
-// background: -webkit-linear-gradient(-45deg, #61c2ff 0%, #cd4444 100%);
-// -webkit-background-clip: text;
-// -webkit-text-fill-color: transparent;
-// background-clip: text;
-// text-fill-color: transparent;
-
-	// PROJECT
-	.blur {
-		width: 120%;
+	img {
+		min-height: 100%;
+		min-width: 100%;
 		position: fixed;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		z-index: 1;
-		-webkit-filter: blur(15px); 
-		// -webkit-filter: blur(50px); 
-		// -moz-filter: blur(50px);
-		// -o-filter: blur(50px); 
-		// -ms-filter: blur(50px);
-		// filter: url(#blur);
-		// filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
-	}
-
-	.project-lead {
-		// display: none;
-		img {
-			position: absolute;
-			top: 20%;
-			left: 15%;
-			// transform: translate(-50%, 0);
-			z-index: 3;
-			max-width: 130%;
-			box-shadow: 0px 10px 45px rgba(#000, 0.4);
-		}
+		opacity: 0.4;
+		z-index: 1;	
 	}
 
 	.gradient {
@@ -135,116 +40,132 @@ section.hero {
 		top: 0;
 		left: 0;
 		z-index: 2;
-		opacity: 0.4;
+		opacity: 0.6;
+		background-image: linear-gradient(to top right, $thered 10%, $theblue 100%);
+		filter: saturate(2);
+	}
+
+	.blur {
+		-webkit-filter: blur(5px); 
 	}
 }
 
+.project-header {
+	$projectIconHeight: 21px;
 
-// *****************************************************************
-// PROJECTS
-// *****************************************************************
-.img-wrap {
-	position: relative;
-	z-index: 10;
-	background: $white;
-	width: 100%;
-	padding: 30px 0;
+	width: 70%%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	color: $white;
+
+	// TYPE
 	text-align: center;
 
-	img {
-		max-width: 85%;
-		margin-bottom: 20px;
-		// max-width: 960px;
-	}
-}
-
-#koozac {
-	.gradient {
-		background: #fcc60a;
-		background-image: linear-gradient(to top right, #fcc60a 10%, #fe7726 100%);
-		filter: saturate(3);
-	}
-}
-
-#ctm-travel {
-	.gradient {
-		background: #09F;
-		background-image: linear-gradient(to top right, #108a00 10%, #55b648 100%);
-	}
-}
-
-
-
-
-.palette {
-
-}
-
-// *****************************************************************
-// WORK INDEX
-// *****************************************************************
-.work {
-	.lead {
-		background: #EcEcEc;
-		padding: 0;
+	h1.title {
+		// TYPE
+		font-family: $fontStackHeader;
+		letter-spacing: -0.12em;
+		font-size: 2.8em;
+		line-height: 1em;
+		margin-left: -0.15em;
+		position: relative;		
 	}
 
-	.clients {
-		background: $theblue;
+	p {
+		padding: $projectIconHeight 0 0 0;
+		margin: 0;
 
-		h1 {
-			background: none;
-		}
+		// TYPE
+		font-size: 1.1em;
+		line-height: 1.6em;
+		letter-spacing: 0.04em;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-style: italic;
 	}
-}
 
-.nav-work {
-	
-	li {
-		cursor: pointer;
-		width: 35%;
-		height: $navWorkHeight;
-		color: $black;
-		display: inline-block;
+	.icon-wrap {
+		padding-top: $projectIconHeight;
+		width: 100%;
+		height: $projectIconHeight;
+		display: block;
 		position: relative;
-		transition: all 0.3s ease-out;
+
+		&::before, &::after {
+			// left line
+			content: '';
+			width: 30%;
+			height: 1px;
+			background: $white;
+			display: block;
+			position: absolute;
+			bottom: $projectIconHeight / 2;
+		}
 
 		&::before {
-			content: '';
+			left: 5%;
+		}
+
+		&::after {
+			right: 5%;
+		}
+	}
+
+	.icon {
+		
+		height: $projectIconHeight;
+		//the height is 86.6% of the width
+		width: ($projectIconHeight / 86.6) * 100;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		margin-left: 0 - ($projectIconHeight / 2);
+		text-align: center;
+
+		svg {
+			height: 100%;
 			width: 100%;
-			height: 1px;
-			display: block;
-			background: $black;
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			transition: all 0.3s ease-out;
+			fill: $white;
 		}
-
-		&.on {
-			color: $thered;
-
-			&::before {
-				height: 6px;
-				background: $thered;
-			}
-		}
-	}
-
-	li:nth-child(1) {
-		margin-right: 5%;
 	}
 }
 
-.projects {
-	width: 100%;
-	// margin-top: 30px;
 
-	.rest {
-		display: none;
+// *****************************************************************
+// META
+// *****************************************************************
+.meta {
+	width: 80%;
+	margin: 30px 10%;
+	padding: 20px 0;
+	border-top: solid 1px #000;
+	border-bottom: solid 1px #000;
+	position: relative;
+
+	li {
+		width: 100%;
+		margin: 15px 0;
+
+		// TYPE
+		font-weight: 400;
+		font-style: italic;
+		line-height: 1.4em;
+
+		.header {
+			font-weight: 200;
+			font-style: normal;
+			letter-spacing: 0.2em;
+
+		} 
 	}
 }
 
+// *****************************************************************
+// PROJECT NAV & FEED NAV
+// *****************************************************************
 li.nav-project {
 	width: 50%;
 	position: relative;
@@ -334,78 +255,16 @@ li.nav-project {
 
 
 // *****************************************************************
-// ABOUT
+// SOCIAL
 // *****************************************************************
-.about {
-	.lead {
-		background: $theblue;
-		padding: 0;
-
-		h1 {
-			color: $white;
-			background: none;
-			width: 80%;
-			margin: 0 10%;
-		}
-	}
-}
-
-.toolbox {
-	color: $white;
-	background: $theblue;
-
-	h1 {
-		background: none;
-	}
-}
-
-.tools {
-	text-align: center;
-	li {
-		width: 25%;
-		height: 80px;
-		display: inline-block;
-		margin: 15px 2.5%;
-		// background: #CCC;
-		position: relative;
-	}
-
-	.word {
-		@include text-replacement();
-	}
-
-	svg {
-		width: 100%;
-		height: 100%;
-		fill: $midpurple;
-	}
-}
-
-// *****************************************************************
-// CONTACT
-// *****************************************************************
-.contact {
-	.lead {
-		color: $white;
-		background: $newpurple;
-	}
-
-	svg {
-		width: 80%;
-	}
-}
-
 .social {
 	$iconWidth: 80px;
 
 	text-align: center;
 	padding-bottom: 40px;
 
-
-
 	.icon {
-		
-		// @include text-replacement();
+
 		width: $iconWidth;
 		height: $iconWidth; // * 0.866;
 		// background: #CCC;
@@ -418,6 +277,7 @@ li.nav-project {
 		a {
 			width: 100%;
 			height: 100%;
+			display: block;
 		}
 
 		svg {
@@ -437,12 +297,33 @@ li.nav-project {
 		bottom: 0;
 		left: 0;
 		color: $thered;
+
+		// TYPE
+		text-transform: uppercase;
+		font-size: 0.8em;
+		line-height: 1.2em;
+		letter-spacing: 0.2em;
 	}
 
 	.noicon {
 		width: 100%;
 		padding: 0 0 20px 0;
 		color: $thered;
+
+		// TYPE
+		font-weight: 400;
+		font-style: italic;
+		font-size: 1.2em;
+		letter-spacing: 0.05em;
+	}
+
+	.accent {
+
+		// TYPE
+		font-weight: 200;
+		text-transform: uppercase;
+		font-size: 1em;
 	}
 
 }
+

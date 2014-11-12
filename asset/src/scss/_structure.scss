@@ -20,15 +20,109 @@ html, body {
 
 body {
 	background: $white;
+
+	// TYPE
+	font-family: $fontStackBody;
+	font-weight: 300;
+	font-size: 1em;
+	line-height: 2em;
+}
+
+p {
+	// TYPE
+	font-size: 1.1em;
+	margin: 20px 10%;
+}
+
+p.headline {
+	//TYPE
+	font-size: 1.3em;
+	font-style: italic;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+h1 {
+	// TYPE
+	text-align: center;
+	font-family: $fontStackBody;
+	font-weight: 200;
+	letter-spacing: 0.3em;
+	font-size: 2em;
+	line-height: 1em;
+
+	&.main {
+		padding: 30px 0;
+		width: 100%;
+		background: $white;
+		color: $satpurple;
+
+		// TYPE
+		text-align: center;
+		font-family: $fontStackHeader;
+		letter-spacing: -0.12em;
+		font-size: 2.8em;
+		line-height: 1em;
+		margin-left: -0.15em;
+	}
+
+	svg {
+		width: 40%;
+		height: 80%;
+		position: absolute;
+		top: 10%;
+		left: 50%;
+		z-index: 1;
+		transform: translateX(-50%);
+		fill: #f7f7f7;
+		margin-left: 0.15em;
+	}
+}
+
+h2 {
+	// TYPE
+	text-align: center;
+	font-weight: 400;
+	font-style: italic;
+	letter-spacing: 0.2em;
+	font-size: 1.1em;
+	line-height: 1em;
 }
 
 .svg-defs {
 	display: none;
 }
 
+
+
+
+
+// *****************************************************************
+// MAIN BLOCKS
+// *****************************************************************
 section {
 	overflow: auto;
 }
+
+.block {
+	position: relative;
+	z-index: 10;
+	background: $white;
+	width: 100%;
+
+	&.img-wrap {
+		text-align: center;
+
+		img {
+			max-width: 85%;
+			margin: 15px 0;
+		}
+		
+	}
+}
+	
+
+
 
 // *****************************************************************
 // FOOTER
@@ -38,6 +132,12 @@ section.footer {
 	background: $lightestgrey;
 	position: relative;
 	z-index: 10;
+	
+	// TYPE
+	letter-spacing: 0.04em;
+	font-size: 0.8em;
+	line-height: 1.6em;
+	text-align: center;
 
 	footer {
 		color: $lightestpurple;

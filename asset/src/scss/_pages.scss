@@ -1,0 +1,178 @@
+// *****************************************************************
+// WORK INDEX
+// *****************************************************************
+.work {
+	.lead {
+		background: #EcEcEc;
+		padding: 0;
+	}
+
+	.clients {
+		background: $theblue;
+
+		h1 {
+			background: none;
+		}
+	}
+}
+
+.nav-work {
+
+	// TYPE
+	text-align: center;
+	
+	li {
+		cursor: pointer;
+		width: 35%;
+		height: $navWorkHeight;
+		color: $black;
+		display: inline-block;
+		position: relative;
+		transition: all 0.3s ease-out;
+
+		// TYPE
+		font-weight: 200;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+		line-height: $navWorkHeight;
+
+		&::before {
+			content: '';
+			width: 100%;
+			height: 1px;
+			display: block;
+			background: $black;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			transition: all 0.3s ease-out;
+		}
+
+		&.on {
+			color: $thered;
+
+			&::before {
+				height: 6px;
+				background: $thered;
+			}
+		}
+	}
+
+	li:nth-child(1) {
+		margin-right: 5%;
+	}
+}
+
+
+// *****************************************************************
+// ABOUT
+// *****************************************************************
+.about {
+	.lead {
+		background: $theblue;
+		padding: 0;
+
+		h1 {
+			color: $white;
+			background: none;
+			width: 80%;
+			margin: 0 10%;
+
+			// TYPE
+			font-weight: 700;
+			letter-spacing: -0.03em;
+			font-size: 2.6em;
+			text-align: left;
+		}
+	}
+}
+
+.toolbox {
+	color: $white;
+	background: $theblue;
+
+	h1 {
+		background: none;
+	}
+}
+
+.tools {
+	text-align: center;
+	li {
+		width: 25%;
+		height: 80px;
+		display: inline-block;
+		margin: 15px 2.5%;
+		// background: #CCC;
+		position: relative;
+	}
+
+	.word {
+		@include text-replacement();
+	}
+
+	svg {
+		width: 100%;
+		height: 100%;
+		fill: $midpurple;
+	}
+}
+
+// *****************************************************************
+// CONTACT
+// *****************************************************************
+.contact {
+	.lead {
+		color: $white;
+		background: $newpurple;
+	}
+
+	svg {
+		width: 80%;
+	}
+}
+
+
+// *****************************************************************
+// PROJECT COLOURS
+// *****************************************************************
+#koozac {
+	$color1: #fcc60a;
+	$color2: #fe7726;
+	p.headline {
+		@include textgradient($color1, $color2);
+	}
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
+		filter: saturate(3);
+	}
+}
+
+#ctm-travel {
+	$color1: #108a00;
+	$color2: #55b648;
+	p.headline {
+		@include textgradient($color1, $color2);
+	}
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
+		filter: saturate(3);
+	}
+}
+
+#hng {
+	$color1: $thered;
+	$color2: $theblue;
+	p.headline {
+		@include textgradient($color1, $color2);
+	}
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
+		filter: saturate(3);
+	}
+}
+
+

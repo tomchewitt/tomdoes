@@ -13,27 +13,32 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 
 		<section id="ctm-travel" class="content project" data-pageid="project">
 
-			<h1 class="main">
-				<span class="word">COMPARE THE MARKET</span>
-				<span class="icon"><svg><use xlink:href="#nav-work"></use></svg></span>
-			</h1>
-
 			<section class="hero">
 				<div class="gradient"></div>
 				<img class="blur" src="/asset/dist/img/work/ctm-travel/hero.jpg">
-				<div class="project-lead">
-					<img src="/asset/dist/img/work/ctm-travel/hero.jpg">
-				</div>
+				<header class="project-header">
+					<h1 class="title">COMPARE THE MARKET</h1>
+					<span class="icon-wrap">
+						<span class="icon"><svg><use xlink:href="#spinner"></use></svg></span>	
+					</span>
+					<p>UX &amp; Web Designer</p>
+				</header>
 			</section>
 
 			<section class="block">
 				<p class="headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatem cum dolores iusto, illo vero dignissimos ipsa aperiam, eaque, vitae blanditiis earum sit quibusdam dolor cumque tempora beatae saepe totam!</p>
-				<aside class="meta">
-					
-				</aside>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatem cum dolores iusto, illo vero dignissimos ipsa aperiam, eaque, vitae blanditiis earum sit quibusdam dolor cumque tempora beatae saepe totam!</p>
+				<ul class="meta">
+					<li>
+						<span class="header">COMPANY:</span><br>Compare the Market
+					</li>
+					<li>
+						<span class="header">ROLE:</span><br>UX &amp; Web Designer.
+					</li>
+				</ul>
 			</section>
 
-			<section class="img-wrap">
+			<section class="block img-wrap">
 				<img src="/asset/dist/img/work/ctm-travel/01.jpg">
 				<img src="/asset/dist/img/work/ctm-travel/03.jpg">
 				<img src="/asset/dist/img/work/ctm-travel/02.jpg">

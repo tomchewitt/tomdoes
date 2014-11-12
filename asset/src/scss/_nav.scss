@@ -18,6 +18,9 @@ section.header {
 		top: 0;
 		left: 40%;
 		z-index: 2;
+		
+		// TYPE
+		@include text-replacement();
 
 		span {
 			width: 100%;
