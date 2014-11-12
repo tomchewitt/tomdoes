@@ -9,6 +9,13 @@
 	margin-top: $headerHeight;
 }
 
+
+.block {
+	h1 {
+		margin: 20px 0;
+	}
+}
+
 // *****************************************************************
 // HEROES
 // *****************************************************************
@@ -269,7 +276,7 @@ li.nav-project {
 		height: $iconWidth; // * 0.866;
 		// background: #CCC;
 		display: inline-block;
-		margin: 5px 12px;
+		margin: 5px 8px;
 		position: relative;
 		border: solid 3px $thered;
   

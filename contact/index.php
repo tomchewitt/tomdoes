@@ -19,7 +19,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			</h1>
 
 			<section class="block lead">
-		    	<p>I like hearing from other people. Whether you want to discuss working together, have a job vacancy, have a question, need an answer, want to say hi, or just have a chat - please use any of the below options. I promise I’ll say something nice back.</p>
+		    	<p>I like hearing from other people. Whether you want to discuss working together or a job vacancy, have a question, need an answer, or just want to say hi - please use any of the below options. I promise I'll say something nice back.</p>
 			</section>
 
 			<section class="block">
