@@ -16,21 +16,22 @@ section.header {
 		display: block;
 		position: absolute;
 		top: 0;
-		left: 40%;
+		left: 39%;
 		z-index: 2;
 		
 		// TYPE
 		@include text-replacement();
-
-		span {
-			width: 100%;
-			height: $headerHeight;
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
+		text-align: center;
 
 		.icon {
+			height: $headerHeight;
+			//the height is 86.6% of the width
+			width: ($headerHeight / 86.6) * 100;
+			display: block;
+			position: relative;
+			margin: 0 auto;
+
+
 			svg:nth-child(1) {
 				width: 100%;
 				height: 100%;

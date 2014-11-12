@@ -2,7 +2,7 @@
             <header>
                 <h1>
                     <a class="ajax-nav" href="/" data-pageid="home">
-                        <span class="word">TOM HEWITT</span>
+                        TOM HEWITT
                         <span class="icon">
                             <svg><use xlink:href="#triangle"></use></svg>
                             <svg><use xlink:href="#triangle"></use></svg>
