@@ -13,26 +13,22 @@
                     <ul>
                         <li class="nav-size">
                             <a class="ajax-nav" href="/about/" data-pageid="about">
-                                <span class="icon"><svg><use xlink:href="#nav-about"></use></svg></span>
-                                <span class="word">ABOUT</span>
+                                <span class="item"><span class="icon"><svg><use xlink:href="#nav-about"></use></svg></span>ABOUT</span>
                             </a>
                         </li>
                         <li class="nav-size">
                             <a class="ajax-nav" href="/work/" data-pageid="work">
-                                <span class="icon"><svg><use xlink:href="#nav-work"></use></svg></span>
-                                <span class="word">WORK</span>
+                                <span class="item"><span class="icon"><svg><use xlink:href="#nav-work"></use></svg></span>WORK</span>
                             </a>
                         </li>
                         <li class="nav-size">
                             <a class="ajax-nav" href="/contact/" data-pageid="contact">
-                                <span class="icon"><svg><use xlink:href="#nav-contact"></use></svg></span>
-                                <span class="word">CONTACT</span>
+                                <span class="item"><span class="icon"><svg><use xlink:href="#nav-contact"></use></svg></span>CONTACT</span>
                             </a>
                         </li>
                         <li class="nav-size">
                             <a class="nav-cv" href="/cv/tomphewitt-CV.pdf" target="_blank">
-                                <span class="icon"><svg><use xlink:href="#nav-cv"></use></svg></span>
-                                <span class="word">CV</span>
+                                <span class="item"><span class="icon"><svg><use xlink:href="#nav-cv"></use></svg></span>CV</span>
                             </a>
                         </li>
                     </ul>

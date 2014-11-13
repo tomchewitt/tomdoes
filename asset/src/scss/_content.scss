@@ -74,7 +74,7 @@ section.hero {
 	transform: translate(-50%, -50%);
 	z-index: 3;
 	color: $white;
-	
+
 	// TYPE
 	text-align: center;
 
@@ -188,6 +188,9 @@ section.hero {
 // *****************************************************************
 li.nav-project {
 	width: 50%;
+	@include breakpoint(medium) {
+		width: 33.333333333333333333%;
+	}
 	position: relative;
 	float: left;
 	overflow: hidden;

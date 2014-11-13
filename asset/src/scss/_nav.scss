@@ -83,7 +83,6 @@ nav.main-nav {
 
 		&:nth-child(2) {
 			margin-right: 22%;
-			// background: #CCC;
 		}
 	}
 
@@ -93,45 +92,94 @@ nav.main-nav {
 		display: block;
 		text-align: center;
 		text-decoration: none;
-		transition: all 0.3s ease-out;
 
-		&:hover {
-			background: $thered;
-		}
+		// TYPE
+		text-align: center;
+		font-size: 0.6em;
+		// line-height: 1em;
+		letter-spacing: 0.14em;
 	}
 
-	.icon {
-		$iconWidth: 70%;
-		$iconHeight: 35%;
-		// @include breakpoint("max-width: 50em") {
+	// BREAKPOINT	
+	@include breakpoint("max-width: 50em") {
+		.item {
+			width: 100%;
+			height: 1.4em;
+			line-height: 1.4em;
+			position: absolute;
+			bottom: 6px;
+			left: 0; 
+		}
+
+		.icon {
+			// $iconWidth: 70%;
+			// $iconHeight: 35%;
+			$iconWidth: 22px;
+			$iconHeight: 22px;
 			width:  $iconWidth;
 			height: $iconHeight;
 			display: block;
 			position: absolute;
-			top: 15%;
-			left: (100 - $iconWidth) / 2;
-		// }
-		
-		fill: #09F;
-	}
+			top: -30px;
+			// left: (100% - $iconWidth) / 2;
+			left: 50%;
+			transform: translate(-50%, 0);
 
-	.word {
-		// @include breakpoint("max-width: 50em") {
-			width: 100%;
-			position: absolute;
-			bottom: 15%;
-			left: 0;
-		// }
-		
-		// TYPE
-		text-align: center;
-		font-size: 0.6em;
-		line-height: 1em;
-		letter-spacing: 0.14em;
-	}
+			svg {
+				fill: #09F;
+				width: 100%;
+				height: 100%;
+			}
+		}
 
-	svg {
-		width: 100%;
-		height: 100%;
-	}
+	} // END BREAKPOINT
+	
+	// BREAKPOINT	
+	@include breakpoint(medium) {
+		$iconWidth: 22px;
+		$iconHeight: 22px;
+
+		.item {
+			display: inline-block;
+			// background: #999;
+			position: relative;
+			// TYPE
+			font-size: 2.2em;
+			line-height: $headerHeight;
+			letter-spacing: 0.25em;
+		}
+
+		.icon {
+			padding-right: 15px;
+		}
+
+		// .icon {
+			
+		// 	width:  $iconWidth;
+		// 	height: $iconHeight;
+		// 	// position: relative;
+		// 	vertical-align: middle;
+		// 	display: inline-block;
+
+		// 	background: #CCC;
+
+		// 	svg {
+				
+		// 		fill: #09F;
+		// 		width:  $iconWidth;
+		// 		height: $iconHeight;
+
+		// 	}
+		// }
+
+		svg {
+
+			vertical-align: middle;
+			fill: #09F;
+			width:  $iconWidth;
+			height: $iconHeight;
+			margin-top: -4px;
+		}
+
+	} // END BREAKPOINT
 }
