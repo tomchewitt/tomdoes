@@ -63,7 +63,7 @@
         }
     }
     @else {
-        @media (min-width: #{$point})  {
+        @media (#{$point})  {
             @content;
         }
     }

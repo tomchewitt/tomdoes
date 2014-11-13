@@ -91,25 +91,38 @@ nav.main-nav {
 		width: 100%;
 		height: 100%;
 		display: block;
+		text-align: center;
+		text-decoration: none;
+		transition: all 0.3s ease-out;
+
+		&:hover {
+			background: $thered;
+		}
 	}
 
 	.icon {
 		$iconWidth: 70%;
 		$iconHeight: 35%;
-		width:  $iconWidth;
-		height: $iconHeight;
-		display: block;
-		position: absolute;
-		top: 15%;
-		left: (100 - $iconWidth) / 2;
+		// @include breakpoint("max-width: 50em") {
+			width:  $iconWidth;
+			height: $iconHeight;
+			display: block;
+			position: absolute;
+			top: 15%;
+			left: (100 - $iconWidth) / 2;
+		// }
+		
 		fill: #09F;
 	}
 
 	.word {
-		width: 100%;
-		position: absolute;
-		bottom: 15%;
-		left: 0;
+		// @include breakpoint("max-width: 50em") {
+			width: 100%;
+			position: absolute;
+			bottom: 15%;
+			left: 0;
+		// }
+		
 		// TYPE
 		text-align: center;
 		font-size: 0.6em;

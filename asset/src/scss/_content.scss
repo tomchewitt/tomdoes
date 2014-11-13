@@ -57,17 +57,24 @@ section.hero {
 	}
 }
 
+
+// *****************************************************************
+// HERO WORDAGE (including home page)
+// *****************************************************************
+.page-header-wrap {
+	display: block;
+	@include clearfix();
+}
 .page-header {
 	$projectIconHeight: 21px;
 
-	width: 70%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 3;
 	color: $white;
-
+	
 	// TYPE
 	text-align: center;
 
@@ -78,10 +85,12 @@ section.hero {
 		font-size: 2.8em;
 		line-height: 1em;
 		margin-left: -0.15em;
-		position: relative;		
+		position: relative;
+		padding-bottom: $projectIconHeight;
 	}
 
 	p {
+		display: block;
 		padding: $projectIconHeight 0 0 0;
 		margin: 0;
 
@@ -95,16 +104,17 @@ section.hero {
 	}
 
 	.icon-wrap {
-		padding-top: $projectIconHeight;
-		width: 100%;
 		height: $projectIconHeight;
 		display: block;
+		width: 100%;
 		position: relative;
 
 		&::before, &::after {
-			// left line
 			content: '';
-			width: 30%;
+			width: 35%;
+			@include breakpoint(medium) {
+				width: 40%;
+			}
 			height: 1px;
 			background: $white;
 			display: block;
@@ -113,11 +123,11 @@ section.hero {
 		}
 
 		&::before {
-			left: 5%;
+			left: 0;
 		}
 
 		&::after {
-			right: 5%;
+			right: 0;
 		}
 	}
 
@@ -133,6 +143,9 @@ section.hero {
 		text-align: center;
 
 		svg {
+			position: absolute;
+			top: 0;
+			left: 0;
 			height: 100%;
 			width: 100%;
 			fill: $white;

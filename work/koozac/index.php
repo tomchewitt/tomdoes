@@ -17,10 +17,12 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 				<div class="gradient"></div>
 				<img class="blur" src="/asset/dist/img/work/koozac/hero.jpg">
 				<header class="page-header">
-					<h1 class="title">KOOZAC</h1>
-					<span class="icon-wrap">
-						<span class="icon"><svg><use xlink:href="#spinner"></use></svg></span>	
-					</span>
+					<h1 class="title">KOOZAC
+						<span class="icon-wrap">
+							<span class="icon"><svg><use xlink:href="#spinner"></use></svg></span>	
+						</span>
+					</h1>
+					
 					<p>Mobile game UI design &amp; asset creation. Web design and build.</p>
 				</header>
 			</section>
