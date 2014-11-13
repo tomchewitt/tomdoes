@@ -11,25 +11,19 @@ section.header {
 	z-index: 9997;
 
 	h1 {
-		width: 22%;
+		//the height is 86.6% of the width
+		width: ($headerHeight / 86.6) * 100;
 		height: $headerHeight;
 		display: block;
 		position: absolute;
 		top: 0;
-		left: 39%;
+		left: 50%;
+		transform: translate(-50%, 0);
 		z-index: 2;
-
-		@include breakpoint(medium) {
-			background: #CCC;
-		}
 		
 		// TYPE
 		@include text-replacement();
 		text-align: center;
-
-
-		/* NEEDS THE SIZES PUT ON THE 'a' TAG... I THINK
-		*/
 
 		.icon {
 			height: $headerHeight;
