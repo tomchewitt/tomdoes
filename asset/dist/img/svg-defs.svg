@@ -5,6 +5,13 @@
 			opacity: 0.3;
 		}
 	</style>
+	
+	<!-- MAIN LOGO -->
+	<!-- <symbol viewBox="0 0 645.4 560" id="logo">
+		<polygon opacity="0.8" fill="#188EB0" points="645.4,0 322.7,560 0,0 "/>
+		<polygon opacity="0.8" fill="#E87A82" points="161.4,560 322.7,280 484.1,560 "/>
+	</symbol> -->
+
 	<!-- NAV ICONS -->
 	<symbol viewBox="0 0 780.6 893.6" id="nav-about">
 		<title>nav-about</title>

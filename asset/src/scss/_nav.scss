@@ -18,10 +18,18 @@ section.header {
 		top: 0;
 		left: 39%;
 		z-index: 2;
+
+		@include breakpoint(medium) {
+			background: #CCC;
+		}
 		
 		// TYPE
 		@include text-replacement();
 		text-align: center;
+
+
+		/* NEEDS THE SIZES PUT ON THE 'a' TAG... I THINK
+		*/
 
 		.icon {
 			height: $headerHeight;
@@ -32,22 +40,20 @@ section.header {
 			margin: 0 auto;
 
 
-			svg:nth-child(1) {
+			svg {
 				width: 100%;
 				height: 100%;
 				position: absolute;
-				top: 0;
 				left: 0;
+			}
+			svg:nth-child(1) {
+				top: 0;
 				fill: $cLogoBlue;
 				transform: rotate(180deg);
 			}
 
 			svg:nth-child(2) {
-				width: 100%;
-				height: 100%;
-				position: absolute;
 				bottom: 0;
-				left: 0;
 				fill: $cLogoRed;
 				transform: scale(0.5);
 				transform-origin: center bottom;
@@ -102,6 +108,7 @@ nav.main-nav {
 		position: absolute;
 		top: 15%;
 		left: (100 - $iconWidth) / 2;
+		fill: #09F;
 	}
 
 	.word {

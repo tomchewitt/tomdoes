@@ -4,8 +4,8 @@
                     <a class="ajax-nav" href="/" data-pageid="home">
                         TOM HEWITT
                         <span class="icon">
-                            <svg><use xlink:href="#triangle"></use></svg>
-                            <svg><use xlink:href="#triangle"></use></svg>
+                            <svg class="logo-part-one"><use xlink:href="#triangle"></use></svg>
+                            <svg class="logo-part-two"><use xlink:href="#triangle"></use></svg>
                         </span>
                     </a>
                 </h1>
