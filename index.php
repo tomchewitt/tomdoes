@@ -33,7 +33,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 					<section class="best">
 						<ul>
 							<li class="nav-project">
-								<a class="ajax-nav" href="koozac/" data-pageid="project">
+								<a class="ajax-nav" href="work/koozac/" data-pageid="project">
 									<img src="/asset/dist/img/bg.jpg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
@@ -44,7 +44,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 								</a>
 							</li>
 							<li class="nav-project">
-								<a class="ajax-nav" href="heroes-and-generals/" data-pageid="project">
+								<a class="ajax-nav" href="work/heroes-and-generals/" data-pageid="project">
 									<img src="/asset/dist/img/bg.jpg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
@@ -55,7 +55,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 								</a>
 							</li>
 							<li class="nav-project">
-								<a class="ajax-nav" href="compare-the-market/" data-pageid="project">
+								<a class="ajax-nav" href="work/compare-the-market/" data-pageid="project">
 									<img src="/asset/dist/img/bg.jpg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>

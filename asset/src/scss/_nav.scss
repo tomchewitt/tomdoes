@@ -12,8 +12,10 @@ section.header {
 
 	h1 {
 		//the height is 86.6% of the width
-		width: ($headerHeight / 86.6) * 100;
-		height: $headerHeight;
+		// width: ($headerHeight / 86.6) * 100;
+		// height: $headerHeight;
+		width: 22%;
+		height: 100%;
 		display: block;
 		position: absolute;
 		top: 0;
@@ -24,6 +26,12 @@ section.header {
 		// TYPE
 		@include text-replacement();
 		text-align: center;
+
+		// a {
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	display: block;
+		// }
 
 		.icon {
 			height: $headerHeight;
@@ -52,10 +60,6 @@ section.header {
 				transform: scale(0.5);
 				transform-origin: center bottom;
 			}
-		}
-
-		.word {
-
 		}
 	}
 }
@@ -144,7 +148,7 @@ nav.main-nav {
 			// background: #999;
 			position: relative;
 			// TYPE
-			font-size: 2.2em;
+			font-size: 1.8em;
 			line-height: $headerHeight;
 			letter-spacing: 0.25em;
 		}
@@ -153,27 +157,7 @@ nav.main-nav {
 			padding-right: 15px;
 		}
 
-		// .icon {
-			
-		// 	width:  $iconWidth;
-		// 	height: $iconHeight;
-		// 	// position: relative;
-		// 	vertical-align: middle;
-		// 	display: inline-block;
-
-		// 	background: #CCC;
-
-		// 	svg {
-				
-		// 		fill: #09F;
-		// 		width:  $iconWidth;
-		// 		height: $iconHeight;
-
-		// 	}
-		// }
-
 		svg {
-
 			vertical-align: middle;
 			fill: #09F;
 			width:  $iconWidth;

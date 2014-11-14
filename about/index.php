@@ -28,11 +28,26 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 		    	BASKETBALL + PIZZA.</h1>
 			</section>
 
+			<section class="block spaced">
+				<h1>GREETINGS</h1>
+
+				<p class="headline">Should I be in the first or third person? Is it 'I' or 'He'. I am Tom, and Tom is he, and he is me. Tom is me, so I am… confused. I'll just be me (I think)...</p>
+
+				<p>Hello. I am Tom Hewitt. I craft great user experiences. To do this I work out how and what content the user sees and when, design beautiful user interfaces, empower brands and create compliant code. I like to do things right. Before fixing something, you need to understand how and why it was broken to begin with. I use this approach for every aspect of my projects, from UX and design all the way through to development. I like to produce lean, minimal code - choosing hand written mechanics rather than a reliance on libraries and plugins.</p>
+
+				<p>From an early age I studied and experimented with digital design. This continued throughout my education, until the end of my degree when my obsession with interactive web design began. For the last five years I've been successfully designing and developing user experiences for a wide range of companies, from large corporate behemoths to small independent games developers.</p>
+
+			</section>
 			<section class="block">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sunt iusto voluptas quia eum aliquid maxime, itaque sapiente perspiciatis labore saepe dolores dolorum officiis doloremque natus nostrum iste eveniet ea.</p>
+
+				<h1>PRESENTLY...</h1>
+
+				<p>Since January 2012 I have been running my own freelance business based from home in Southampton. Managing clients, scheduling projects and collaborating with client and external resources is all part of the process. Not to mention the glamour of dealing with Mr Taxman. One of my biggest assets is my familiarity and experience managing both the design and development sides of a project. Understanding and communicating with developers and designers alike let's me work in a more fluid way, allowing me to focus on producing great work.</p>
+
+				<p>So what drives me to do all this? Quite simply, because I love it. I love learning new techniques, processes and tools - not because it ticks a new box, but because I am genuinely interested and passionate about making the best experiences I can. I'm not fixed on any one tool or process, and while I do have my preferred way of doing things, I am always happy and excited to learn new things.</p>
 			</section>
 
-			<section class="block toolbox">
+			<section class="block toolbox spaced">
 				<h1>TOOLBOX</h1>
 
 				<ul class="tools">
@@ -48,21 +63,27 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 				</ul>
 
 				<h1>BONUS</h1>
-				<p>after effects, premiere, flash, AS3, php, minimal mySql</p>
+
+				<ul class="bonus">
+					<li>After Effects</li>
+					<li>Premiere</li>
+					<li>Flash</li>
+					<li>ActionScript 3</li>
+					<li>PHP</li>
+					<li>mySQL</li>
+				</ul>
 			</section>
 
-			<section class="block">
+			<section class="block spaced">
 				<h1>DANGERZONE!</h1>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas eum mollitia accusamus. Est sequi maxime ad nostrum impedit assumenda laudantium quae voluptate dignissimos, numquam iusto mollitia eius! Nisi, sit, enim.</p>
+				<p>There's more to me than just work though. There's all the fun little projects I do for funsies as well. Be sure to check some of them out on Codepen or Behance. I'm also a huge basketball fan (<a href="#" target="_blank">go Bulls!!</a>), nerdily into video games and eSports, and am way to enthusiastic about the Fast and the Furious franchise. Music and stories are my muses and I am an occasional and (not quite so anymore) secret <a href="#" target="_blank">AFOL</a>. And I love pizza.</p>
 
 				<ul class="social">
 			    	<li class="icon behance"><a target="_blank" href=""><span class="word">Behance</span><svg><use xlink:href="#behance"></use></svg></a></li>
 			    	<li class="icon codepen"><a target="_blank" href=""><span class="word">Codepen</span><svg><use xlink:href="#codepen"></use></svg></a></li>
 			    	<li class="icon github"><a target="_blank" href=""><span class="word">GitHub</span><svg><use xlink:href="#github"></use></svg></a></li>
 			    </ul>
-
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas eum mollitia accusamus. Est sequi maxime ad nostrum impedit assumenda laudantium quae voluptate dignissimos, numquam iusto mollitia eius! Nisi, sit, enim.</p>				
 			</section>
 
         </section>

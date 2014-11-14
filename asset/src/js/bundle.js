@@ -395,7 +395,7 @@ function sizeNav() {
 
 	console.log(winWth, icoWth, liWth);
 }
-sizeNav();
+// sizeNav();
 
 
 // TEST FOR WEBKIT (blur??)
@@ -409,5 +409,5 @@ if (isWebkit) {
 
 // RESIZE
 window.onresize = function(event) {
-    sizeNav();
+    // sizeNav();
 };
