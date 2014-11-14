@@ -284,8 +284,10 @@ li.nav-project {
 		.subtext {
 			width: 80%;
 			position: absolute;
-			top: 53%;
+			top: 73%;
 			left: 10%;
+			opacity: 0;
+			transition: all 0.3s ease-out;
 		}
 	}
 
@@ -298,12 +300,8 @@ li.nav-project {
 
 		.triangle {
 			transform: translate(-50%, -50%);
-			border-top: solid 1px $thered;
-
-			&::before, &::after {
-				background: $thered;
-			}
-
+			opacity: 0.7;
+			
 			&::before {
 				transform-origin: left center;
 				transform: rotate(60deg);
@@ -313,6 +311,11 @@ li.nav-project {
 				transform-origin: right center;
 				transform: rotate(-60deg);	
 			}
+		}
+
+		.subtext {
+			top: 53%;
+			opacity: 1;
 		}
 	}
 
