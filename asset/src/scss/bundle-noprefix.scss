@@ -1,23 +1,33 @@
 // MIXIN SHEET
-@import "_mixins.scss";
+@import "utility/_mixins.scss";
 
 // VARIABLES & KEYFRAMES
-@import "_utils.scss";
+@import "utility/_utils.scss";
 
 // RESET
 @import "compass/reset";
 
-// BASIC STRUCTURE
-@import "_structure.scss";
+// TYPE
+@import "global/_type.scss";
 
-// PRELOADER
-@import "_loader.scss";
+// GLOBALS
+@import "global/_structure.scss";
+@import "global/_loader.scss";
+@import "global/_nav.scss";
 
-// HEADER & NAV
-@import "_nav.scss";
-
-// MAIN CONTENET BLOCKS
-@import "_content.scss";
+// MAIN CONTENET
+@import "content/_heroes.scss";
+@import "content/_hero-meta.scss";
+@import "content/_projects-list.scss";
+@import "content/_social.scss";
 
 // PAGE SPECIFICS
-@import "_pages.scss";
+@import "page/_home.scss";
+@import "page/_work.scss";
+@import "page/_about.scss";
+@import "page/_contact.scss";
+@import "page/_projects.scss";
+
+// MEDIA QUERIES
+@import "global/_mediaqueries.scss";
+

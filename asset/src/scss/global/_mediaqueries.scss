@@ -1,0 +1,61 @@
+// *****************************************************************
+// MEDIA QUERIES
+// *****************************************************************
+@media screen and (max-height: 900px) {
+}
+@media screen and (max-height: 750px) {
+}
+@media screen and (min-aspect-ratio: 17/10) {
+}
+@media screen and (min-width: 1500px) {
+}
+@media screen and (max-width: 1000px) {
+}
+// ipad portrait
+@media screen and (min-device-width: 569px) and (max-device-width: 768px) and (orientation: portrait) {
+}
+// ipad landscape
+@media screen and (min-device-width: 569px) and (max-device-width: 768px) and (orientation: landscape) {
+}
+// iphone 5
+@media screen and (max-device-width: 568px) {
+}
+// iphone 5 landscape
+@media screen and (max-device-width: 568px) and (orientation: landscape) {
+}
+
+
+// *****************************************************************
+// BREAKPOINT LARGE (65.75em);
+// *****************************************************************
+@media screen and (min-width: 64.375em) {
+	.page-header {
+		width: 30%;
+		.icon-wrap {
+			&::before, &::after {
+				width: 41%;
+			}
+		}
+	}
+
+	.home {
+		.page-header {
+			.icon-wrap {
+				&::before, &::after {
+					width: 27%;
+				}
+				&::before {
+					left: 15%;
+				}
+				&::after {
+					right: 15%;
+				}
+			}
+
+			p {
+				letter-spacing: 0.4em;
+				font-size: 1.3em;
+			}
+		}
+	}
+}

@@ -28,7 +28,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			<section class="block">
 				<p class="headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatem cum dolores iusto, illo vero dignissimos ipsa aperiam, eaque, vitae blanditiis earum sit quibusdam dolor cumque tempora beatae saepe totam!</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatem cum dolores iusto, illo vero dignissimos ipsa aperiam, eaque, vitae blanditiis earum sit quibusdam dolor cumque tempora beatae saepe totam!</p>
-				<ul class="meta">
+				<ul class="meta two double">
 					<li>
 						<span class="header">COMPANY:</span><br>Compare the Market
 					</li>

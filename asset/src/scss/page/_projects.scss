@@ -1,0 +1,59 @@
+
+// *****************************************************************
+// PROJECTS
+// *****************************************************************
+.project {
+	.headline {
+		margin-top: 50px;
+	}
+}
+#koozac {
+	$color1: #fcc60a;
+	$color2: #fe7726;
+
+	// HEADLINE TEXT
+	p.headline {
+		@include textgradient($color1, $color2);
+	}
+
+	// ALL GRADIENTS
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
+		filter: saturate(3);
+	}
+	// WIDTH OF ACCENT BUG
+}
+
+#ctm-travel {
+	$color1: #108a00;
+	$color2: #55b648;
+	p.headline {
+		@include textgradient($color1, $color2);
+	}
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
+		filter: saturate(3);
+	}
+}
+
+#hng {
+	$color1: $thered;
+	$color2: $theblue;
+	p.headline {
+		@include textgradient($color1, $color2);
+	}
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
+		filter: saturate(3);
+	}
+	@include breakpoint(medium) {
+		.icon-wrap {
+			width: 60%;
+			left: 20%;
+		}
+	}
+	
+}

@@ -1,0 +1,88 @@
+// *****************************************************************
+// SOCIAL
+// *****************************************************************
+.social {
+	$iconWidth: 80px;
+
+	text-align: center;
+	padding-bottom: 40px;
+
+	.icon {
+
+		width: $iconWidth;
+		height: $iconWidth; // * 0.866;
+		// background: #CCC;
+		display: inline-block;
+		margin: 5px 8px;
+		position: relative;
+		border: solid 3px $thered;
+
+		transition: all 0.3s ease-in-out;
+	}
+
+	a {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+
+	.word {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		color: $thered;
+
+		// TYPE
+		text-transform: uppercase;
+		font-size: 0.8em;
+		line-height: 1.2em;
+		letter-spacing: 0.2em;
+	}
+
+	svg {
+		width: 40%;
+		height: 40%;
+		position: absolute;
+		top: 20%;
+		left: 30%;
+		// z-index: 10;
+		fill: $thered;
+	}
+
+	// HOVERS
+	.icon:hover {
+		background: $thered;
+
+		svg {
+			fill: $white;
+		}
+
+		.word {
+			color: $white;
+		}
+	}
+
+	// EMAIL & PHONE
+	.noicon {
+		width: 100%;
+		padding: 0 0 20px 0;
+		color: $thered;
+
+		// TYPE
+		font-weight: 400;
+		font-style: italic;
+		font-size: 1.2em;
+		letter-spacing: 0.05em;
+	}
+
+	.accent {
+
+		// TYPE
+		font-weight: 200;
+		text-transform: uppercase;
+		font-size: 1em;
+	}
+
+}
+

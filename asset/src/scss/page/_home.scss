@@ -1,0 +1,37 @@
+// *****************************************************************
+// HOME
+// *****************************************************************
+.home {
+	header {
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 5;
+		transfrom: translate(-50%, -50%);
+		text-align: center;
+
+		.sub {
+			font-weight: 400;
+			font-style: italic;
+			font-size: 1em;
+			letter-spacing: 0.2em;
+			margin-top: 20px;
+		}
+	}
+
+	.block {
+		h1 {
+			margin: 40px 0;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

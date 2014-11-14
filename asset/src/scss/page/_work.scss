@@ -1,0 +1,99 @@
+// *****************************************************************
+// WORK INDEX
+// *****************************************************************
+.work {
+	.lead {
+		background: #EcEcEc;
+		padding: 0;
+	}
+
+	.morework {
+		padding-top: 20px;
+	}
+
+	.clients {
+		background: $theblue;
+
+		h1 {
+			background: none;
+		}
+	}
+}
+
+.nav-work {
+
+	// TYPE
+	text-align: center;
+	
+	li {
+		cursor: pointer;
+		width: 35%;
+		height: $navWorkHeight;
+		color: $black;
+		display: inline-block;
+		position: relative;
+		transition: all 0.3s ease-out;
+
+		// TYPE
+		font-weight: 200;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+		line-height: $navWorkHeight;
+
+		&::before {
+			content: '';
+			width: 100%;
+			height: 1px;
+			display: block;
+			background: $black;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			transition: all 0.3s ease-out;
+		}
+
+		&.on {
+			color: $thered;
+
+			&::before {
+				height: 6px;
+				background: $thered;
+			}
+		}
+	}
+
+	li:nth-child(1) {
+		margin-right: 5%;
+	}
+}
+
+
+.rest {
+	display: none;
+}
+
+
+// CLIENTS
+.clientlist {
+	padding: 0 10%;
+	position: relative;
+	text-align: center;
+
+	li {
+		display: inline-block;
+		width: 40%;
+		height: 40px;
+		margin: 10px 2.5%;
+		position: relative;
+
+		@include breakpoint("min-width: 40em") {
+			width: 25%;
+		}
+	}
+
+	svg {
+		max-height: 100%;
+		max-width: 100%;
+		fill: $white;
+	}
+}

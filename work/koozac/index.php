@@ -17,12 +17,10 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 				<div class="gradient"></div>
 				<img class="blur" src="/asset/dist/img/work/koozac/hero.jpg">
 				<header class="page-header">
-					<h1 class="title">KOOZAC
-						<span class="icon-wrap">
-							<span class="icon"><svg><use xlink:href="#spinner"></use></svg></span>	
-						</span>
-					</h1>
-					
+					<h1 class="title">KOOZAC</h1>
+					<span class="icon-wrap">
+						<span class="icon"><svg><use xlink:href="#spinner"></use></svg></span>	
+					</span>
 					<p>Mobile game UI design &amp; asset creation. Web design and build.</p>
 				</header>
 			</section>
@@ -30,7 +28,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			<section class="block">
 				<p class="headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatem cum dolores iusto, illo vero dignissimos ipsa aperiam, eaque, vitae blanditiis earum sit quibusdam dolor cumque tempora beatae saepe totam!</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatem cum dolores iusto, illo vero dignissimos ipsa aperiam, eaque, vitae blanditiis earum sit quibusdam dolor cumque tempora beatae saepe totam!</p>
-				<ul class="meta">
+				<ul class="meta three triple">
 					<li>
 						<span class="header">COMPANY:</span><br>Suqare Enix
 					</li>
