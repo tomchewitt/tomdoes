@@ -25,7 +25,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 				</div>
 		    	<h1>SHAPES + CODE.<br>
 		    	MUSIC + GAMES.<br>
-		    	BASKETBALL + PIZZA.</h1>
+		    	BASKETBALL +<br>PIZZA.</h1>
 			</section>
 
 			<section class="block spaced">

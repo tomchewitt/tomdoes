@@ -7,6 +7,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 	ob_start();
 } else {
 	include $_SERVER['DOCUMENT_ROOT']."/asset/dist/inc/header.php";
+	include $_SERVER['DOCUMENT_ROOT']."/asset/dist/img/svg-clients.svg";
 	include $_SERVER['DOCUMENT_ROOT']."/asset/dist/inc/nav.php";
 }
 ?>
@@ -66,18 +67,18 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 						</ul>
 					</section>
 
-					<section class="rest">
+					<!-- <section class="rest">
 						<ul>
 							<li class="nav-project"><a class="ajax-nav" href="koozac/" data-pageid="project">KZ 2</a></li>
 							<li class="nav-project"><a class="ajax-nav" href="heroesandgenerals/" data-pageid="project">HNG 2</a></li>
 						</ul>
-					</section>
+					</section> -->
 
 				</div>
 				
 			</section>
 			
-			<section class="block">
+			<section class="block morework">
 				<h1>SEE MORE</h1>
 
 			    <ul class="social">
@@ -87,10 +88,19 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			    </ul>
 			</section>
 
-			<section class="block clients">
+			<section class="block clients spaced">
 				<h1>CLIENTS &amp; COMPANIES</h1>
-
-			    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aut eius, inventore impedit. Unde vel, reprehenderit sunt alias iusto tempore excepturi sit at, provident, nam esse debitis laborum, quasi quam.</p>
+			    
+			    <ul class="clientlist">
+			    	<li><svg><use xlink:href="#square"></use></svg></li>
+			    	<li><svg><use xlink:href="#bafta"></use></svg></li>
+			    	<li><svg><use xlink:href="#game"></use></svg></li>
+			    	<li><svg><use xlink:href="#argos"></use></svg></li>
+			    	<li><svg><use xlink:href="#ctm"></use></svg></li>
+			    	<li><svg><use xlink:href="#ea"></use></svg></li>
+			    	<li><svg><use xlink:href="#bbc"></use></svg></li>
+			    	<li><svg><use xlink:href="#climax"></use></svg></li>
+			    </ul>
 			</section>
 
         </section>

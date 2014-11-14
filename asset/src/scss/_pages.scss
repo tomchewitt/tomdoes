@@ -37,6 +37,10 @@
 		padding: 0;
 	}
 
+	.morework {
+		padding-top: 20px;
+	}
+
 	.clients {
 		background: $theblue;
 
@@ -98,6 +102,32 @@
 	display: none;
 }
 
+
+// CLIENTS
+.clientlist {
+	padding: 0 10%;
+	position: relative;
+	text-align: center;
+
+	li {
+		display: inline-block;
+		width: 40%;
+		height: 40px;
+		margin: 10px 2.5%;
+		position: relative;
+
+		@include breakpoint("min-width: 40em") {
+			width: 25%;
+		}
+	}
+
+	svg {
+		max-height: 100%;
+		max-width: 100%;
+		fill: $white;
+	}
+}
+
 // *****************************************************************
 // ABOUT
 // *****************************************************************
@@ -122,6 +152,12 @@
 			line-height: 1.1em;
 			letter-spacing: 0.03em;
 			text-align: left;
+
+			@include breakpoint("min-width: 40em") {
+				font-size: 2.8em;
+				letter-spacing: 0.09em;
+				transform: translate(0, -55%);
+			}
 		}
 	}
 
@@ -211,9 +247,9 @@
 		background: $newpurple;
 	}
 
-	svg {
-		width: 80%;
-	}
+	// svg {
+	// 	width: 80%;
+	// }
 }
 
 
