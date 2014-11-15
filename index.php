@@ -28,10 +28,76 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			<section class="block">
 			    <h1>FEED</h1>
 
-				<div class="projects hero">
+				<div class="projects hero lead">
 
 					<section class="best">
 						<ul>
+							<li class="nav-project">
+								<a class="ajax-nav" href="work/koozac/" data-pageid="project">
+									<img src="/asset/dist/img/bg.jpg">
+									<span class="gradient"></span>
+									<span class="triangle"></span>
+									<h2>
+										<span class="word">KOOZAC</span>
+										<span class="subtext">Mobile game UI &amp; Web</span>
+									</h2>
+								</a>
+							</li>
+							<li class="nav-project">
+								<a class="ajax-nav" href="work/heroes-and-generals/" data-pageid="project">
+									<img src="/asset/dist/img/bg.jpg">
+									<span class="gradient"></span>
+									<span class="triangle"></span>
+									<h2>
+										<span class="word">HEROES &amp; GENERALS</span>
+										<span class="subtext">Web design &amp; build</span>
+									</h2>
+								</a>
+							</li>
+							<li class="nav-project">
+								<a class="ajax-nav" href="work/compare-the-market/" data-pageid="project">
+									<img src="/asset/dist/img/bg.jpg">
+									<span class="gradient"></span>
+									<span class="triangle"></span>
+									<h2>
+										<span class="word">COMPARE THE MARKET</span>
+										<span class="subtext">UX &amp; Design</span>
+									</h2>
+								</a>
+							</li>
+							<li class="nav-project">
+								<a class="ajax-nav" href="work/koozac/" data-pageid="project">
+									<img src="/asset/dist/img/bg.jpg">
+									<span class="gradient"></span>
+									<span class="triangle"></span>
+									<h2>
+										<span class="word">KOOZAC</span>
+										<span class="subtext">Mobile game UI &amp; Web</span>
+									</h2>
+								</a>
+							</li>
+							<li class="nav-project">
+								<a class="ajax-nav" href="work/heroes-and-generals/" data-pageid="project">
+									<img src="/asset/dist/img/bg.jpg">
+									<span class="gradient"></span>
+									<span class="triangle"></span>
+									<h2>
+										<span class="word">HEROES &amp; GENERALS</span>
+										<span class="subtext">Web design &amp; build</span>
+									</h2>
+								</a>
+							</li>
+							<li class="nav-project">
+								<a class="ajax-nav" href="work/compare-the-market/" data-pageid="project">
+									<img src="/asset/dist/img/bg.jpg">
+									<span class="gradient"></span>
+									<span class="triangle"></span>
+									<h2>
+										<span class="word">COMPARE THE MARKET</span>
+										<span class="subtext">UX &amp; Design</span>
+									</h2>
+								</a>
+							</li>
 							<li class="nav-project">
 								<a class="ajax-nav" href="work/koozac/" data-pageid="project">
 									<img src="/asset/dist/img/bg.jpg">

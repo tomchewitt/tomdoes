@@ -38,7 +38,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 				<p>From an early age I studied and experimented with digital design. This continued throughout my education, until the end of my degree when my obsession with interactive web design began. For the last five years I've been successfully designing and developing user experiences for a wide range of companies, from large corporate behemoths to small independent games developers.</p>
 
 			</section>
-			<section class="block">
+			<section class="block presently">
 
 				<h1>PRESENTLY...</h1>
 

@@ -23,8 +23,8 @@ li.nav-project {
 	
 	// BACKGROUND IMAGE
 	img {
-		width: 150%;
-		height: 150%;
+		width: 110%;
+		height: 110%;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -38,7 +38,7 @@ li.nav-project {
 		width: 100%;
 		height: 100%;
 		display: block;
-		background: rgba($theblue, 0.7);
+		opacity: 0.6;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -102,8 +102,8 @@ li.nav-project {
 	// LI HOVER
 	&:hover {
 		img {
-			width: 120%;
-			height: 120%;
+			width: 101%;
+			height: 101%;
 		}
 
 		.triangle {

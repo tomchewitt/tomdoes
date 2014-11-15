@@ -79,7 +79,7 @@ module.exports = function(grunt) {
 				}
 			},
 			scss: {
-				files: 'asset/src/scss/*.scss',
+				files: 'asset/src/scss/**/*.scss',
 				tasks: ['compass'],
 				options: {
 					livereload: true

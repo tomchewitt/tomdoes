@@ -57,14 +57,11 @@ section.hero {
 		width: 40%;
 	}
 
-	// TYPE
-	text-align: center;
+	@include breakpoint(large) {
+		width: 30%;
+	}
 
 	h1.title {
-		// TYPE
-		font-family: $fontStackHeader;
-		letter-spacing: -0.12em;
-		font-size: 2.8em;
 		line-height: 1em;
 		margin-left: -0.15em;
 		position: relative;
@@ -76,14 +73,6 @@ section.hero {
 		display: inline-block;
 		padding: $projectIconHeight 0 0 0;
 		margin: 0;
-
-		// TYPE
-		font-size: 1.1em;
-		line-height: 1.6em;
-		letter-spacing: 0.04em;
-		font-weight: 400;
-		text-transform: uppercase;
-		font-style: italic;
 	}
 
 	.icon-wrap {
@@ -100,6 +89,10 @@ section.hero {
 			display: block;
 			position: absolute;
 			bottom: $projectIconHeight / 2;
+
+			@include breakpoint(large) {
+				width: 41%;
+			}
 		}
 
 		&::before {
@@ -120,7 +113,6 @@ section.hero {
 		bottom: 0;
 		left: 50%;
 		margin-left: 0 - ($projectIconHeight / 2);
-		text-align: center;
 
 		svg {
 			position: absolute;

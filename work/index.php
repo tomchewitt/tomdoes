@@ -20,18 +20,11 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			</h1>
 
 			<section class="block lead">
-				<!-- <nav class="nav-work">
-					<ul>
-						<li class="nav-best on">The Best</li>
-						<li class="nav-rest">The Rest</li>
-					</ul>
-				</nav> -->
-
 				<div class="projects hero">
-
 					<section class="best">
 						<ul>
-							<li class="nav-project">
+							<!-- KOOZAC -->
+							<li id="koozac" class="nav-project">
 								<a class="ajax-nav" href="koozac/" data-pageid="project">
 									<img src="/asset/dist/img/bg.jpg">
 									<span class="gradient"></span>
@@ -42,7 +35,9 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 									</h2>
 								</a>
 							</li>
-							<li class="nav-project">
+
+							<!-- HEROES AND GENERALS -->
+							<li id="hng" class="nav-project">
 								<a class="ajax-nav" href="heroes-and-generals/" data-pageid="project">
 									<img src="/asset/dist/img/bg.jpg">
 									<span class="gradient"></span>
@@ -53,26 +48,86 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 									</h2>
 								</a>
 							</li>
-							<li class="nav-project">
+
+							<!-- CTM TRAVEL -->
+							<li id="ctm-travel" class="nav-project">
 								<a class="ajax-nav" href="compare-the-market/" data-pageid="project">
 									<img src="/asset/dist/img/bg.jpg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
 									<h2>
 										<span class="word">COMPARE THE MARKET</span>
-										<span class="subtext">UX &amp; Design</span>
+										<span class="subtext">The fastest travel insurance yet</span>
+									</h2>
+								</a>
+							</li>
+
+							<!-- LIPSUM GENERATOR -->
+							<li id="hng" class="nav-project">
+								<a class="ajax-nav" href="lipsum-generator/" data-pageid="project">
+									<img src="/asset/dist/img/bg.jpg">
+									<span class="gradient"></span>
+									<span class="triangle"></span>
+									<h2>
+										<span class="word">LIPSUM GENERATOR</span>
+										<span class="subtext">Speedy, bookmarkable, easy lipsum</span>
+									</h2>
+								</a>
+							</li>
+
+							<!-- STOPCLOCK -->
+							<li id="hng" class="nav-project">
+								<a class="ajax-nav" href="stopclock/" data-pageid="project">
+									<img src="/asset/dist/img/bg.jpg">
+									<span class="gradient"></span>
+									<span class="triangle"></span>
+									<h2>
+										<span class="word">STOPCLOCK</span>
+										<span class="subtext">Full screen time tracking</span>
+									</h2>
+								</a>
+							</li>
+
+							<!-- COLOURFLOOD -->
+							<li id="hng" class="nav-project">
+								<a class="ajax-nav" href="colourflood/" data-pageid="project">
+									<img src="/asset/dist/img/bg.jpg">
+									<span class="gradient"></span>
+									<span class="triangle"></span>
+									<h2>
+										<span class="word">COLOURFLOOD</span>
+										<span class="subtext">My freelance company</span>
+									</h2>
+								</a>
+							</li>
+
+							<!-- SWAS -->
+							<li id="hng" class="nav-project">
+								<a class="ajax-nav" href="startwithasquare/" data-pageid="project">
+									<img src="/asset/dist/img/bg.jpg">
+									<span class="gradient"></span>
+									<span class="triangle"></span>
+									<h2>
+										<span class="word">START WITH A SQUARE</span>
+										<span class="subtext">A place for my madness</span>
+									</h2>
+								</a>
+							</li>
+
+							<!-- CODENAME -->
+							<li id="hng" class="nav-project">
+								<a class="ajax-nav" href="one-more-project/" data-pageid="project">
+									<img src="/asset/dist/img/bg.jpg">
+									<span class="gradient"></span>
+									<span class="triangle"></span>
+									<h2>
+										<span class="word">CODENAME: SHH</span>
+										<span class="subtext">A sneak peak at what's coming next</span>
 									</h2>
 								</a>
 							</li>
 						</ul>
 					</section>
-
-					<!-- <section class="rest">
-						<ul>
-							<li class="nav-project"><a class="ajax-nav" href="koozac/" data-pageid="project">KZ 2</a></li>
-							<li class="nav-project"><a class="ajax-nav" href="heroesandgenerals/" data-pageid="project">HNG 2</a></li>
-						</ul>
-					</section> -->
 
 				</div>
 				

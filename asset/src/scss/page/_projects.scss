@@ -7,22 +7,18 @@
 		margin-top: 50px;
 	}
 }
+
 #koozac {
 	$color1: #fcc60a;
 	$color2: #fe7726;
-
-	// HEADLINE TEXT
 	p.headline {
 		@include textgradient($color1, $color2);
 	}
-
-	// ALL GRADIENTS
 	.gradient {
 		background: $color1;
 		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
 		filter: saturate(3);
 	}
-	// WIDTH OF ACCENT BUG
 }
 
 #ctm-travel {

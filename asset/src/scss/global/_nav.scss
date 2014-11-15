@@ -11,9 +11,6 @@ section.header {
 	z-index: 9997;
 
 	h1 {
-		//the height is 86.6% of the width
-		// width: ($headerHeight / 86.6) * 100;
-		// height: $headerHeight;
 		width: 22%;
 		height: 100%;
 		display: block;
@@ -22,16 +19,6 @@ section.header {
 		left: 50%;
 		transform: translate(-50%, 0);
 		z-index: 2;
-		
-		// TYPE
-		@include text-replacement();
-		text-align: center;
-
-		// a {
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	display: block;
-		// }
 
 		.icon {
 			height: $headerHeight;
@@ -94,14 +81,6 @@ nav.main-nav {
 		width: 100%;
 		height: 100%;
 		display: block;
-		text-align: center;
-		text-decoration: none;
-
-		// TYPE
-		text-align: center;
-		font-size: 0.6em;
-		// line-height: 1em;
-		letter-spacing: 0.14em;
 	}
 
 	// BREAKPOINT	
@@ -109,15 +88,12 @@ nav.main-nav {
 		.item {
 			width: 100%;
 			height: 1.4em;
-			line-height: 1.4em;
 			position: absolute;
 			bottom: 6px;
 			left: 0; 
 		}
 
 		.icon {
-			// $iconWidth: 70%;
-			// $iconHeight: 35%;
 			$iconWidth: 22px;
 			$iconHeight: 22px;
 			width:  $iconWidth;
@@ -125,7 +101,6 @@ nav.main-nav {
 			display: block;
 			position: absolute;
 			top: -30px;
-			// left: (100% - $iconWidth) / 2;
 			left: 50%;
 			transform: translate(-50%, 0);
 
@@ -145,12 +120,7 @@ nav.main-nav {
 
 		.item {
 			display: inline-block;
-			// background: #999;
 			position: relative;
-			// TYPE
-			font-size: 1.8em;
-			line-height: $headerHeight;
-			letter-spacing: 0.25em;
 		}
 
 		.icon {

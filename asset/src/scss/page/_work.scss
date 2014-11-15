@@ -3,7 +3,7 @@
 // *****************************************************************
 .work {
 	.lead {
-		background: #EcEcEc;
+		background: $theblue;
 		padding: 0;
 	}
 
@@ -18,13 +18,15 @@
 			background: none;
 		}
 	}
+
+	.block {
+		h1 {
+			margin-bottom: 40px;
+		}
+	}
 }
 
 .nav-work {
-
-	// TYPE
-	text-align: center;
-	
 	li {
 		cursor: pointer;
 		width: 35%;
@@ -33,12 +35,6 @@
 		display: inline-block;
 		position: relative;
 		transition: all 0.3s ease-out;
-
-		// TYPE
-		font-weight: 200;
-		letter-spacing: 0.2em;
-		text-transform: uppercase;
-		line-height: $navWorkHeight;
 
 		&::before {
 			content: '';
@@ -77,13 +73,18 @@
 .clientlist {
 	padding: 0 10%;
 	position: relative;
-	text-align: center;
+
+	@include breakpoint(large) {
+		padding: 0;
+		width: 800px;
+		margin: 0 auto;
+	}
 
 	li {
 		display: inline-block;
 		width: 40%;
 		height: 40px;
-		margin: 10px 2.5%;
+		margin: 15px 2.5%;
 		position: relative;
 
 		@include breakpoint("min-width: 40em") {
@@ -94,6 +95,6 @@
 	svg {
 		max-height: 100%;
 		max-width: 100%;
-		fill: $white;
+		fill: $midpurple;
 	}
 }

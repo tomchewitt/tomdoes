@@ -23,67 +23,48 @@ html, body {
 
 body {
 	background: $white;
-
-	// TYPE
-	font-family: $fontStackBody;
-	font-weight: 300;
-	font-size: 1em;
-	line-height: 2em;
 }
 
 p {
-	// TYPE
-	font-size: 1.1em;
 	margin: 20px 10%;
-}
 
-p.headline {
-	//TYPE
-	font-size: 1.3em;
-	font-style: italic;
-	font-weight: 400;
-	text-transform: uppercase;
+	@include breakpoint(medium) {
+		margin: 0 auto;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		width: 720px;
+	}
+
+	@include breakpoint(large) {
+		width: 800px;
+		margin-top: 35px;
+		margin-bottom: 35px;
+	}
 }
 
 h1 {
+	z-index: 12;
 	position: relative;
-	// TYPE
-	text-align: center;
-	font-family: $fontStackBody;
-	font-weight: 200;
-	letter-spacing: 0.2em;
-	font-size: 2em;
-	line-height: 1em;
 
 	&.main {
 		padding: 30px 0;
 		width: 100%;
 		background: $white;
 		color: $satpurple;
-
-		// TYPE
-		text-align: center;
-		font-family: $fontStackHeader;
-		letter-spacing: -0.12em;
-		font-size: 2.8em;
-		line-height: 1em;
 		margin-left: -0.15em;
 
 		.word {
-		position: relative;
-		z-index: 2;
+			position: relative;
+			z-index: 2;
 		}
 
 		.icon {
 			width: 100%;
 			height: 70%;
 			position: absolute;
-			text-align: center;
 			top: 15%;
 			left: 0;
 			z-index: 1;
-			
-			// margin-left: 0.15em;
 
 			svg {
 				fill: #f7f7f7;
@@ -93,50 +74,6 @@ h1 {
 		}
 	}	
 }
-
-h2 {
-	// TYPE
-	text-align: center;
-	font-weight: 400;
-	font-style: italic;
-	letter-spacing: 0.2em;
-	font-size: 1.1em;
-	line-height: 1em;
-}
-
-
-@include breakpoint(medium) {
-	p {
-		margin: 0 auto;
-		margin-top: 25px;
-		margin-bottom: 25px;
-		width: 720px;
-	}
-
-	h1 {
-		// TYPE
-		// letter-spacing: 0.3em;
-		// font-size: 2em;
-		// line-height: 1em;
-
-		&.main {
-			// padding: 40px 0;
-			// // TYPE
-			// letter-spacing: -0.07em;
-			// font-size: 3.4em;
-		}	
-	}
-
-	h2 {
-		// TYPE
-		letter-spacing: 0.2em;
-		font-size: 1.1em;
-		line-height: 1em;
-	}
-}
-
-
-
 
 
 // *****************************************************************
@@ -153,8 +90,6 @@ section {
 	width: 100%;
 
 	&.img-wrap {
-		text-align: center;
-
 		img {
 			max-width: 80%;
 			margin: 15px 0;
@@ -162,8 +97,15 @@ section {
 			@include breakpoint(medium) {
 				width: 720px;
 			}
+
+			@include breakpoint(large) {
+				width: 800px;
+				display: block;
+				margin: 0 auto;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
 		}
-		
 	}
 }
 
@@ -178,7 +120,6 @@ section {
 .content {
 	margin-top: $headerHeight;
 }
-
 
 .block {
 	h1 {
@@ -195,12 +136,6 @@ section.footer {
 	background: $lightestgrey;
 	position: relative;
 	z-index: 10;
-	
-	// TYPE
-	letter-spacing: 0.04em;
-	font-size: 0.8em;
-	line-height: 1.6em;
-	text-align: center;
 
 	footer {
 		color: $lightestpurple;

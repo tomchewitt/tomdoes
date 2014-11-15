@@ -18,11 +18,11 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 				<span class="icon"><svg><use xlink:href="#nav-contact"></use></svg></span>
 			</h1>
 
-			<section class="block lead">
+			<section class="block lead spaced">
 		    	<p>I like hearing from other people. Whether you want to discuss working together or a job vacancy, have a question, need an answer, or just want to say hi - please use any of the below options. I promise I'll say something nice back.</p>
 			</section>
 
-			<section class="block">
+			<section class="block spaced">
 				<h1>LET'S CHAT</h1>
 
 			    <ul class="social">
@@ -35,8 +35,6 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			    	<li class="icon codepen"><a target="_blank" href=""><span class="word">Codepen</span><svg><use xlink:href="#codepen"></use></svg></a></li>
 			    	<li class="icon github"><a target="_blank" href=""><span class="word">GitHub</span><svg><use xlink:href="#github"></use></svg></a></li>
 			    </ul>
-				
-			    <h2>THANKS &amp; HAVE A NICE DAY!</h2>
 			</section>
 
         </section>

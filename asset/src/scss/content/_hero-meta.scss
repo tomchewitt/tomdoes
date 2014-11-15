@@ -14,32 +14,14 @@
 		width: 100%;
 		margin: 15px 0;
 		overflow: hidden;
-
-		// TYPE
-		font-weight: 400;
-		font-style: italic;
-		line-height: 1.4em;
-
-		.header {
-			font-weight: 200;
-			font-style: normal;
-			letter-spacing: 0.2em;
-
-		} 
 	}
 
 	@include breakpoint("min-width: 40em") {
 		border: none;
-		text-align: center;
 		padding: 0;
 
 		li {
 			margin: 0;
-		}
-
-		.header {
-			font-size: 1.2em;
-			line-height: 1.6em;
 		}
 		
 		&.double li {
@@ -76,6 +58,17 @@
 		margin-top: 30px;
 		margin-bottom: 30px;
 
+		&.triple li {
+			height: 90px;
+		}
+		&.three li {
+			width: 24.7%;
+		}
+	}
+
+	@include breakpoint(large) {
+		width: 800px;
+		
 		&.triple li {
 			height: 90px;
 		}

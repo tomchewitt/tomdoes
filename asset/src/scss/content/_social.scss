@@ -4,6 +4,10 @@
 .social {
 	$iconWidth: 80px;
 
+	@include breakpoint(large) {
+		$iconWidth: 120px;
+	}
+
 	text-align: center;
 	padding-bottom: 40px;
 
@@ -11,7 +15,6 @@
 
 		width: $iconWidth;
 		height: $iconWidth; // * 0.866;
-		// background: #CCC;
 		display: inline-block;
 		margin: 5px 8px;
 		position: relative;
@@ -32,12 +35,11 @@
 		bottom: 0;
 		left: 0;
 		color: $thered;
+		transition: all 0.2s ease-in-out;
 
-		// TYPE
-		text-transform: uppercase;
-		font-size: 0.8em;
-		line-height: 1.2em;
-		letter-spacing: 0.2em;
+		@include breakpoint(large) {
+			bottom: 5%;
+		}
 	}
 
 	svg {
@@ -46,7 +48,6 @@
 		position: absolute;
 		top: 20%;
 		left: 30%;
-		// z-index: 10;
 		fill: $thered;
 	}
 
@@ -60,6 +61,11 @@
 
 		.word {
 			color: $white;
+			bottom: 10%;
+
+			@include breakpoint(large) {
+				bottom: 15%;
+			}
 		}
 	}
 
@@ -68,21 +74,6 @@
 		width: 100%;
 		padding: 0 0 20px 0;
 		color: $thered;
-
-		// TYPE
-		font-weight: 400;
-		font-style: italic;
-		font-size: 1.2em;
-		letter-spacing: 0.05em;
 	}
-
-	.accent {
-
-		// TYPE
-		font-weight: 200;
-		text-transform: uppercase;
-		font-size: 1em;
-	}
-
 }
 
