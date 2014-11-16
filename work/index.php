@@ -7,7 +7,6 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 	ob_start();
 } else {
 	include $_SERVER['DOCUMENT_ROOT']."/asset/dist/inc/header.php";
-	include $_SERVER['DOCUMENT_ROOT']."/asset/dist/img/svg-clients.svg";
 	include $_SERVER['DOCUMENT_ROOT']."/asset/dist/inc/nav.php";
 }
 ?>
@@ -145,6 +144,8 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 
 			<section class="block clients spaced">
 				<h1>CLIENTS &amp; COMPANIES</h1>
+
+			    <?php include $_SERVER['DOCUMENT_ROOT']."/asset/dist/img/svg-clients.svg"; ?>
 			    
 			    <ul class="clientlist">
 			    	<li><svg><use xlink:href="#square"></use></svg></li>

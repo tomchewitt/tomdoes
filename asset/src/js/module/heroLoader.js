@@ -26,10 +26,13 @@ var heroLoader = (function() {
 		if (document.querySelector('section.hero')) {
 			// SET HEIGHT OF HERO
 			var $hero = document.querySelector('.hero');
-			$hero.style.height = (window.innerHeight - $hero.offsetTop) + 'px';
+			var nPointer = document.querySelector('.hero .pointer').offsetHeight;
+			console.log(nPointer);
+			$hero.style.height = (window.innerHeight - $hero.offsetTop + nPointer) + 'px';
 		}
 
 		preloadImg(aImgs);
+		
 		
 	}
 

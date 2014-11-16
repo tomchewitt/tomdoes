@@ -13,6 +13,7 @@ module.exports = function(grunt) {
 		concat: {
 			dist: {
 				src: [
+					'asset/src/js/vendor/skrollr/skrollr.min.js',
 					'asset/src/js/vendor/gsap/TweenMax.min.js',
 					'asset/src/js/module/*.js',
 					'asset/src/js/script/init.js'],
