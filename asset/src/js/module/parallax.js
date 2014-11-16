@@ -51,4 +51,4 @@ var parallax = (function() {
 	// RETURN MODULE
 	return parallax;
 
-})();
+});

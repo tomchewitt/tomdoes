@@ -187,6 +187,7 @@ var ajaxLoader = (function () {
 		vPageToLoad = document.querySelector('section.content').getAttribute('data-pageid');
 		console.log(vPageToLoad);
 		heroLoader.setup(vPageToLoad);
+		var fParallax = new parallax();
 	}
 
 
@@ -222,7 +223,8 @@ var ajaxLoader = (function () {
 			console.log('ERROR REP: ' + vPageToLoad);
 
 			// LOAD HEROES & SETUP PAGE
-			heroLoader.setup(vPageToLoad);		
+			heroLoader.setup(vPageToLoad);
+			var fParallax = new parallax();
 		}
 	}
 
@@ -271,8 +273,10 @@ var heroLoader = (function() {
 			// SET HEIGHT OF HERO
 			var $hero = document.querySelector('.hero');
 			var nPointer = document.querySelector('.hero .pointer').offsetHeight;
-			console.log(nPointer);
-			$hero.style.height = (window.innerHeight - $hero.offsetTop + nPointer) + 'px';
+			if (nPointer) {
+				console.log(nPointer);
+				$hero.style.height = (window.innerHeight - $hero.offsetTop + nPointer) + 'px';
+			}
 		}
 
 		preloadImg(aImgs);
@@ -432,7 +436,7 @@ var parallax = (function() {
 	// RETURN MODULE
 	return parallax;
 
-})();
+});
 
 // *****************************************************************
 // INIT

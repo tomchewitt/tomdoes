@@ -168,6 +168,7 @@ var ajaxLoader = (function () {
 		vPageToLoad = document.querySelector('section.content').getAttribute('data-pageid');
 		console.log(vPageToLoad);
 		heroLoader.setup(vPageToLoad);
+		var fParallax = new parallax();
 	}
 
 
@@ -203,7 +204,8 @@ var ajaxLoader = (function () {
 			console.log('ERROR REP: ' + vPageToLoad);
 
 			// LOAD HEROES & SETUP PAGE
-			heroLoader.setup(vPageToLoad);		
+			heroLoader.setup(vPageToLoad);
+			var fParallax = new parallax();
 		}
 	}
 

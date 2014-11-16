@@ -27,8 +27,10 @@ var heroLoader = (function() {
 			// SET HEIGHT OF HERO
 			var $hero = document.querySelector('.hero');
 			var nPointer = document.querySelector('.hero .pointer').offsetHeight;
-			console.log(nPointer);
-			$hero.style.height = (window.innerHeight - $hero.offsetTop + nPointer) + 'px';
+			if (nPointer) {
+				console.log(nPointer);
+				$hero.style.height = (window.innerHeight - $hero.offsetTop + nPointer) + 'px';
+			}
 		}
 
 		preloadImg(aImgs);
