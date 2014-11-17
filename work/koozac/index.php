@@ -14,21 +14,25 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 		<section id="koozac" class="content project" data-pageid="project">
 
 			<section class="hero">
-				<div class="gradient"></div>
-				<img class="blur" src="/asset/dist/img/work/koozac/hero.jpg">
-				<header class="page-header">
+				<div id="heroGradient" class="gradient"></div>
+				<img id="heroImg" src="/asset/dist/img/work/koozac/hero.jpg">
+				<header id="heroHeader" class="page-header">
 					<h1 class="title">KOOZAC</h1>
 					<span class="icon-wrap">
 						<span class="icon"><svg><use xlink:href="#spinner"></use></svg></span>	
 					</span>
 					<p>Mobile game UI design &amp; asset creation. Web design and build.</p>
 				</header>
+				<span class="pointer"></span>
 			</section>
 
-			<section class="block">
+			<section class="block spaced">
 				<p class="headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatem cum dolores iusto, illo vero dignissimos ipsa aperiam, eaque, vitae blanditiis earum sit quibusdam dolor cumque tempora beatae saepe totam!</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatem cum dolores iusto, illo vero dignissimos ipsa aperiam, eaque, vitae blanditiis earum sit quibusdam dolor cumque tempora beatae saepe totam!</p>
-				<ul class="meta three triple">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatem cum dolores iusto, illo vero dignissimos ipsa aperiam, eaque, vitae blanditiis earum sit quibusdam dolor cumque tempora beatae saepe totam!</p>
+			</section>
+			<section class="block meta">
+				<ul>
 					<li>
 						<span class="header">COMPANY:</span><br>Suqare Enix
 					</li>
@@ -39,6 +43,8 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 						<span class="header">LINK:</span><br><a href="http://koozac.com" target="_blank">http://koozac.com</a>
 					</li>
 				</ul>
+			</section>
+				
 			</section>
 
 			<section class="block img-wrap">

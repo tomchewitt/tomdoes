@@ -187,7 +187,6 @@ var ajaxLoader = (function () {
 		vPageToLoad = document.querySelector('section.content').getAttribute('data-pageid');
 		console.log(vPageToLoad);
 		heroLoader.setup(vPageToLoad);
-		var fParallax = new parallax();
 	}
 
 
@@ -224,7 +223,6 @@ var ajaxLoader = (function () {
 
 			// LOAD HEROES & SETUP PAGE
 			heroLoader.setup(vPageToLoad);
-			var fParallax = new parallax();
 		}
 	}
 
@@ -253,7 +251,6 @@ var heroLoader = (function() {
 	var heroLoader = {};
 
 	// PRIVATE VARS
-	// var $ = function (selector) { return document.querySelector(selector) };
 	var vPageToLoad;
 	var aImgs;
 	var nImgsLoaded;
@@ -272,13 +269,15 @@ var heroLoader = (function() {
 		if (document.querySelector('section.hero')) {
 			// SET HEIGHT OF HERO
 			var $hero = document.querySelector('.hero');
-			var nPointer = document.querySelector('.hero .pointer').offsetHeight;
-			if (nPointer) {
-				console.log(nPointer);
+			if (document.querySelector('.hero .pointer')) {
+				var nPointer = document.querySelector('.hero .pointer').offsetHeight;
 				$hero.style.height = (window.innerHeight - $hero.offsetTop + nPointer) + 'px';
+			} else {
+				$hero.style.height = (window.innerHeight - $hero.offsetTop) + 'px';
 			}
 		}
 
+		parallax.setup();
 		preloadImg(aImgs);
 		
 		
@@ -391,32 +390,84 @@ var parallax = (function() {
 	// constructor
 	var parallax = {};
 	
-	// MAIN ATTRIBUTES OBJECT	
-	var oSkrollrAttr = {
-		heroImg: {
-			data: [
-				'data-top',
-				'data-top-bottom'
-			],
-			val: [
-				'width:1900px; height:1900px; opacity:1;',
-				'width:10px; height:10px; opacity:0;'
-			]
-		},
-		projectArrows: {
-			data: [],
-			val: []
+	// HERO DIMENSIONS
+	var oSkrollrAttr;
+
+	// CHECK DOC FOR APPROPRIATE ELEMENTS
+	function checkDoc() {
+
+		if (!(document.querySelector('.page-header'))) {
+			return;
+		}
+		
+
+		// HERO DIMENSIONS
+		// var nHeroNatural = document.querySelector('.hero img').naturalWidth;
+		// var oHero = {
+		// 	height: document.querySelector('.hero').offsetHeight,
+		// 	width: document.querySelector('.hero').offsetWidth
+		// }
+		// SET RATIO
+		// if (oHero.height > oHero.width) {
+		// 	oHero.size = oHero.height;
+		// } else {
+		// 	oHero.size = oHero.width;
+		// }
+
+		// console.log('NATURAL: ' + nHeroNatural + ' - NEW: ' + oHero.size + ' - SCALE: ' + oHero.size / nHeroNatural);
+		
+		var nPageHeader = (window.innerHeight / 2) - (document.querySelector('.page-header').offsetHeight / 2) - 40 || 0;
+
+		// MAIN ATTR OBJ
+		oSkrollrAttr = {
+			// heroImg: {
+			// 	data: [
+			// 		'data-0',
+			// 		'data-' + oHero.size
+			// 	],
+			// 	val: [
+			// 		'transform: translate(-50%, -50%) scale(' + oHero.size / nHeroNatural + ');',
+			// 		'transform: translate(-50%, -50%) scale(' + (oHero.size / nHeroNatural) / 2 + ');',
+			// 	]
+			// },
+			heroHeader: {
+				data: [
+					'data-0',
+					'data-' + nPageHeader
+				],
+				val: [
+					'position:fixed; top:!' + (window.innerHeight / 2) + 'px; left:50%;',
+					'position:absolute; top:!' + ((window.innerHeight / 2) + nPageHeader - (document.querySelector('.header').offsetHeight)) + 'px; left:50%;',
+				]
+			},
+			heroGradient: {
+				data: [
+					'data-0',
+					'data-' + (window.innerHeight / 2)
+				],
+				val: [
+					'opacity: 0.7;',
+					'opacity: 1;',
+				]
+			},
+			projectArrows: {
+				data: [],
+				val: []
+			}
+		}
+		
+
+		// SET ATTR
+		console.log(oHero.width, oHero.height, oHero.size)
+
+		for (var property in oSkrollrAttr) {
+		    if (document.querySelector('#' + property)) {
+		    	setupAttr(property);
+		    }
 		}
 	}
 
-	// CHECK DOC FOR APPROPRIATE ELEMENTS
-	for (var property in oSkrollrAttr) {
-	    if (document.querySelector('#' + property)) {
-	    	setupAttr(property);
-	    }
-	}
-
-	// ADD THE ATTRIBUTES
+	// ADD THE ATTR
 	function setupAttr(elm) {
 		var $elm = document.querySelector('#' + elm);
 		var aData = oSkrollrAttr[elm].data;
@@ -428,15 +479,22 @@ var parallax = (function() {
 	}
 	
 	// SETUP SKROLLR
+	checkDoc();
 	var s = skrollr.init({
-		forceHeight: false
+		forceHeight: false,
+		smoothScrolling: false
 	});
 
+	// REFRESH
+	parallax.setup = function() {
+		checkDoc();
+		s.refresh();
+	}
 
 	// RETURN MODULE
 	return parallax;
 
-});
+})();
 
 // *****************************************************************
 // INIT
@@ -475,3 +533,5 @@ if (isWebkit) {
 window.onresize = function(event) {
     // sizeNav();
 };
+
+// var $ = function (selector) { return document.querySelector(selector) };

@@ -35,3 +35,5 @@ if (isWebkit) {
 window.onresize = function(event) {
     // sizeNav();
 };
+
+// var $ = function (selector) { return document.querySelector(selector) };

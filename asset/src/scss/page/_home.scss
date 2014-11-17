@@ -6,19 +6,6 @@
 		background: $theblue;
 	}
 
-	header {
-		display: inline-block;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		z-index: 5;
-		transfrom: translate(-50%, -50%);
-
-		.sub {
-			margin-top: 20px;
-		}
-	}
-
 	.feed {
 		padding-top: 50px;
 

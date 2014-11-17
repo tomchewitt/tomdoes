@@ -14,9 +14,9 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 		<section class="content home" data-pageid="home">
 
 			<section class="hero">
-			<!-- data-top="" -->
+				<div id="heroGradient" class="gradient"></div>
 				<img id="heroImg" src="/asset/dist/img/bg.jpg"> 
-				<header class="page-header">
+				<header id="heroHeader" class="page-header">
 					<h1 class="title">TOM HEWITT</h1>
 					<span class="icon-wrap">
 						<span class="icon"><svg><use xlink:href="#spinner"></use></svg></span>	

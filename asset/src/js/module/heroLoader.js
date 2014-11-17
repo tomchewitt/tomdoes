@@ -7,7 +7,6 @@ var heroLoader = (function() {
 	var heroLoader = {};
 
 	// PRIVATE VARS
-	// var $ = function (selector) { return document.querySelector(selector) };
 	var vPageToLoad;
 	var aImgs;
 	var nImgsLoaded;
@@ -26,13 +25,15 @@ var heroLoader = (function() {
 		if (document.querySelector('section.hero')) {
 			// SET HEIGHT OF HERO
 			var $hero = document.querySelector('.hero');
-			var nPointer = document.querySelector('.hero .pointer').offsetHeight;
-			if (nPointer) {
-				console.log(nPointer);
+			if (document.querySelector('.hero .pointer')) {
+				var nPointer = document.querySelector('.hero .pointer').offsetHeight;
 				$hero.style.height = (window.innerHeight - $hero.offsetTop + nPointer) + 'px';
+			} else {
+				$hero.style.height = (window.innerHeight - $hero.offsetTop) + 'px';
 			}
 		}
 
+		parallax.setup();
 		preloadImg(aImgs);
 		
 		
