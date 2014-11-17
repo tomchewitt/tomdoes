@@ -74,7 +74,7 @@ var parallax = (function() {
 		
 
 		// SET ATTR
-		console.log(oHero.width, oHero.height, oHero.size)
+		// console.log(oHero.width, oHero.height, oHero.size)
 
 		for (var property in oSkrollrAttr) {
 		    if (document.querySelector('#' + property)) {
