@@ -13,8 +13,9 @@ module.exports = function(grunt) {
 		concat: {
 			dist: {
 				src: [
-					'asset/src/js/vendor/skrollr/skrollr.min.js',
-					'asset/src/js/vendor/gsap/TweenMax.min.js',
+					'asset/src/js/vendor/gsap/TweenLite.min.js',
+					'asset/src/js/vendor/gsap/CSSPlugin.min.js',
+					'asset/src/js/vendor/gsap/EasePack.min.js',
 					'asset/src/js/module/*.js',
 					'asset/src/js/script/init.js'],
 				dest: 'asset/src/js/bundle.js'

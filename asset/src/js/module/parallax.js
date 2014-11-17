@@ -5,7 +5,46 @@ var parallax = (function() {
 	
 	// constructor
 	var parallax = {};
+	var bGradient;
+	var bHeader;
+	var bArrows;
 	
+	
+	function init() {
+		if (bGradient) {
+			console.log('bGradient');
+		}
+
+		if (bHeader) {
+			console.log('bHeader');
+		}
+
+		if (bArrows) {
+			console.log('bArrows');
+		}
+	}
+
+
+	// REFRESH
+	parallax.setup = function() {
+		console.log('parallax.setup');
+
+		if (document.querySelector('.page-header')) {
+			bGradient = true;
+			bHeader = true;
+		}
+		// run setup
+		window.onscroll = init;
+	}
+
+	// RETURN MODULE
+	return parallax;
+
+})();
+
+
+/*
+
 	// HERO DIMENSIONS
 	var oSkrollrAttr;
 
@@ -16,36 +55,10 @@ var parallax = (function() {
 			return;
 		}
 		
-
-		// HERO DIMENSIONS
-		// var nHeroNatural = document.querySelector('.hero img').naturalWidth;
-		// var oHero = {
-		// 	height: document.querySelector('.hero').offsetHeight,
-		// 	width: document.querySelector('.hero').offsetWidth
-		// }
-		// SET RATIO
-		// if (oHero.height > oHero.width) {
-		// 	oHero.size = oHero.height;
-		// } else {
-		// 	oHero.size = oHero.width;
-		// }
-
-		// console.log('NATURAL: ' + nHeroNatural + ' - NEW: ' + oHero.size + ' - SCALE: ' + oHero.size / nHeroNatural);
-		
 		var nPageHeader = (window.innerHeight / 2) - (document.querySelector('.page-header').offsetHeight / 2) - 40 || 0;
 
 		// MAIN ATTR OBJ
 		oSkrollrAttr = {
-			// heroImg: {
-			// 	data: [
-			// 		'data-0',
-			// 		'data-' + oHero.size
-			// 	],
-			// 	val: [
-			// 		'transform: translate(-50%, -50%) scale(' + oHero.size / nHeroNatural + ');',
-			// 		'transform: translate(-50%, -50%) scale(' + (oHero.size / nHeroNatural) / 2 + ');',
-			// 	]
-			// },
 			heroHeader: {
 				data: [
 					'data-0',
@@ -74,8 +87,6 @@ var parallax = (function() {
 		
 
 		// SET ATTR
-		// console.log(oHero.width, oHero.height, oHero.size)
-
 		for (var property in oSkrollrAttr) {
 		    if (document.querySelector('#' + property)) {
 		    	setupAttr(property);
@@ -93,21 +104,5 @@ var parallax = (function() {
 			$elm.setAttribute(aData[i], aVal[i]);
 		}
 	}
-	
-	// SETUP SKROLLR
-	checkDoc();
-	var s = skrollr.init({
-		forceHeight: false,
-		smoothScrolling: false
-	});
 
-	// REFRESH
-	parallax.setup = function() {
-		checkDoc();
-		s.refresh();
-	}
-
-	// RETURN MODULE
-	return parallax;
-
-})();
+	*/

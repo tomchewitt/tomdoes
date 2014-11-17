@@ -16,7 +16,7 @@ var heroLoader = (function() {
 		aImgs = [];
 
 		if (document.querySelector('.hero')) {
-			console.log('HERO: true');
+			// console.log('HERO: true');
 			// PUSH IMAGE TO ARR
 			var heroSrc = document.querySelector('.hero img').src;
 			aImgs.push(heroSrc);
@@ -41,7 +41,7 @@ var heroLoader = (function() {
 
 
 	function preloadImg(aImgs) {
-		console.log(aImgs, aImgs.length);
+		// console.log(aImgs, aImgs.length);
 
 		if (aImgs.length == 0) {
 			ajaxLoader.completed();
