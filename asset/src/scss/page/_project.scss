@@ -1,41 +1,7 @@
 
 // *****************************************************************
-// PROJECTS
+// KOOZAC
 // *****************************************************************
-.project {
-	.headline {
-		margin-top: 20px;
-	}
-}
-
-.img-wrap {
-	ul {
-		width: 100%;
-
-		li {
-			width: 100%;
-			display: block;
-			background: #999;
-			padding: 80px 0;
-			clear: both;
-
-			&.double {
-				padding: 0;
-
-				img {
-					width: 50%;
-					float: left;
-				}
-			}
-		}
-	}
-
-	img {
-		max-width: 80%;
-	}
-}
-
-
 #koozac {
 	$color1: #fcc60a;
 	$color2: #fe7726;
@@ -47,8 +13,29 @@
 		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
 		filter: saturate(3);
 	}
+	.palette {
+		.color-1 {
+			background: #FDF64B;
+		}
+		.color-2 {
+			background: #FF683F;
+		}
+		.color-3 {
+			background: #5AB889;
+		}
+		.color-4 {
+			background: #34D92F;
+		}
+		.color-5 {
+			background: #1DCDED;
+		}
+	}
 }
 
+
+// *****************************************************************
+// CTM TRAVEL
+// *****************************************************************
 #ctm-travel {
 	$color1: #108a00;
 	$color2: #55b648;

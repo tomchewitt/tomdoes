@@ -423,7 +423,7 @@ var parallax = (function() {
 
 			if (nWinOffset < nBlockOffset) {
 				document.querySelector('.gradient').style.opacity = nPercentage;
-				console.log(nWinOffset, nBlockOffset, nPercentage);
+				// console.log(nWinOffset, nBlockOffset, nPercentage);
 			}			
 		}
 
