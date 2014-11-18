@@ -48,10 +48,17 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			</section>
 
 			<section class="block img-wrap">
-				<img src="/asset/dist/img/work/koozac/02.jpg">
-				<img src="/asset/dist/img/work/koozac/04.jpg">
-				<img src="/asset/dist/img/work/koozac/03.jpg">
-				<img src="/asset/dist/img/work/koozac/01.jpg">
+				<ul>
+					<li><img src="/asset/dist/img/work/koozac/02.jpg"></li>
+					<li class="double">
+						<img src="/asset/dist/img/work/koozac/04.jpg">
+						<img src="/asset/dist/img/work/koozac/03.jpg">
+					</li>
+					<li><img src="/asset/dist/img/work/koozac/01.jpg"></li>
+				</ul>
+				
+				
+				
 			</section>
 
 			<section class="block palette">

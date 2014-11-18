@@ -8,15 +8,32 @@ var parallax = (function() {
 	var bGradient;
 	var bHeader;
 	var bArrows;
+	var nPageHeaderOffset;
+	var nPageHeaderPosition;
 	
 	
 	function init() {
-		if (bGradient) {
-			console.log('bGradient');
+		var nWinOffset = document.body.scrollTop;
+
+		if (bGradient) {	
+			var nBlockOffset = window.innerHeight; // document.querySelector('.block').scrollTop;
+			var nPercentage = 0.6 + (nWinOffset / nBlockOffset) * 0.7; // * 1.2;
+
+			if (nWinOffset < nBlockOffset) {
+				document.querySelector('.gradient').style.opacity = nPercentage;
+				console.log(nWinOffset, nBlockOffset, nPercentage);
+			}			
 		}
 
 		if (bHeader) {
-			console.log('bHeader');
+			var $header = document.querySelector('.page-header');
+			if (nWinOffset >= nPageHeaderOffset) {
+				$header.style.position = 'absolute';
+				$header.style.top = nPageHeaderPosition + 'px';
+			} else {
+				$header.style.position = 'fixed';
+				$header.style.top = '50%';
+			}
 		}
 
 		if (bArrows) {
@@ -32,6 +49,8 @@ var parallax = (function() {
 		if (document.querySelector('.page-header')) {
 			bGradient = true;
 			bHeader = true;
+			nPageHeaderOffset = (window.innerHeight / 2) - (document.querySelector('.page-header').offsetHeight / 2) - 40;
+			nPageHeaderPosition = (window.innerHeight / 2) + nPageHeaderOffset - (document.querySelector('.header').offsetHeight);
 		}
 		// run setup
 		window.onscroll = init;
@@ -41,6 +60,18 @@ var parallax = (function() {
 	return parallax;
 
 })();
+	/*
+
+	function findPos(obj) {
+		var curleft = curtop = 0;
+		if (obj.offsetParent) {
+			do {
+				curleft += obj.offsetLeft;
+				curtop += obj.offsetTop;
+			} while (obj = obj.offsetParent);
+			return [curleft,curtop];
+	}
+	*/
 
 
 /*
