@@ -8,6 +8,34 @@
 	}
 }
 
+.img-wrap {
+	ul {
+		width: 100%;
+
+		li {
+			width: 100%;
+			display: block;
+			background: #999;
+			padding: 80px 0;
+			clear: both;
+
+			&.double {
+				padding: 0;
+
+				img {
+					width: 50%;
+					float: left;
+				}
+			}
+		}
+	}
+
+	img {
+		max-width: 80%;
+	}
+}
+
+
 #koozac {
 	$color1: #fcc60a;
 	$color2: #fe7726;

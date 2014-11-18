@@ -14,9 +14,9 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 		<section id="koozac" class="content project" data-pageid="project">
 
 			<section class="hero">
-				<div id="heroGradient" class="gradient"></div>
-				<img id="heroImg" src="/asset/dist/img/work/koozac/hero.jpg">
-				<header id="heroHeader" class="page-header">
+				<div class="gradient"></div>
+				<img src="/asset/dist/img/work/koozac/03.jpg">
+				<header class="page-header">
 					<h1 class="title">KOOZAC</h1>
 					<span class="icon-wrap">
 						<span class="icon"><svg><use xlink:href="#spinner"></use></svg></span>	
@@ -51,8 +51,8 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 				<ul>
 					<li><img src="/asset/dist/img/work/koozac/02.jpg"></li>
 					<li class="double">
-						<img src="/asset/dist/img/work/koozac/04.jpg">
 						<img src="/asset/dist/img/work/koozac/03.jpg">
+						<img src="/asset/dist/img/work/koozac/04.jpg">
 					</li>
 					<li><img src="/asset/dist/img/work/koozac/01.jpg"></li>
 				</ul>
