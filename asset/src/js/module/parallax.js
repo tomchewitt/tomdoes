@@ -13,7 +13,9 @@ var parallax = (function() {
 	
 	
 	function init() {
-		var nWinOffset = document.body.scrollTop;
+		console.log('parallax.init');
+		// var nWinOffset = document.body.scrollTop;
+		var nWinOffset = window.pageYOffset || document.documentElement.scrollTop;
 
 		if (bGradient) {	
 			var nBlockOffset = window.innerHeight; // document.querySelector('.block').scrollTop;
@@ -21,7 +23,7 @@ var parallax = (function() {
 
 			if (nWinOffset < nBlockOffset) {
 				document.querySelector('.gradient').style.opacity = nPercentage;
-				// console.log(nWinOffset, nBlockOffset, nPercentage);
+				console.log(nWinOffset, nBlockOffset, nPercentage);
 			}			
 		}
 

@@ -69,41 +69,50 @@ $pointerHeight: 100px;
 }
 
 // ARROW
-.hero {
-	.arrow {
-		width: $pointerHeight / 2;
-		height: $pointerHeight / 2;
-		display: block;
-		position: absolute;
-		z-index: 6;
-		bottom: $pointerHeight + 20;
-		left: 50%;
-		margin-left: 0 - ($pointerHeight / 4);
-		// background: #000;
+// .hero {
+// 	.arrow {
+// 		width: $pointerHeight / 2;
+// 		height: $pointerHeight / 2;
+// 		display: block;
+// 		position: absolute;
+// 		z-index: 6;
+// 		bottom: $pointerHeight + 20;
+// 		left: 50%;
+// 		margin-left: 0 - ($pointerHeight / 4);
+// 		// background: #000;
 
-		&::before, &::after {
-			content: '';
-			width: 1px;
-			height: 100%;
-			display: block;
-			background: $white;
-			position: absolute;
-			top: 0;
-		}
+// 		&::before, &::after {
+// 			content: '';
+// 			width: 1px;
+// 			height: 100%;
+// 			display: block;
+// 			background: $white;
+// 			position: absolute;
+// 			top: 0;
+// 		}
 
-		&::before {
-			right: 50%;
-			transform: rotate(30deg);
-			transform-origin: bottom right;
-		}
+// 		&::before {
+// 			right: 50%;
+// 			transform: rotate(30deg);
+// 			transform-origin: bottom right;
+// 		}
 
-		&::after {
-			left: 50%;
-			transform: rotate(-30deg);
-			transform-origin: bottom left;
-		}
-	}
-}
+// 		&::after {
+// 			left: 50%;
+// 			transform: rotate(-30deg);
+// 			transform-origin: bottom left;
+// 		}
+// 	}
+// }
+
+// @keyframes arrowBounce {
+// 	0% {
+// 		bottom: $pointerHeight + 20;
+// 	}
+// 	60% {
+// 		bottom: $pointerHeight + 50;
+// 	}
+// }
 
 // *****************************************************************
 // HERO WORDAGE (including home page)
