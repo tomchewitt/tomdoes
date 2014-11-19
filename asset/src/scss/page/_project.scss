@@ -34,6 +34,39 @@
 
 
 // *****************************************************************
+// COLOURFLOOD
+// *****************************************************************
+#colourflood {
+	$color1: #E62262;
+	$color2: #0C1B49;
+	p.headline {
+		@include textgradient($color1, $color2);
+	}
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
+		filter: saturate(3);
+	}
+	.palette {
+		.color-1 {
+			background: $color1;
+		}
+		.color-2 {
+			background: $color2;
+		}
+		.color-3 {
+			background: #5AB889;
+		}
+		.color-4 {
+			background: #34D92F;
+		}
+	}
+}
+
+
+
+
+// *****************************************************************
 // CTM TRAVEL
 // *****************************************************************
 #ctm-travel {

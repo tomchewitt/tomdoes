@@ -417,7 +417,7 @@ var parallax = (function() {
 	function init() {
 		console.log('parallax.init');
 		// var nWinOffset = document.body.scrollTop;
-		var nWinOffset = window.pageYOffset || document.documentElement.scrollTop
+		var nWinOffset = window.pageYOffset || document.documentElement.scrollTop;
 
 		if (bGradient) {	
 			var nBlockOffset = window.innerHeight; // document.querySelector('.block').scrollTop;
