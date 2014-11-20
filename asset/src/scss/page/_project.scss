@@ -35,7 +35,7 @@
 			background: #D37B32;
 		}
 		li:nth-child(3) {
-			background: #7ED5C1;
+			background: #DD690A;
 		}
 	}
 }
@@ -99,15 +99,15 @@
 			background: $color1;
 		}
 		.color-2 {
-			background: $color2;
+			background: #297351;
 		}
 		.color-3 {
-			background: #7F1A57;
+			background: #A0F4CE;
 		}
 	}
 	.img-wrap {
 		.curved {
-			background: $color2;
+			background: #2A4E40;
 		}
 	}
 }
@@ -129,22 +129,70 @@
 	}
 	.palette {
 		.color-1 {
-			background: $color1;
+			background: #0B77D1;
 		}
 		.color-2 {
 			background: $color2;
 		}
 		.color-3 {
-			background: #7F1A57;
+			background: #F79B34;
 		}
 	}
 	.img-wrap {
 		.curved {
-			background: $color2;
+			background: $color1;
 		}
 	}
 }
 
+
+// *****************************************************************
+// HEROES & GENERALS
+// *****************************************************************
+#hng {
+	$color1: #CDC195;
+	$color2: #6D4C39;
+	p.headline {
+		@include textgradient($color1, $color2);
+	}
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color2 40%, $color1 100%);
+		// filter: saturate(3);
+	}
+	.palette {
+		.color-1 {
+			background: #EAB339;
+		}
+		.color-2 {
+			background: #534737;
+		}
+		.color-3 {
+			background: #856348;
+		}
+		.color-4 {
+			background: #6D4C39;
+		}
+		.color-5 {
+			background: #CBB45C;
+		}
+	}
+	.img-wrap {
+		li:nth-child(1) {
+			background: #534737;			
+		}
+		li:nth-child(4) {
+			background: #6D4C39;			
+		}
+		li:nth-child(5) {
+			background: #CDC195;			
+		}
+		.full {
+			background: $white;
+			padding: 30px 0;
+		}
+	}
+}
 
 
 // *****************************************************************
@@ -163,22 +211,4 @@
 	}
 }
 
-#hng {
-	$color1: $thered;
-	$color2: $theblue;
-	p.headline {
-		@include textgradient($color1, $color2);
-	}
-	.gradient {
-		background: $color1;
-		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
-		filter: saturate(3);
-	}
-	@include breakpoint(medium) {
-		.icon-wrap {
-			width: 60%;
-			left: 20%;
-		}
-	}
-	
-}
+

@@ -19,7 +19,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			</h1>
 
 			<section class="block lead">
-				<div class="projects hero">
+				<div class="projects">
 					<section class="best">
 						<ul>
 							<!-- KOOZAC -->
@@ -38,7 +38,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 							<!-- HEROES AND GENERALS -->
 							<li id="hng" class="nav-project">
 								<a class="ajax-nav" href="heroes-and-generals/" data-pageid="project">
-									<img src="/asset/dist/img/bg.jpg">
+									<img src="/asset/dist/img/work/hng/hero.jpg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
 									<h2>
