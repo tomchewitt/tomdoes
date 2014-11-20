@@ -199,16 +199,87 @@
 // CTM TRAVEL
 // *****************************************************************
 #ctm-travel {
-	$color1: #108a00;
-	$color2: #55b648;
+	$color1: #1E488C;
+	$color2: #4871D3;
 	p.headline {
 		@include textgradient($color1, $color2);
 	}
 	.gradient {
 		background: $color1;
 		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
-		filter: saturate(3);
+		// filter: saturate(3);
+	}
+	.palette {
+		.color-1 {
+			background: $color1;
+		}
+		.color-2 {
+			background: $color2;
+		}
+		.color-3 {
+			background: #5DBD50;
+		}
+		.color-4 {
+			background: #BBBBBB;
+		}
+	}
+	.img-wrap {
+		li:nth-child(1) {
+			background: $color2;			
+		}
+		li:nth-child(3) {
+			background: #108A00;			
+		}
+		.full {
+			background: $white;
+			min-width: 100%;
+			margin-bottom: -10px;
+			padding: 0;
+
+			img {
+				min-width: 100%;
+				margin: 0;
+				padding: 0;
+			}
+		}
 	}
 }
 
+
+// *****************************************************************
+// SWAS
+// *****************************************************************
+#swas {
+	$color1: #A82A2B;
+	$color2: #EE7A79;
+	p.headline {
+		@include textgradient($color1, $color2);
+	}
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
+		// filter: saturate(3);
+	}
+	.palette {
+		.color-1 {
+			background: $color1;
+		}
+		.color-2 {
+			background: $color2;
+		}
+		.color-3 {
+			background: #E64C41;
+		}
+	}
+	.img-wrap {
+		li:nth-child(1) {
+			background: #CCC;			
+		}
+	}
+}
+
+
+// E64C41 mid
+// A82A2B dark
+// EE7A79 lightest
 

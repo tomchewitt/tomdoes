@@ -51,7 +51,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 							<!-- CTM TRAVEL -->
 							<li id="ctm-travel" class="nav-project">
 								<a class="ajax-nav" href="compare-the-market/" data-pageid="project">
-									<img src="/asset/dist/img/bg.jpg">
+									<img src="/asset/dist/img/work/ctm-travel/hero.jpg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
 									<h2>
@@ -101,9 +101,9 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 							</li>
 
 							<!-- SWAS -->
-							<li id="hng" class="nav-project">
-								<a class="ajax-nav" href="startwithasquare/" data-pageid="project">
-									<img src="/asset/dist/img/bg.jpg">
+							<li id="swas" class="nav-project">
+								<a class="ajax-nav" href="start-with-a-square/" data-pageid="project">
+									<img src="/asset/dist/img/work/swas/hero.svg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
 									<h2>
