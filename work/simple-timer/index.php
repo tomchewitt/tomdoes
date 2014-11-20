@@ -1,5 +1,5 @@
 <?php
-$page_title = "COLOURFLOOD";
+$page_title = "SIMPLE TIMER";
 $as_json = false;
 
 if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
@@ -10,17 +10,18 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 	include $_SERVER['DOCUMENT_ROOT']."/asset/dist/inc/nav.php";
 }
 ?>
-		<section id="colourflood" class="content project" data-pageid="project">
+
+		<section id="timer" class="content project" data-pageid="project">
 
 			<section class="hero">
 				<div class="gradient"></div>
-				<img src="/asset/dist/img/work/colourflood/hero.svg">
+				<img src="/asset/dist/img/work/timer/hero.jpg">
 				<header class="page-header">
-					<h1 class="title">COLOURFLOOD</h1>
+					<h1 class="title">SIMPLE TIMER</h1>
 					<span class="icon-wrap">
 						<span class="icon"><svg><use xlink:href="#spinner"></use></svg></span>	
 					</span>
-					<p>Branding. Design. Development. Direction.</p>
+					<p>Full screen time tracking.</p>
 				</header>
 				<span class="pointer"></span>
 			</section>
@@ -33,41 +34,28 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			<section class="block meta">
 				<ul class="triple">
 					<li>
-						<span class="header">COMPANY:</span><br>Colourflood
+						<span class="header">COMPANY:</span><br>Personal Project
 					</li>
 					<li>
-						<span class="header">ROLE:</span><br>Director.
+						<span class="header">ROLE:</span><br>Designer &amp; Front End Developer.
 					</li>
 					<li>
-						<span class="header">LINK:</span><br><a href="http://colourflood.uk" target="_blank">http://colourflood.uk</a>
+						<span class="header">LINK:</span><br><a href="http://tomdoes.digital/lab/simple-timer" target="_blank">http://tomdoes.digital/lab/simple-timer</a>
 					</li>
 				</ul>
 			</section>
 
 			<section class="block img-wrap">
 				<ul>
-					<li class="curved"><img src="/asset/dist/img/work/colourflood/01.jpg"></li>
-					<li class="double">
-						<img src="/asset/dist/img/work/colourflood/02.svg">
-						<img src="/asset/dist/img/work/colourflood/04.svg">
-						
-					</li>
-					<li class="double">
-					<img src="/asset/dist/img/work/colourflood/03.svg">
-					<img src="/asset/dist/img/work/colourflood/05.svg"></li>
-					<li class="full"><img src="/asset/dist/img/work/colourflood/06.svg"></li>
-				</ul>
-				
-				
-				
+					<li class="curved"><img src="/asset/dist/img/work/timer/01.jpg"></li>
+				</ul>				
 			</section>
 
-			<section class="block palette four-colors">
+			<section class="block palette three-colors">
 				<ul>
 					<li class="color-1"></li>
 					<li class="color-2"></li>
 					<li class="color-3"></li>
-					<li class="color-4"></li>
 				</ul>
 			</section>
 

@@ -4,6 +4,9 @@
 .about {
 	.hero {
 		z-index: 1;
+		img {
+			position: fixed;
+		}
 	}
 	.lead {
 		padding: 0;
@@ -13,9 +16,9 @@
 			background: none;
 			width: 80%;
 			position: absolute;
-			top: 50%;
+			top: 40%;
 			left: 10%;
-			transform: translate(0, -90%);
+			// transform: translate(0, -90%);
 			z-index: 5;
 
 			@include breakpoint("min-width: 40em") {
@@ -31,8 +34,8 @@
 }
 
 .presently {
-	background: $black;
-	color: $white;
+	background: $midpurple;
+	color: $lightestpurple;
 	padding-bottom: 40px;
 }
 

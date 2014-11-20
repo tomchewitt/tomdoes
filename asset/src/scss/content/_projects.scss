@@ -109,6 +109,15 @@
 				
 			}
 
+			&.full {
+				padding: 0;
+				
+				img {
+					box-shadow: none;
+					width: 100%;
+				}
+			}
+
 			&.double {
 				padding: 0;
 

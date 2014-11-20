@@ -18,12 +18,11 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 				<span class="icon"><svg><use xlink:href="#nav-about"></use></svg></span>
 			</h1>
 
-		    <section class="block lead hero">
-		    	<div class="full">
-					<img src="/asset/dist/img/bg.jpg">
-					<span class="gradient"></span>
-				</div>
-		    	<h1>SHAPES + CODE.<br>
+			<section class="block lead hero">
+				<div class="gradient"></div>
+				<img src="/asset/dist/img/bg.jpg"> 
+				<span class="pointer"></span>
+				<h1>SHAPES + CODE.<br>
 		    	MUSIC + GAMES.<br>
 		    	BASKETBALL +<br>PIZZA.</h1>
 			</section>
@@ -75,14 +74,16 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			</section>
 
 			<section class="block spaced">
-				<h1>DANGERZONE!</h1>
+				<h1>WELCOME TO THE DANGERZONE!</h1>
 
-				<p>There's more to me than just work though. There's all the fun little projects I do for funsies as well. Be sure to check some of them out on Codepen or Behance. I'm also a huge basketball fan (<a href="#" target="_blank">go Bulls!!</a>), nerdily into video games and eSports, and am way to enthusiastic about the Fast and the Furious franchise. Music and stories are my muses and I am an occasional and (not quite so anymore) secret <a href="#" target="_blank">AFOL</a>. And I love pizza.</p>
+				<p>There's more to me than just work though. There's all the little projects I do for funsies as well. Be sure to check some of them out on <a href="http://codepen.io/tomchewitt" target="_blank">Codepen</a> or <a target="_blank" href="https://www.behance.net/tomchewitt">Behance</a>. I'm also a huge basketball fan (<a href="http://www.nba.com/bulls/" target="_blank">go Bulls!!</a>), nerdily into video games and eSports, and am way to enthusiastic about the Fast and the Furious franchise. Music and stories are my muses and I am an occasional and (not quite so anymore) secret <a href="http://www.brickish.org/default.aspx" target="_blank">AFOL</a>. And I love pizza.</p>
+			</section>
 
-				<ul class="social">
-			    	<li class="icon behance"><a target="_blank" href=""><span class="word">Behance</span><svg><use xlink:href="#behance"></use></svg></a></li>
-			    	<li class="icon codepen"><a target="_blank" href=""><span class="word">Codepen</span><svg><use xlink:href="#codepen"></use></svg></a></li>
-			    	<li class="icon github"><a target="_blank" href=""><span class="word">GitHub</span><svg><use xlink:href="#github"></use></svg></a></li>
+			<section class="social">
+				<ul>
+			    	<li class="icon behance"><a target="_blank" href="https://www.behance.net/tomchewitt"><span class="word">Behance</span><svg><use xlink:href="#behance"></use></svg></a></li>
+			    	<li class="icon codepen"><a target="_blank" href="http://codepen.io/tomchewitt"><span class="word">Codepen</span><svg><use xlink:href="#codepen"></use></svg></a></li>
+			    	<li class="icon github"><a target="_blank" href="https://github.com/tomchewitt"><span class="word">GitHub</span><svg><use xlink:href="#github"></use></svg></a></li>
 			    </ul>
 			</section>
 

@@ -52,7 +52,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 						<img src="/asset/dist/img/work/koozac/03.jpg">
 						<img src="/asset/dist/img/work/koozac/04.jpg">
 					</li>
-					<li><img src="/asset/dist/img/work/koozac/01.jpg"></li>
+					<li class="curved"><img src="/asset/dist/img/work/koozac/01.jpg"></li>
 				</ul>
 				
 				

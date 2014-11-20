@@ -25,7 +25,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 							<!-- KOOZAC -->
 							<li id="koozac" class="nav-project">
 								<a class="ajax-nav" href="koozac/" data-pageid="project">
-									<img src="/asset/dist/img/bg.jpg">
+									<img src="/asset/dist/img/work/koozac/03.jpg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
 									<h2>
@@ -62,9 +62,9 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 							</li>
 
 							<!-- LIPSUM GENERATOR -->
-							<li id="hng" class="nav-project">
+							<li id="lipsum" class="nav-project">
 								<a class="ajax-nav" href="lipsum-generator/" data-pageid="project">
-									<img src="/asset/dist/img/bg.jpg">
+									<img src="/asset/dist/img/work/lipsum/hero.jpg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
 									<h2>
@@ -75,22 +75,22 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 							</li>
 
 							<!-- STOPCLOCK -->
-							<li id="hng" class="nav-project">
-								<a class="ajax-nav" href="stopclock/" data-pageid="project">
-									<img src="/asset/dist/img/bg.jpg">
+							<li id="timer" class="nav-project">
+								<a class="ajax-nav" href="simple-timer/" data-pageid="project">
+									<img src="/asset/dist/img/work/timer/hero.jpg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
 									<h2>
-										<span class="word">STOPCLOCK</span>
+										<span class="word">SIMPLE TIMER</span>
 										<span class="subtext">Full screen time tracking</span>
 									</h2>
 								</a>
 							</li>
 
 							<!-- COLOURFLOOD -->
-							<li id="hng" class="nav-project">
+							<li id="colourflood" class="nav-project">
 								<a class="ajax-nav" href="colourflood/" data-pageid="project">
-									<img src="/asset/dist/img/bg.jpg">
+									<img src="/asset/dist/img/work/colourflood/hero.svg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
 									<h2>
@@ -134,11 +134,13 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			
 			<section class="block morework">
 				<h1>SEE MORE</h1>
+			</section>
 
-			    <ul class="social">
-			    	<li class="icon behance"><a target="_blank" href=""><span class="word">Behance</span><svg><use xlink:href="#behance"></use></svg></a></li>
-			    	<li class="icon codepen"><a target="_blank" href=""><span class="word">Codepen</span><svg><use xlink:href="#codepen"></use></svg></a></li>
-			    	<li class="icon github"><a target="_blank" href=""><span class="word">GitHub</span><svg><use xlink:href="#github"></use></svg></a></li>
+			<section class="social">
+				<ul>
+			    	<li class="icon behance"><a target="_blank" href="https://www.behance.net/tomchewitt"><span class="word">Behance</span><svg><use xlink:href="#behance"></use></svg></a></li>
+			    	<li class="icon codepen"><a target="_blank" href="http://codepen.io/tomchewitt"><span class="word">Codepen</span><svg><use xlink:href="#codepen"></use></svg></a></li>
+			    	<li class="icon github"><a target="_blank" href="https://github.com/tomchewitt"><span class="word">GitHub</span><svg><use xlink:href="#github"></use></svg></a></li>
 			    </ul>
 			</section>
 

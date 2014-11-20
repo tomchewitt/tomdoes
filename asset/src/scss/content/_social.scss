@@ -9,16 +9,25 @@
 	}
 
 	text-align: center;
-	padding-bottom: 40px;
+	// padding-bottom: 40px;
+	width: 100%;
+	display: block;
+	height: $iconWidth;
+	background: $lightestgrey;
+	overflow: hidden;
+	position: relative;
+	z-index: 5;
 
 	.icon {
 
 		width: $iconWidth;
 		height: $iconWidth; // * 0.866;
 		display: inline-block;
-		margin: 5px 8px;
+		margin: 0;
+		padding: 0;
+		// margin: 5px 8px;
 		position: relative;
-		border: solid 3px $thered;
+		// border: solid 3px $thered;
 
 		transition: all 0.3s ease-in-out;
 	}
@@ -38,7 +47,7 @@
 		transition: all 0.2s ease-in-out;
 
 		@include breakpoint(large) {
-			bottom: 5%;
+			bottom: 15%;
 		}
 	}
 
@@ -64,16 +73,20 @@
 			bottom: 10%;
 
 			@include breakpoint(large) {
-				bottom: 15%;
+				bottom: 20%;
 			}
 		}
 	}
+}
 
-	// EMAIL & PHONE
-	.noicon {
-		width: 100%;
-		padding: 0 0 20px 0;
-		color: $thered;
+// EMAIL & PHONE
+.noicon {
+	width: 100%;
+	padding: 0 0 20px 0;
+	color: $thered;
+
+	&:nth-child(1) {
+		padding-right: 40px;
 	}
 }
 

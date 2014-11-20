@@ -27,7 +27,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			</section>
 
 			<section class="block feed">
-			    <h1>FEED</h1>
+			    <h1>LATEST</h1>
 					<section class="projects lead">
 						<ul>
 							<li class="nav-project">

@@ -30,6 +30,14 @@
 			background: #1DCDED;
 		}
 	}
+	.img-wrap {
+		li:nth-child(1) {
+			background: #D37B32;
+		}
+		li:nth-child(3) {
+			background: #7ED5C1;
+		}
+	}
 }
 
 
@@ -44,8 +52,8 @@
 	}
 	.gradient {
 		background: $color1;
-		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
-		filter: saturate(3);
+		background-image: linear-gradient(to top right, #7F1A57 30%, $white 100%);
+		// filter: saturate(3);
 	}
 	.palette {
 		.color-1 {
@@ -55,14 +63,87 @@
 			background: $color2;
 		}
 		.color-3 {
-			background: #5AB889;
+			background: #7F1A57;
 		}
 		.color-4 {
-			background: #34D92F;
+			background: #7F6C8C;
+		}
+	}
+	.img-wrap {
+		.curved {
+			background: #7F1A57;
+		}
+		.full {
+			background: $white;
 		}
 	}
 }
 
+
+
+// *****************************************************************
+// LIPSUM
+// *****************************************************************
+#lipsum {
+	$color1: #40B37F;
+	$color2: #303B36;
+	p.headline {
+		@include textgradient($color1, $color2);
+	}
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color2 10%, $color1 100%);
+	}
+	.palette {
+		.color-1 {
+			background: $color1;
+		}
+		.color-2 {
+			background: $color2;
+		}
+		.color-3 {
+			background: #7F1A57;
+		}
+	}
+	.img-wrap {
+		.curved {
+			background: $color2;
+		}
+	}
+}
+
+
+
+// *****************************************************************
+// TIMER
+// *****************************************************************
+#timer {
+	$color1: #00AFF2;
+	$color2: #008ADC;
+	p.headline {
+		@include textgradient($color1, $color2);
+	}
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color2 10%, $color1 100%);
+	}
+	.palette {
+		.color-1 {
+			background: $color1;
+		}
+		.color-2 {
+			background: $color2;
+		}
+		.color-3 {
+			background: #7F1A57;
+		}
+	}
+	.img-wrap {
+		.curved {
+			background: $color2;
+		}
+	}
+}
 
 
 
