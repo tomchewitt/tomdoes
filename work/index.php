@@ -114,13 +114,13 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 							</li>
 
 							<!-- CODENAME -->
-							<li id="hng" class="nav-project">
-								<a class="ajax-nav" href="one-more-project/" data-pageid="project">
-									<img src="/asset/dist/img/bg.jpg">
+							<li id="gbm" class="nav-project">
+								<a class="ajax-nav" href="ghost-bytes-media/" data-pageid="project">
+									<img src="/asset/dist/img/work/gbm/hero.svg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
 									<h2>
-										<span class="word">CODENAME: SHH</span>
+										<span class="word">GHOST BYTES MEDIA</span>
 										<span class="subtext">A sneak peak at what's coming next</span>
 									</h2>
 								</a>

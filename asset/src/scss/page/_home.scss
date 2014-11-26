@@ -2,10 +2,34 @@
 // HOME
 // *****************************************************************
 .home {
+	.hero {
+		z-index: 1;
+		img {
+			position: fixed;
+		}
+	}
+
+	.page-header {
+		color: $midpurple;
+
+		.icon-wrap {
+			&::before, &::after {
+				background: $midpurple;
+			}
+
+		}
+		.icon {
+
+			svg {
+				fill: $midpurple;
+			}
+		}
+	}
+	
 	.lead {
 		background: $theblue;
 	}
-
+	
 	.feed {
 		padding-top: 50px;
 

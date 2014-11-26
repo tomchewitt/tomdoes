@@ -20,7 +20,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 
 			<section class="block lead hero">
 				<div class="gradient"></div>
-				<img src="/asset/dist/img/bg.jpg"> 
+				<img src="/asset/dist/img/about-hero.jpg"> 
 				<span class="pointer"></span>
 				<h1>SHAPES + CODE.<br>
 		    	MUSIC + GAMES.<br>
@@ -64,12 +64,12 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 				<h1>BONUS</h1>
 
 				<ul class="bonus">
+					<li>PHP</li>
+					<li>ActionScript 3</li>
+					<li>mySQL</li>
 					<li>After Effects</li>
 					<li>Premiere</li>
 					<li>Flash</li>
-					<li>ActionScript 3</li>
-					<li>PHP</li>
-					<li>mySQL</li>
 				</ul>
 			</section>
 

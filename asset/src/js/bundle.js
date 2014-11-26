@@ -341,65 +341,6 @@ var heroLoader = (function() {
 
 })();
 
-
-/*
-
-
-// NAV SWITCHER FOR WORK
-function switchNav() {
-	if (this.classList.contains('on')) {
-		return;
-	}
-
-	for (var i = 0; i < links.length; i++) {
-		links[i].classList.toggle('on');
-	}
-	workNavSwitcher();
-}
-
-function workNavSwitcher() {
-	var navBest = $('.nav-best');
-	var navBestOn = false;
-	var className = 'on';
-
-	// has class
-	// YUK, find a better way of doing this!!!
-	if (navBest.classList) {
-		if (navBest.classList.contains(className)) {
-			navBestOn = true;
-		};
-	} else {
-		if (new RegExp('(^| )' + className + '( |$)', 'gi').test(navBest.className)) {
-			navBestOn = true;
-		};
-	}
-
-	// SWITCH CONTENT
-	// this animation needs jazzing up a fair bit...
-	if (navBestOn) {
-		// nav best on
-		$('.best').style.display = 'block';
-		$('.rest').style.display = 'none';
-	} else {
-		// nav best off
-		$('.best').style.display = 'none';
-		$('.rest').style.display = 'block';
-	}
-}
-
-
-// Iterate over #links <li>
-// Use querySelector to target #links and then get tag names <li>
-var links = $('.nav-work').getElementsByTagName('li');
-
-
-// For each <li> inside #links
-for (var i = 0; i < links.length; i++) {
-	links[i].onclick = switchNav;
-}
-*/
-	
-
 // *****************************************************************
 // PARALLAX ANIMATIONS
 // *****************************************************************
@@ -408,6 +349,7 @@ var parallax = (function() {
 	// constructor
 	var parallax = {};
 	var bGradient;
+	var bNoGradient;
 	var bHeader;
 	var bArrows;
 	var nPageHeaderOffset;
@@ -421,7 +363,15 @@ var parallax = (function() {
 
 		if (bGradient) {	
 			var nBlockOffset = window.innerHeight; // document.querySelector('.block').scrollTop;
-			var nPercentage = 0.6 + (nWinOffset / nBlockOffset) * 0.7; // * 1.2;
+			var nPercentage; // = 0.6 + (nWinOffset / nBlockOffset) * 0.7;
+
+			if (bNoGradient) {
+				nPercentage = 0 + (nWinOffset / nBlockOffset) * 1.7;
+			} else {
+				nPercentage = 0.6 + (nWinOffset / nBlockOffset) * 0.7;
+			}
+
+			
 
 			if (nWinOffset < nBlockOffset) {
 				document.querySelector('.gradient').style.opacity = nPercentage;
@@ -451,11 +401,34 @@ var parallax = (function() {
 		console.log('parallax.setup');
 
 		if (document.querySelector('.page-header')) {
+			bNoGradient = false;
 			bGradient = true;
 			bHeader = true;
 			nPageHeaderOffset = (window.innerHeight / 2) - (document.querySelector('.page-header').offsetHeight / 2) - 40;
 			nPageHeaderPosition = (window.innerHeight / 2) + nPageHeaderOffset - (document.querySelector('.header').offsetHeight);
 		}
+
+		if (document.querySelector('.about')) {
+			bNoGradient = true;
+			bGradient = true;
+			bHeader = false;
+
+			document.querySelector('.gradient').style.opacity = 0;
+
+			console.log('about page');
+		}
+
+		if (document.querySelector('.home')) {
+			bNoGradient = true;
+			bGradient = true;
+			bHeader = true;
+
+			document.querySelector('.gradient').style.opacity = 0;
+
+			console.log('about page');
+		}
+
+
 		// run setup
 		window.onscroll = init;
 	}
