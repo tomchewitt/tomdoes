@@ -40,7 +40,17 @@
 		}
 	}
 
-	
+	a {
+		text-decoration: none;
+		color: $white;
+		border-bottom: dotted 1px $white;
+		transition: all 0.2s ease-out;
+
+		&:hover {
+			color: $thered;
+			border-bottom: dotted 1px $thered;
+		}
+	}
 }
 
 .project {
@@ -143,3 +153,33 @@
 		max-width: 80%;
 	}
 }
+
+
+.back-to-work {
+	width: 100%;
+	display: block;
+	background: $white;
+	text-align: center;
+
+	a {
+		text-decoration: none;
+		font-size: 1.4em;
+		line-height: 1.6em;
+		letter-spacing: 0.2em;
+		color: $thered;
+		display: block;
+		padding: 50px 0;
+		transition: all 0.3s ease-out;
+
+		&:hover {
+			background: $thered;
+			color: $white;
+		}
+	}
+}
+
+
+
+
+
+

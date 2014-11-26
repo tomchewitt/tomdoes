@@ -3,9 +3,24 @@
 // *****************************************************************
 .about {
 	.hero {
+		background: #c7eaee;
 		z-index: 1;
 		img {
 			position: fixed;
+			top: 100%;
+			left: 100%;
+			transform: translate(-100%, -100%);
+			min-width: 0;
+			min-height: 0;
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		.gradient {
+			background: $theblue;
+			background-image: linear-gradient(to top right, $theblue 10%, #3fdaeb 100%);
+			filter: saturate(1);
+			// #3fdaeb
 		}
 	}
 	.lead {
@@ -29,7 +44,7 @@
 	}
 
 	.headline {
-		@include textgradient($thered, $theblue);
+		@include textgradient($theblue, #3fdaeb);
 	}
 }
 

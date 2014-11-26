@@ -48,6 +48,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 						<img src="/asset/dist/img/work/swas/hero.svg">
 						<img src="/asset/dist/img/work/swas/02.svg">
 					</li>
+					<li class="curved"><img src="/asset/dist/img/work/swas/03.jpg"></li>
 				</ul>
 				
 				
@@ -62,6 +63,10 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 				</ul>
 			</section>
 
+		</section>
+
+		<section class="back-to-work">
+			<a class="ajax-nav" href="../">SEE MORE WORK</a>
 		</section>
 
 <?php

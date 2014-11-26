@@ -15,12 +15,19 @@ var heroLoader = (function() {
 	function preloadHero() {
 		aImgs = [];
 
-		if (document.querySelector('.hero')) {
-			// console.log('HERO: true');
-			// PUSH IMAGE TO ARR
-			var heroSrc = document.querySelector('.hero img').src;
-			aImgs.push(heroSrc);
+		// PUSH IMAGE TO ARR
+		var imgs = document.querySelectorAll('img'), i;
+
+		for (i = 0; i < imgs.length; ++i) {
+			aImgs.push(imgs[i].src);
 		}
+
+		// if (document.querySelector('.hero')) {
+		// 	// PUSH IMAGE TO ARR
+		// 	// var heroSrc = document.querySelector('.hero img').src;
+		// 	// aImgs.push(heroSrc);
+			
+		// }
 
 		if (document.querySelector('section.hero')) {
 			// SET HEIGHT OF HERO
@@ -31,6 +38,13 @@ var heroLoader = (function() {
 			} else {
 				$hero.style.height = (window.innerHeight - $hero.offsetTop) + 'px';
 			}
+		}
+
+		// SETUP BACKGROUND COLOURS
+		if (document.querySelector('.contact')) {
+			document.body.style.background = '#2E3042';
+		} else {
+			document.body.style.background = '#FFFFFF';
 		}
 
 		parallax.setup();
@@ -53,6 +67,8 @@ var heroLoader = (function() {
 	        var oImg = new Image();
 	        oImg.src = aImgs[i];
 	        oImg.onload = heroesReady;
+
+	        console.log(oImg.src);
 
 	    }
 	}

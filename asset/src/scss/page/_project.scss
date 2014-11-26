@@ -11,7 +11,7 @@
 	.gradient {
 		background: $color1;
 		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
-		filter: saturate(3);
+		// filter: saturate(3);
 	}
 	.palette {
 		.color-1 {
@@ -273,10 +273,51 @@
 	}
 	.img-wrap {
 		li:nth-child(1) {
-			background: #CCC;			
+			background: #DEDEDE;			
+		}
+		li:nth-child(3) {
+			background: $color2;
 		}
 	}
 }
 
 
+
+// *****************************************************************
+// SWAS
+// *****************************************************************
+#gbm {
+	$color1: #071F28;
+	$color2: #134968;
+	p.headline {
+		@include textgradient($color1, $color2);
+	}
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
+		// filter: saturate(3);
+	}
+	.palette {
+		.color-1 {
+			background: $color1;
+		}
+		.color-2 {
+			background: $color2;
+		}
+		.color-3 {
+			background: #256484;
+		}
+		.color-4 {
+			background: #0C374C;
+		}
+	}
+	.img-wrap {
+		li:nth-child(2) {
+			background: #134968;			
+		}
+		li:nth-child(3) {
+			background: #C7DFEA;			
+		}
+	}
+}
 

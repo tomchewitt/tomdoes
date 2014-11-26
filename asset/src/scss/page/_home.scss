@@ -3,28 +3,42 @@
 // *****************************************************************
 .home {
 	.hero {
+		background: $white;
 		z-index: 1;
 		img {
 			position: fixed;
+			min-width: 0;
+			min-height: 0;
+
+			max-width: 70%;
+			max-height: 70%;
+
+		}
+
+		.gradient {
+			background: #3fdaeb;
+			background-image: linear-gradient(to top right, $thered 10%, $theblue 100%);
+			filter: saturate(1);
+			// #3fdaeb
 		}
 	}
 
-	.page-header {
-		color: $midpurple;
+	// .page-header {
+	// 	color: $midpurple;
 
-		.icon-wrap {
-			&::before, &::after {
-				background: $midpurple;
-			}
+	// 	.icon-wrap {
+	// 		&::before, &::after {
+	// 			background: $midpurple;
+	// 		}
 
-		}
-		.icon {
+	// 	}
+	// 	.icon {
 
-			svg {
-				fill: $midpurple;
-			}
-		}
-	}
+	// 		svg {
+	// 			fill: $midpurple;
+	// 		}
+	// 	}
+	// }
 	
 	.lead {
 		background: $theblue;

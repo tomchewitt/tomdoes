@@ -65,6 +65,10 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 
 		</section>
 
+		<section class="back-to-work">
+			<a class="ajax-nav" href="../">SEE MORE WORK</a>
+		</section>
+
 <?php
 if ($as_json) {
 	echo json_encode(array("page" => $page_title, "content" => ob_get_clean()));

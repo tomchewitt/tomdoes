@@ -22,7 +22,7 @@ html, body {
 }
 
 body {
-	background: $white;
+	background: $midpurple;
 	color: $newpurple;
 }
 
@@ -61,6 +61,7 @@ h1 {
 		background: $white;
 		color: $satpurple;
 		margin-left: -0.15em;
+		padding-right: 0.15em;
 
 		.word {
 			position: relative;

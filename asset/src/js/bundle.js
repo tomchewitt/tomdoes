@@ -215,8 +215,9 @@ var ajaxLoader = (function () {
 		oIsSpinning = true;
 		$loader.style.display = 'block';
 
-		TweenLite.to('.loader .cover', 0.5, {scale: 1, ease:Quad.easeOut, onComplete:midSpinner});
 		TweenLite.to('.loader .spinner', 0.3, {opacity: 1, ease:Quad.easeOut});
+		TweenLite.to('.loader .cover', 0.5, {scale: 1, ease:Quad.easeOut, onComplete:midSpinner});
+		
 	}
 
 	function midSpinner() {
@@ -277,12 +278,19 @@ var heroLoader = (function() {
 	function preloadHero() {
 		aImgs = [];
 
-		if (document.querySelector('.hero')) {
-			// console.log('HERO: true');
-			// PUSH IMAGE TO ARR
-			var heroSrc = document.querySelector('.hero img').src;
-			aImgs.push(heroSrc);
+		// PUSH IMAGE TO ARR
+		var imgs = document.querySelectorAll('img'), i;
+
+		for (i = 0; i < imgs.length; ++i) {
+			aImgs.push(imgs[i].src);
 		}
+
+		// if (document.querySelector('.hero')) {
+		// 	// PUSH IMAGE TO ARR
+		// 	// var heroSrc = document.querySelector('.hero img').src;
+		// 	// aImgs.push(heroSrc);
+			
+		// }
 
 		if (document.querySelector('section.hero')) {
 			// SET HEIGHT OF HERO
@@ -293,6 +301,13 @@ var heroLoader = (function() {
 			} else {
 				$hero.style.height = (window.innerHeight - $hero.offsetTop) + 'px';
 			}
+		}
+
+		// SETUP BACKGROUND COLOURS
+		if (document.querySelector('.contact')) {
+			document.body.style.background = '#2E3042';
+		} else {
+			document.body.style.background = '#FFFFFF';
 		}
 
 		parallax.setup();
@@ -315,6 +330,8 @@ var heroLoader = (function() {
 	        var oImg = new Image();
 	        oImg.src = aImgs[i];
 	        oImg.onload = heroesReady;
+
+	        console.log(oImg.src);
 
 	    }
 	}
@@ -368,7 +385,7 @@ var parallax = (function() {
 			if (bNoGradient) {
 				nPercentage = 0 + (nWinOffset / nBlockOffset) * 1.7;
 			} else {
-				nPercentage = 0.6 + (nWinOffset / nBlockOffset) * 0.7;
+				nPercentage = 0.8 + (nWinOffset / nBlockOffset) * 0.3;
 			}
 
 			
@@ -412,22 +429,20 @@ var parallax = (function() {
 			bNoGradient = true;
 			bGradient = true;
 			bHeader = false;
-
 			document.querySelector('.gradient').style.opacity = 0;
-
-			console.log('about page');
 		}
 
 		if (document.querySelector('.home')) {
-			bNoGradient = true;
+			bNoGradient = false;
 			bGradient = true;
 			bHeader = true;
-
-			document.querySelector('.gradient').style.opacity = 0;
-
-			console.log('about page');
 		}
 
+		if (document.querySelector('.contact') || document.querySelector('.work')) {
+			bNoGradient = false;
+			bGradient = false;
+			bHeader = false;
+		}
 
 		// run setup
 		window.onscroll = init;

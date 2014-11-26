@@ -25,7 +25,7 @@ var parallax = (function() {
 			if (bNoGradient) {
 				nPercentage = 0 + (nWinOffset / nBlockOffset) * 1.7;
 			} else {
-				nPercentage = 0.6 + (nWinOffset / nBlockOffset) * 0.7;
+				nPercentage = 0.8 + (nWinOffset / nBlockOffset) * 0.3;
 			}
 
 			
@@ -69,22 +69,20 @@ var parallax = (function() {
 			bNoGradient = true;
 			bGradient = true;
 			bHeader = false;
-
 			document.querySelector('.gradient').style.opacity = 0;
-
-			console.log('about page');
 		}
 
 		if (document.querySelector('.home')) {
-			bNoGradient = true;
+			bNoGradient = false;
 			bGradient = true;
 			bHeader = true;
-
-			document.querySelector('.gradient').style.opacity = 0;
-
-			console.log('about page');
 		}
 
+		if (document.querySelector('.contact') || document.querySelector('.work')) {
+			bNoGradient = false;
+			bGradient = false;
+			bHeader = false;
+		}
 
 		// run setup
 		window.onscroll = init;

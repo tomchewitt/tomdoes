@@ -178,8 +178,9 @@ var ajaxLoader = (function () {
 		oIsSpinning = true;
 		$loader.style.display = 'block';
 
-		TweenLite.to('.loader .cover', 0.5, {scale: 1, ease:Quad.easeOut, onComplete:midSpinner});
 		TweenLite.to('.loader .spinner', 0.3, {opacity: 1, ease:Quad.easeOut});
+		TweenLite.to('.loader .cover', 0.5, {scale: 1, ease:Quad.easeOut, onComplete:midSpinner});
+		
 	}
 
 	function midSpinner() {
