@@ -22,6 +22,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 				<div class="gradient"></div>
 				<img src="/asset/dist/img/about-hero.jpg"> 
 				<span class="pointer"></span>
+				<span class="arrow"></span>
 				<h1>SHAPES + CODE.<br>
 		    	MUSIC + GAMES.<br>
 		    	BASKETBALL +<br>PIZZA.</h1>

@@ -23,6 +23,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 					<p>Branding. Design. Development. Direction.</p>
 				</header>
 				<span class="pointer"></span>
+				<span class="arrow"></span>
 			</section>
 
 			<section class="block spaced">

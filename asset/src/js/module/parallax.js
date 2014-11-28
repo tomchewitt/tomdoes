@@ -57,6 +57,10 @@ var parallax = (function() {
 	parallax.setup = function() {
 		console.log('parallax.setup');
 
+		if (document.querySelector('.hero .arrow')) {
+			document.querySelector('.hero .arrow').addEventListener("click", arrowClick);
+		}
+		
 		if (document.querySelector('.page-header')) {
 			bNoGradient = false;
 			bGradient = true;
@@ -88,6 +92,13 @@ var parallax = (function() {
 		window.onscroll = init;
 	}
 
+	// ARROWS
+	function arrowClick() {
+		console.log('arrow-clicked');
+		var offset = window.innerHeight;
+		TweenLite.to('html, body', 0.6, {scrollTop: offset, ease:Quad.easeInOut});
+		// TweenLite.to(window, 1, {scrollTo:{y: 500} });
+	}
 	
 	// WINDOW RESIZE
 	window.onresize = function() {
