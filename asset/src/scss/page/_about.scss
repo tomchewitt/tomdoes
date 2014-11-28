@@ -36,8 +36,10 @@
 			// transform: translate(0, -90%);
 			z-index: 5;
 
+			@include breakpoint("max-width: 40em") {
+				top: 20px;
+			}
 			@include breakpoint("min-width: 40em") {
-
 				transform: translate(0, -55%);
 			}
 		}

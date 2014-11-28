@@ -16,7 +16,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 				<div class="gradient"></div>
 				<img src="/asset/dist/img/work/colourflood/hero.svg">
 				<header class="page-header">
-					<h1 class="title">COLOURFLOOD</h1>
+					<h1 class="title">COLOUR FLOOD</h1>
 					<span class="icon-wrap">
 						<span class="icon"><svg><use xlink:href="#spinner"></use></svg></span>	
 					</span>

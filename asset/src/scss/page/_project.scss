@@ -77,6 +77,10 @@
 			background: $white;
 		}
 	}
+
+	.hero {
+		background: #FFF;
+	}
 }
 
 
@@ -279,6 +283,9 @@
 			background: $color2;
 		}
 	}
+	.hero {
+		background: #E64C41;
+	}
 }
 
 
@@ -318,6 +325,9 @@
 		li:nth-child(3) {
 			background: #C7DFEA;			
 		}
+	}
+	.hero {
+		background: #071F28;
 	}
 }
 

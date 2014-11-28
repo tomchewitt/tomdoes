@@ -80,6 +80,8 @@
 			// }
 		}
 	}
+
+
 }
 
 // EMAIL & PHONE
@@ -91,5 +93,30 @@
 	&:nth-child(1) {
 		padding-right: 40px;
 	}
+}
+
+
+
+@include breakpoint("max-width: 37.5em") {
+	.about, .work {
+		.icon {
+			width: 30%;
+		}
+	}
+	.contact {
+		.icon {
+			width: 19%;
+			font-size: 0.6em;
+			letter-spacing: 0.01em;
+		}
+	}
+
+	.noicon {
+		font-size: 0.9em;
+		&:nth-child(1) {
+			padding-right: 0;
+		}
+	}
+	
 }
 

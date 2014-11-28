@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 				src: [
 					'asset/src/js/vendor/gsap/TweenLite.min.js',
 					'asset/src/js/vendor/gsap/CSSPlugin.min.js',
-					'asset/src/js/vendor/gsap/ScrollToPlugin.min.js',
+					// 'asset/src/js/vendor/gsap/ScrollToPlugin.min.js',
 					'asset/src/js/vendor/gsap/EasePack.min.js',
 					'asset/src/js/module/*.js',
 					'asset/src/js/script/init.js'],

@@ -94,7 +94,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 									<span class="gradient"></span>
 									<span class="triangle"></span>
 									<h2>
-										<span class="word">COLOURFLOOD</span>
+										<span class="word">COLOUR FLOOD</span>
 										<span class="subtext">My freelance company</span>
 									</h2>
 								</a>
