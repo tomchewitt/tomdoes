@@ -26,9 +26,9 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			</section>
 
 			<section class="block spaced">
-				<p class="headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatem cum dolores iusto, illo vero dignissimos ipsa aperiam, eaque, vitae blanditiis earum sit quibusdam dolor cumque tempora beatae saepe totam!</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatem cum dolores iusto, illo vero dignissimos ipsa aperiam, eaque, vitae blanditiis earum sit quibusdam dolor cumque tempora beatae saepe totam!</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatem cum dolores iusto, illo vero dignissimos ipsa aperiam, eaque, vitae blanditiis earum sit quibusdam dolor cumque tempora beatae saepe totam!</p>
+				<p class="headline">Please note, this is a work in progress. Ghost Bytes Media approached me to brand them and design/build a website to showcase their work.</p>
+
+				<p>Ghost Bytes Media wanted a modern logo and mark with some specific tastes. Focussing on the idea of a playful mascot, using flat, simple shapes and colours I begun experimenting. I am very happy with the final logo and feel that it is very recognisable and simple, while retaining a playful ambience. This combined with the custom type and placement give a strong sense of professionalism, through an approachable style. Stay tuned... more to come!</p>
 			</section>
 			<section class="block meta">
 				<ul class="double">

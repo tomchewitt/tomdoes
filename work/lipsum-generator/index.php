@@ -27,9 +27,13 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			</section>
 
 			<section class="block spaced">
-				<p class="headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatem cum dolores iusto, illo vero dignissimos ipsa aperiam, eaque, vitae blanditiis earum sit quibusdam dolor cumque tempora beatae saepe totam!</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatem cum dolores iusto, illo vero dignissimos ipsa aperiam, eaque, vitae blanditiis earum sit quibusdam dolor cumque tempora beatae saepe totam!</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatem cum dolores iusto, illo vero dignissimos ipsa aperiam, eaque, vitae blanditiis earum sit quibusdam dolor cumque tempora beatae saepe totam!</p>
+				<p class="headline">There are lots of Lipsum generators out there on the internet. Most text editors (well, Sublime does at least) have built in shortcuts for them, but I still found myself getting frustrated on occasion to generate the text I wanted quickly when I was using apps that didn’t have such shortcuts. Enter the homemade, wonderfully named: Lipsum Generator.</p>
+
+				<p>Using vanilla javascript, I wanted to create a good looking, online generator that would allow bookmarking for the users preferred and most used choice of lorem text. I do this by using html5’s pushstate API to change the query of the URL whenever the user changes the outputted text. This is then bookmark-able so the user can come back to that configuration at the click of a button. The text is preselected by default so just needs the user to copy and paste. There are 4 variables the user can manipulate:</p>
+
+				<p class="lipsum-code">/?paras=1&amp;words=69&amp;tags=1&amp;hodor=1</p>
+
+				<p>The tags option will add 'p' tags wrapping each paragraph and the hodor tag is there just for funsies.</p>
 			</section>
 			<section class="block meta">
 				<ul class="triple">

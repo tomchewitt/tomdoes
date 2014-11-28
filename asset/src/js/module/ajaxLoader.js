@@ -179,7 +179,8 @@ var ajaxLoader = (function () {
 		$loader.style.display = 'block';
 
 		TweenLite.to('.loader .spinner', 0.3, {opacity: 1, ease:Quad.easeOut});
-		TweenLite.to('.loader .cover', 0.5, {scale: 1, ease:Quad.easeOut, onComplete:midSpinner});
+		// TweenLite.to('.loader .cover', 0.5, {scale: 1, ease:Quad.easeOut, onComplete:midSpinner});
+		TweenLite.to('.loader .cover', 0.5, {width: '500%', height: '500%', ease:Quad.easeOut, onComplete:midSpinner});
 		
 	}
 
@@ -209,7 +210,8 @@ var ajaxLoader = (function () {
 	}
 
 	function closeSpinner() {
-		TweenLite.to('.loader .cover', 0.5, {scale: 0, ease:Quad.easeOut, onComplete:postSpinner});
+		// TweenLite.to('.loader .cover', 0.5, {scale: 0, ease:Quad.easeOut, onComplete:postSpinner});
+		TweenLite.to('.loader .cover', 0.5, {width: 0, height: 0, ease:Quad.easeOut, onComplete:postSpinner});
 		TweenLite.to('.loader .spinner', 0.3, {opacity: 0, ease:Quad.easeOut});
 	}
 

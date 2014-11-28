@@ -13,8 +13,13 @@
 
 
 // RESIZE
-window.onresize = function(event) {
-
-};
+// window.onresize = function() {
+	// document.querySelector('.loader').style.display = 'none';
+// };
 
 // var $ = function (selector) { return document.querySelector(selector) };
+// element.style.webkitTransform = "";
+// element.style.MozTransform = "";
+// element.style.msTransform = "";
+// element.style.OTransform = "";
+// element.style.transform = "";

@@ -27,8 +27,15 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			</section>
 
 			<section class="block spaced">
-				<p class="headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatem cum dolores iusto, illo vero dignissimos ipsa aperiam, eaque, vitae blanditiis earum sit quibusdam dolor cumque tempora beatae saepe totam!</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatem cum dolores iusto, illo vero dignissimos ipsa aperiam, eaque, vitae blanditiis earum sit quibusdam dolor cumque tempora beatae saepe totam!</p>
+				<p class="headline">Rebranding the WW2 first person shooter is no easy task. After 8 months of iteration, experimentation design and development - a unique and modern take had been established and was ready to go.</p>
+
+				<p>During my second 6 month contract at Square Enix I joined a team of producers and designers to rebrand Heroes &amp; Generals - a WW2 online first person shooter. As the sole web designer on the team, it was my job to make sure the rebrand would be accessible online as well as design the new web experience. I was also responsible for building the front-end of the forums section.</p>
+
+				<p>At the time the web presence was made of 5 different systems that required different logins and looked completely different. There was also a big problem of a complicated navigation and page structure. Simplifying the UX was priority number 1. Creating a design that could be used across all areas of the site was next on the list.</p>
+
+				<p>Helping with the branding while creating a simplified user experience was an enjoyable process. It meant that I could begin to see how the artwork would sit in the different areas of the site and taylor areas of navigation and content towards the art style.</p>
+
+				<p>Unfortunately, after a long slog of iteration and development - when the site was ready to go, and had been teased to the players with great reception, the project got put on hold and has yet to be released.</p>
 			</section>
 			<section class="block meta">
 				<ul class="double">

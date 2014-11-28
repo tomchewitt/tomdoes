@@ -27,9 +27,11 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			</section>
 
 			<section class="block spaced">
-				<p class="headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatem cum dolores iusto, illo vero dignissimos ipsa aperiam, eaque, vitae blanditiis earum sit quibusdam dolor cumque tempora beatae saepe totam!</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatem cum dolores iusto, illo vero dignissimos ipsa aperiam, eaque, vitae blanditiis earum sit quibusdam dolor cumque tempora beatae saepe totam!</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatem cum dolores iusto, illo vero dignissimos ipsa aperiam, eaque, vitae blanditiis earum sit quibusdam dolor cumque tempora beatae saepe totam!</p>
+				<p class="headline">What started as a request to change a few backgrounds in-game turned into one of my staple projects while working with Square Enix; the mobile game Koozac.</p>
+
+				<p>Working on Koozac was a very enjoyable experience as it really allowed me to show my versatility across multiple disciplines. While originally I was only tasked with amending some in-game backgrounds to be less cluttered and overpowering, I ended up working on everything from logos and iTunes icons, in-game UI design, artworking new in-game assets, to web design and development.</p>
+
+				<p>The game owner Ben Cusack was so impressed that he asked me to rebrand his company <a href="http://www.viker.co.uk" target="_blank">Viker</a> and create the website.</p>
 			</section>
 			<section class="block meta">
 				<ul class="triple">
