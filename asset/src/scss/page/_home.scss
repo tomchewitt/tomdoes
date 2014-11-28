@@ -17,28 +17,9 @@
 
 		.gradient {
 			background: #3fdaeb;
-			background-image: linear-gradient(to top right, $thered 10%, $theblue 100%);
-			filter: saturate(1);
-			// #3fdaeb
+			background-image: linear-gradient(to top right, $midpurple 0%, $theblue 100%);
 		}
 	}
-
-	// .page-header {
-	// 	color: $midpurple;
-
-	// 	.icon-wrap {
-	// 		&::before, &::after {
-	// 			background: $midpurple;
-	// 		}
-
-	// 	}
-	// 	.icon {
-
-	// 		svg {
-	// 			fill: $midpurple;
-	// 		}
-	// 	}
-	// }
 	
 	.lead {
 		background: $theblue;

@@ -9,33 +9,48 @@
 	text-align: center;
 	position: relative;
 
-
 	ul {
-		
-
+		padding: 30px 0;
 		li {
-			padding: 20px 0;
-			margin: 50px 0;
+			@include breakpoint("max-width: 40em") {
+				width: 80%;
+			}
+			padding: 15px 10%;
+			margin: 0;
 			text-align: left;
 			display: inline-block;
 		}
+	}
+	
 
-		&.double {
-			li:nth-child(1) {
-				padding-right: 40px;
-				margin-right: 40px;
-				border-right: solid 1px $white;
+	@include breakpoint("min-width: 40em") {
+		ul {
+			padding: 0;
+
+			li {
+				padding: 20px 0;
+				margin: 50px 0;
+				text-align: left;
+				display: inline-block;
 			}
-		}
 
-		&.triple {
-			li:nth-child(2) {
-				padding-left: 40px;
-				padding-right: 40px;
-				margin-left: 40px;
-				margin-right: 40px;
-				border-right: solid 1px $white;
-				border-left: solid 1px $white;
+			&.double {
+				li:nth-child(1) {
+					padding-right: 40px;
+					margin-right: 40px;
+					border-right: solid 1px $white;
+				}
+			}
+
+			&.triple {
+				li:nth-child(2) {
+					padding-left: 40px;
+					padding-right: 40px;
+					margin-left: 40px;
+					margin-right: 40px;
+					border-right: solid 1px $white;
+					border-left: solid 1px $white;
+				}
 			}
 		}
 	}
@@ -59,6 +74,10 @@
 	}
 }
 
+
+// *****************************************************************
+// PALETTE
+// *****************************************************************
 .palette {
 	width: 100%;
 	height: 10px;
@@ -94,6 +113,10 @@
 	}
 }
 
+
+// *****************************************************************
+// IMAGES
+// *****************************************************************
 .img-wrap {
 	
 
@@ -154,7 +177,36 @@
 	}
 }
 
+@include breakpoint("max-width: 40em") {
+	.img-wrap {
+		img {
+			max-width: 90%;
+		}
 
+		ul {
+		
+			li.double {
+				padding: 0;
+
+				img {
+					width: 100%;
+					float: left;
+					box-shadow: none;
+					min-width: 100%;
+				}
+			}
+		}
+		
+	}
+
+
+
+}
+
+
+// *****************************************************************
+// BACK BUTTON
+// *****************************************************************
 .back-to-work {
 	width: 100%;
 	display: block;

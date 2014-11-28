@@ -88,84 +88,30 @@ var parallax = (function() {
 		window.onscroll = init;
 	}
 
+	
+	// WINDOW RESIZE
+	window.onresize = function() {
+		console.log('rezise header');
+		nPageHeaderOffset = (window.innerHeight / 2) - (document.querySelector('.page-header').offsetHeight / 2) - 40;
+		nPageHeaderPosition = (window.innerHeight / 2) + nPageHeaderOffset - (document.querySelector('.header').offsetHeight);
+
+		if (document.querySelector('section.hero')) {
+			// SET HEIGHT OF HERO
+			console.log('height should be changing..');
+			var $hero = document.querySelector('.hero');
+			if (document.querySelector('.hero .pointer')) {
+				var nPointer = document.querySelector('.hero .pointer').offsetHeight;
+				$hero.style.height = (window.innerHeight - $hero.offsetTop + nPointer) + 'px';
+			} else {
+				$hero.style.height = (window.innerHeight - $hero.offsetTop) + 'px';
+			}
+		}
+	};
+
+
+
 	// RETURN MODULE
 	return parallax;
 
 })();
-	/*
 
-	function findPos(obj) {
-		var curleft = curtop = 0;
-		if (obj.offsetParent) {
-			do {
-				curleft += obj.offsetLeft;
-				curtop += obj.offsetTop;
-			} while (obj = obj.offsetParent);
-			return [curleft,curtop];
-	}
-	*/
-
-
-/*
-
-	// HERO DIMENSIONS
-	var oSkrollrAttr;
-
-	// CHECK DOC FOR APPROPRIATE ELEMENTS
-	function checkDoc() {
-
-		if (!(document.querySelector('.page-header'))) {
-			return;
-		}
-		
-		var nPageHeader = (window.innerHeight / 2) - (document.querySelector('.page-header').offsetHeight / 2) - 40 || 0;
-
-		// MAIN ATTR OBJ
-		oSkrollrAttr = {
-			heroHeader: {
-				data: [
-					'data-0',
-					'data-' + nPageHeader
-				],
-				val: [
-					'position:fixed; top:!' + (window.innerHeight / 2) + 'px; left:50%;',
-					'position:absolute; top:!' + ((window.innerHeight / 2) + nPageHeader - (document.querySelector('.header').offsetHeight)) + 'px; left:50%;',
-				]
-			},
-			heroGradient: {
-				data: [
-					'data-0',
-					'data-' + (window.innerHeight / 2)
-				],
-				val: [
-					'opacity: 0.7;',
-					'opacity: 1;',
-				]
-			},
-			projectArrows: {
-				data: [],
-				val: []
-			}
-		}
-		
-
-		// SET ATTR
-		for (var property in oSkrollrAttr) {
-		    if (document.querySelector('#' + property)) {
-		    	setupAttr(property);
-		    }
-		}
-	}
-
-	// ADD THE ATTR
-	function setupAttr(elm) {
-		var $elm = document.querySelector('#' + elm);
-		var aData = oSkrollrAttr[elm].data;
-		var aVal = oSkrollrAttr[elm].val;
-
-		for (i = 0; i < aData.length; i++) {
-			$elm.setAttribute(aData[i], aVal[i]);
-		}
-	}
-
-	*/

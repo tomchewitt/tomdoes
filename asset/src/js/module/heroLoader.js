@@ -90,6 +90,24 @@ var heroLoader = (function() {
 	}
 
 
+	// // WINDOW RESIZE
+	// window.onresize = function() {
+	// 	console.log('change height');
+	// 	if (document.querySelector('section.hero')) {
+	// 		// SET HEIGHT OF HERO
+	// 		console.log('height should be changing..');
+	// 		var $hero = document.querySelector('.hero');
+	// 		if (document.querySelector('.hero .pointer')) {
+	// 			var nPointer = document.querySelector('.hero .pointer').offsetHeight;
+	// 			$hero.style.height = (window.innerHeight - $hero.offsetTop + nPointer) + 'px';
+	// 		} else {
+	// 			$hero.style.height = (window.innerHeight - $hero.offsetTop) + 'px';
+	// 		}
+	// 	}
+	// };
+	
+
+
 	// RETURN MODULE
 	return heroLoader;
 

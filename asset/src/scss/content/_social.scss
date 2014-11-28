@@ -14,7 +14,10 @@
 	display: block;
 	height: $iconWidth;
 	background: $lightestgrey;
-	overflow: hidden;
+	@include breakpoint(medium) {
+		overflow: hidden;
+	}
+	
 	position: relative;
 	z-index: 5;
 
@@ -41,14 +44,14 @@
 	.word {
 		width: 100%;
 		position: absolute;
-		bottom: 0;
+		bottom: 15%;
 		left: 0;
 		color: $thered;
 		transition: all 0.2s ease-in-out;
 
-		@include breakpoint(large) {
-			bottom: 15%;
-		}
+		// @include breakpoint(large) {
+		// 	bottom: 15%;
+		// }
 	}
 
 	svg {
@@ -70,11 +73,11 @@
 
 		.word {
 			color: $white;
-			bottom: 10%;
+			bottom: 20%;
 
-			@include breakpoint(large) {
-				bottom: 20%;
-			}
+			// @include breakpoint(large) {
+			// 	bottom: 20%;
+			// }
 		}
 	}
 }
