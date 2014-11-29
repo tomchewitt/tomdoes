@@ -28,83 +28,18 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			</section>
 
 			<section class="block feed">
-			    <h1>LATEST</h1>
+			    <h1>LATEST FROM THE WEB</h1>
 					<section class="projects lead">
 						<ul>
-														<!-- KOOZAC -->
-							<li id="koozac" class="nav-project">
-								<a class="ajax-nav" href="koozac/" data-pageid="project">
-									<img src="/asset/dist/img/work/koozac/03.jpg">
+							<!-- SWAS -->
+							<li id="swas" class="nav-project">
+								<a class="ajax-nav" href="start-with-a-square/" data-pageid="project">
+									<img src="/asset/dist/img/work/swas/hero.svg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
 									<h2>
-										<span class="word">KOOZAC</span>
-										<span class="subtext">Mobile game UI &amp; Web</span>
-									</h2>
-								</a>
-							</li>
-
-							<!-- HEROES AND GENERALS -->
-							<li id="hng" class="nav-project">
-								<a class="ajax-nav" href="heroes-and-generals/" data-pageid="project">
-									<img src="/asset/dist/img/work/hng/hero.jpg">
-									<span class="gradient"></span>
-									<span class="triangle"></span>
-									<h2>
-										<span class="word">HEROES &amp; GENERALS</span>
-										<span class="subtext">Web design &amp; build</span>
-									</h2>
-								</a>
-							</li>
-
-							<!-- CTM TRAVEL -->
-							<li id="ctm-travel" class="nav-project">
-								<a class="ajax-nav" href="compare-the-market/" data-pageid="project">
-									<img src="/asset/dist/img/work/ctm-travel/hero.jpg">
-									<span class="gradient"></span>
-									<span class="triangle"></span>
-									<h2>
-										<span class="word">COMPARE THE MARKET</span>
-										<span class="subtext">The fastest travel insurance yet</span>
-									</h2>
-								</a>
-							</li>
-
-							<!-- LIPSUM GENERATOR -->
-							<li id="lipsum" class="nav-project">
-								<a class="ajax-nav" href="lipsum-generator/" data-pageid="project">
-									<img src="/asset/dist/img/work/lipsum/hero.jpg">
-									<span class="gradient"></span>
-									<span class="triangle"></span>
-									<h2>
-										<span class="word">LIPSUM GENERATOR</span>
-										<span class="subtext">Speedy, bookmarkable, easy lipsum</span>
-									</h2>
-								</a>
-							</li>
-
-							<!-- STOPCLOCK -->
-							<li id="timer" class="nav-project">
-								<a class="ajax-nav" href="simple-timer/" data-pageid="project">
-									<img src="/asset/dist/img/work/timer/hero.jpg">
-									<span class="gradient"></span>
-									<span class="triangle"></span>
-									<h2>
-										<span class="word">SIMPLE TIMER</span>
-										<span class="subtext">Full screen time tracking</span>
-									</h2>
-								</a>
-							</li>
-
-							<!-- COLOURFLOOD -->
-							<li id="colourflood" class="nav-project">
-								<a class="ajax-nav" href="colourflood/" data-pageid="project">
-									<img src="/asset/dist/img/work/colourflood/hero.svg">
-									<span class="gradient"></span>
-									<span class="triangle"></span>
-									<h2>
-										<span class="word">COLOUR FLOOD</span>
-										<span class="subtext">My freelance company</span>
+										<span class="word">MY PORTFOLIO IS LIVE!</span>
+										<span class="subtext">Read on startwithasquare.co.uk</span>
 									</h2>
 								</a>
 							</li>
@@ -116,21 +51,21 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 									<span class="gradient"></span>
 									<span class="triangle"></span>
 									<h2>
-										<span class="word">START WITH A SQUARE</span>
-										<span class="subtext">A place for my madness</span>
+										<span class="word">DO I STILL NEED CREATIVE CLOUD?</span>
+										<span class="subtext">Read on startwithasquare.co.uk</span>
 									</h2>
 								</a>
 							</li>
 
-							<!-- CODENAME -->
-							<li id="gbm" class="nav-project">
-								<a class="ajax-nav" href="ghost-bytes-media/" data-pageid="project">
-									<img src="/asset/dist/img/work/gbm/hero.svg">
+							<!-- SWAS -->
+							<li id="swas" class="nav-project">
+								<a class="ajax-nav" href="start-with-a-square/" data-pageid="project">
+									<img src="/asset/dist/img/work/swas/hero.svg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
 									<h2>
-										<span class="word">GHOST BYTES MEDIA</span>
-										<span class="subtext">A sneak peak at what's coming next</span>
+										<span class="word">ARE YOU A DESIGNER OR DEVELOPER?</span>
+										<span class="subtext">Read on startwithasquare.co.uk</span>
 									</h2>
 								</a>
 							</li>
