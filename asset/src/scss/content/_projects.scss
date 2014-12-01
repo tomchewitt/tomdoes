@@ -212,6 +212,8 @@
 	display: block;
 	background: $white;
 	text-align: center;
+	position: relative;
+	z-index: 10;
 
 	a {
 		text-decoration: none;

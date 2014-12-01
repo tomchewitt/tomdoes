@@ -33,6 +33,19 @@
 		}
 	}
 
+	.nav-project {
+		svg {
+			width: 12%;
+			height: 12%;
+			position: absolute;
+			bottom: 4%;
+			left: 44%;
+			z-index: 9;
+			fill: $white;
+			opacity: 0.7;
+		}
+	}
+
 	@include breakpoint(large) {
 		.page-header {
 			.icon-wrap {
@@ -47,5 +60,86 @@
 				}
 			}
 		}
+	}
+}
+
+#sec {
+	$color1: #552228;
+	$color2: #DDD;
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
+	}
+}
+
+#drips {
+	$color1: #127DC1;
+	$color2: #2E4957;
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
+	}
+}
+
+#pyramid {
+	$color1: #127DC1;
+	$color2: #4C4BB3;
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
+	}
+}
+
+#hover {
+	$color1: #449199;
+	$color2: #222B2E;
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
+	}
+}
+
+#cosplay {
+	$color1: #2D3B49;
+	$color2: #83426C;
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
+	}
+}
+
+#anniversary {
+	$color1: #AE434C;
+	$color2: #D0ECF4;
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
+	}
+}
+
+#spinner {
+	$color1: #53B1DC;
+	$color2: #8ACFEF;
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
+	}
+}
+
+#flipbook {
+	$color1: #310527;
+	$color2: #891516;
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
+	}
+}
+
+#mensa {
+	$color1: #B95334;
+	$color2: #EAD85F;
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
 	}
 }

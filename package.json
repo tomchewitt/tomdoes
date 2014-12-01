@@ -1,9 +1,9 @@
 {
-  "name": "tomdoes",
+  "name": "startwithasquare",
   "author": "Tom Hewitt",
   "license": "BSD-2-Clause",
   "version": "0.1.0",
-  "description": "tomdoes.digital portfolio site",
+  "description": "startwithasquare blog site",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^1.0.1",
@@ -19,9 +19,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/tomchewitt/tomdoes.git"
+    "url": "git://github.com/tomchewitt/startwithasquare.git"
   },
   "bugs": {
-    "url": "https://github.com/tomchewitt/tomdoes/issues"
+    "url": "https://github.com/tomchewitt/startwithasquare/issues"
   }
 }
