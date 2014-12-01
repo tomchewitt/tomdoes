@@ -203,6 +203,10 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 					</section>
 			</section>
 
+			<section class="back-to-work">
+				<a class="ajax-nav" href="/work/">VIEW PORTFOLIO</a>
+			</section>
+
         </section>
 
 <?php
