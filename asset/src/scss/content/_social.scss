@@ -112,7 +112,8 @@
 	}
 
 	.noicon {
-		font-size: 0.9em;
+		// font-size: 0.9em;
+		width: 80%;
 		&:nth-child(1) {
 			padding-right: 0;
 		}
