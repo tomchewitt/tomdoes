@@ -32,7 +32,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 
 				<p>The customer journey for comparethemarket's insurance journey was over 3 pages of intense forms that required a lot of unnecessary data. The task was to focus on simplicity, accessibility and speed. After doing a lot of user research, we found that most travel insurance was almost always bought in a rush with very little time between purchase and the date the customer began their holiday - a last minute purchase. This meant we needed to taylor the experience towards this type of user. After extensive iteration and user testing we got the question set down to just one form, seven questions, all of which were a simple click/tap. A name and email address later and you're at your quotes, all of which were simplified with key pieces of information pointed out.</p>
 
-				<p>The results after just one day of the new experience being live were phenomenal. Conversion had soured so high that the technical team were worried the analytics had been embedded incorrectly… but they hadn't. I was extremely happy with the success and optimisation that we brought to what was an overly complicated and frustrating experience.</p>
+				<p>The results after just one day of the new experience being live were phenomenal. Conversion had soared so high that the technical team were worried the analytics had been embedded incorrectly… but they hadn't. I was extremely happy with the success and optimisation that we brought to what was an overly complicated and frustrating experience.</p>
 			</section>
 			
 			<section class="block meta">

@@ -42,7 +42,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 
 				<h1>PRESENTLY...</h1>
 
-				<p>Since January 2012 I have been running my own freelance business based from home in Southampton. Managing clients, scheduling projects and collaborating with client and external resources is all part of the process. Not to mention the glamour of dealing with Mr Taxman. One of my biggest assets is my familiarity and experience managing both the design and development sides of a project. Understanding and communicating with developers and designers alike let's me work in a more fluid way, allowing me to focus on producing great work.</p>
+				<p>Since January 2012 I have been running my own freelance business based at home in Southampton. Managing clients, scheduling projects and collaborating with client and external resources is all part of the process. Not to mention the glamour of dealing with Mr Taxman. One of my biggest assets is my familiarity and experience managing both the design and development sides of a project. Understanding and communicating with developers and designers alike lets me work in a more fluid way, allowing me to focus on producing great work.</p>
 
 				<p>So what drives me to do all this? Quite simply, because I love it. I love learning new techniques, processes and tools - not because it ticks a new box, but because I am genuinely interested and passionate about making the best experiences I can. I'm not fixed on any one tool or process, and while I do have my preferred way of doing things, I am always happy and excited to learn new things.</p>
 			</section>
