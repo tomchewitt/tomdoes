@@ -88,6 +88,9 @@ var parallax = (function() {
 			bHeader = false;
 		}
 
+		// setup tracking
+		tracking.setup();
+
 		// run setup
 		window.onscroll = init;
 	}
