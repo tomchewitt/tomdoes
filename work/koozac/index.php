@@ -37,7 +37,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			<section class="block meta">
 				<ul class="triple">
 					<li>
-						<span class="header">COMPANY:</span><br>Suqare Enix
+						<span class="header">COMPANY:</span><br>Square Enix
 					</li>
 					<li>
 						<span class="header">ROLE:</span><br>Mobile game UI/Web Designer &amp; Front-end Developer.

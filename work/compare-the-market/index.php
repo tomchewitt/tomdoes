@@ -30,7 +30,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			<section class="block spaced">
 				<p class="headline">Comparison websites like comparethemarket.com are big business. The volume of traffic together with the slightest change in UX design and web accessibility can have a monumental effect on conversation in such a highly competitive market. Fresh into the world of a freelancer, redesigning and optimising the travel insurance journey for comparethemarket was a huge and exciting challenge… with some fantastic results.</p>
 
-				<p>The customer journey for comparethemarket's insurance journey was over 3 pages of intense forms that required a lot of unnecessary data. The task was to focus on simplicity, accessibility and speed. After doing a lot of user research, we found that most travel insurance was almost always bought in a rush with very little time between purchase and the date the customer began their holiday - a last minute purchase. This meant we needed to taylor the experience towards this type of user. After extensive iteration and user testing we got the question set down to just one form, seven questions, all of which were a simple click/tap. A name and email address later and you're at your quotes, all of which were simplified with key pieces of information pointed out.</p>
+				<p>The customer journey for comparethemarket's insurance journey was over 3 pages of intense forms that required a lot of unnecessary data. The task was to focus on simplicity, accessibility and speed. After doing a lot of user research, we found that most travel insurance was almost always bought in a rush with very little time between purchase and the date the customer began their holiday - a last minute purchase. This meant we needed to tailor the experience towards this type of user. After extensive iteration and user testing we got the question set down to just one form, seven questions, all of which were a simple click/tap. A name and email address later and you're at your quotes, all of which were simplified with key pieces of information pointed out.</p>
 
 				<p>The results after just one day of the new experience being live were phenomenal. Conversion had soared so high that the technical team were worried the analytics had been embedded incorrectly… but they hadn't. I was extremely happy with the success and optimisation that we brought to what was an overly complicated and frustrating experience.</p>
 			</section>
@@ -38,13 +38,13 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			<section class="block meta">
 				<ul class="triple">
 					<li>
-						<span class="header">COMPANY:</span><br>Suqare Enix
+						<span class="header">COMPANY:</span><br>Compare the Market
 					</li>
 					<li>
-						<span class="header">ROLE:</span><br>Mobile game UI/Web Designer &amp; Front-end Developer.
+						<span class="header">ROLE:</span><br>UX &amp; Web Designer
 					</li>
 					<li>
-						<span class="header">LINK:</span><br><a href="http://koozac.com" target="_blank">http://koozac.com</a>
+						<span class="header">LINK:</span><br><a href="http://comparethemarket.com/travel-insurance/" target="_blank">http://comparethemarket.com/travel-insurance/</a>
 					</li>
 				</ul>
 			</section>

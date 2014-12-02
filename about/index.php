@@ -77,7 +77,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			<section class="block spaced">
 				<h1>WELCOME TO THE DANGERZONE!</h1>
 
-				<p>There's more to me than just work though. There's all the little projects I do for funsies as well. Be sure to check some of them out on <a href="http://codepen.io/tomchewitt" target="_blank">Codepen</a> or <a target="_blank" href="https://www.behance.net/tomchewitt">Behance</a>. I'm also a huge basketball fan (<a href="http://www.nba.com/bulls/" target="_blank">go Bulls!!</a>), nerdily into video games and eSports, and am way to enthusiastic about the Fast and the Furious franchise. Music and stories are my muses and I am an occasional and (not quite so anymore) secret <a href="http://www.brickish.org/default.aspx" target="_blank">AFOL</a>. And I love pizza.</p>
+				<p>There's more to me than just work though. There's all the little projects I do for funsies as well. Be sure to check some of them out on <a href="http://codepen.io/tomchewitt" target="_blank">Codepen</a> or <a target="_blank" href="https://www.behance.net/tomchewitt">Behance</a>. I'm also a huge basketball fan (<a href="http://www.nba.com/bulls/" target="_blank">go Bulls!!</a>), nerdily into video games and eSports, and am way too enthusiastic about the Fast and the Furious franchise. Music and stories are my muses and I am an occasional and (not quite so anymore) secret <a href="http://www.brickish.org/default.aspx" target="_blank">AFOL</a>. And I love pizza.</p>
 			</section>
 
 			<section class="social">

@@ -28,11 +28,11 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			</section>
 
 			<section class="block spaced">
-				<p class="headline">During the last year I found the need for an online stopclock/timer and was frustrated to find nothing that simple and elegant which would let me see time time at a glance. Rather than dealing with the best that was on offer, I made my own!</p>
+				<p class="headline">During the last year I found the need for an online stopclock/timer and was frustrated to find nothing simple and elegant which would let me see time time at a glance. Rather than dealing with the best that was on offer, I made my own!</p>
 
-				<p>The idea was simple enough - create something with a large timer that was easy to control and had some basic lap time, start/stop functionality. It also had to look good :)</p>
+				<p>The idea was simple enough - create something with a large timer that was easy to control and had some basic lap time, start/stop functionality. It also had to look good :\)</p>
 
-				<p>I found a great little jQuery library called <a href="http://simplefocus.com/flowtype/" target="_blank">flowtype.js</a> that will resize type to fit the parent space which was perfect for creating a responsive timer. The timer mechanic was simple enough to create using javascript’s build in setInterval function. The design is clean and simple and was built in browser.</p>
+				<p>I found a great little jQuery library called <a href="http://simplefocus.com/flowtype/" target="_blank">flowtype.js</a> that will resize type to fit the parent space which was perfect for creating a responsive timer. The timer mechanic was simple enough to create using javascript’s built in setInterval function. The design is clean and simple and was built in the browser.</p>
 			</section>
 			<section class="block meta">
 				<ul class="triple">

@@ -27,7 +27,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			</section>
 
 			<section class="block spaced">
-				<p class="headline">Start with a Square started as a domain name. I liked the ties to the design and digital industries, two I am extremely passionate about. It is now going to become a place of words and opinion… a blog.</p>
+				<p class="headline">Start with a Square started as a domain name. I liked the ties to the design and digital industries, two of which I am extremely passionate about. It is now going to become a place of words and opinion... a blog.</p>
 
 				<p>I've always wanted to make a proper blog. Somewhere I can talk about the things I am passionate about, where I can give back to the web community through insights and tutorials, advice for freelancers and engage more with the community. I've started this at Start with a Square. It's currently in a very beta stage, while I develop the main site using wordpress. Below are my initial designs and what I'm planning to develop, but these may change the further into the browser I get. More on the way.</p>
 			</section>

@@ -34,14 +34,14 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 
 				<p>At the time the web presence was made of 5 different systems that required different logins and looked completely different. There was also a big problem of a complicated navigation and page structure. Simplifying the UX was priority number 1. Creating a design that could be used across all areas of the site was next on the list.</p>
 
-				<p>Helping with the branding while creating a simplified user experience was an enjoyable process. It meant that I could begin to see how the artwork would sit in the different areas of the site and taylor areas of navigation and content towards the art style.</p>
+				<p>Helping with the branding while creating a simplified user experience was an enjoyable process. It meant that I could begin to see how the artwork would sit in the different areas of the site and tailor areas of navigation and content towards the art style.</p>
 
-				<p>Unfortunately, after a long slog of iteration and development - when the site was ready to go, and had been teased to the players with great reception, the project got put on hold and has yet to be released.</p>
+				<p>After a long slog of iteration and development, the site was teased to the players and got a great reception. Square Enix have not yet released the site.</p>
 			</section>
 			<section class="block meta">
 				<ul class="double">
 					<li>
-						<span class="header">COMPANY:</span><br>Suqare Enix
+						<span class="header">COMPANY:</span><br>Square Enix
 					</li>
 					<li>
 						<span class="header">ROLE:</span><br>Web Designer &amp; Front End Developer.
