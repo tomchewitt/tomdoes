@@ -520,6 +520,8 @@ var tracking = (function() {
 	var tracking = {};
 
 	function init() {
+		console.log('tracking init');
+
 		var links = document.querySelectorAll('.ajax-nav'), i;
 
 		for (i = 0; i < links.length; ++i) {
@@ -530,6 +532,7 @@ var tracking = (function() {
 	}
 	
 	tracking.setup = function() {
+		console.log('tracking setup');
 		init();
 	}
 
