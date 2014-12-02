@@ -15,7 +15,7 @@ section.hero {
 		min-width: 100%;
 		position: absolute;
 
-		@include breakpoint(medium) {
+		@include breakpoint("min-width: 1030px") {
 			position: fixed;	
 		}
 		
