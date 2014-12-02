@@ -537,7 +537,7 @@ var tracking = (function() {
 	// RETURN MODULE
 	return tracking;
 
-})();
+});
 
 
 // *****************************************************************
