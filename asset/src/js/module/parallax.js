@@ -36,7 +36,7 @@ var parallax = (function() {
 			}			
 		}
 
-		if (bHeader) {
+		if (bHeader && window.innerWidth >= 1030) {
 			var $header = document.querySelector('.page-header');
 			if (nWinOffset >= nPageHeaderOffset) {
 				$header.style.position = 'absolute';
