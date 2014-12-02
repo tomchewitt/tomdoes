@@ -13,12 +13,15 @@ module.exports = function(grunt) {
 		concat: {
 			dist: {
 				src: [
+					// TWEENMAX // 'asset/src/js/vendor/gsap/ScrollToPlugin.min.js',
 					'asset/src/js/vendor/gsap/TweenLite.min.js',
-					'asset/src/js/vendor/gsap/CSSPlugin.min.js',
-					// 'asset/src/js/vendor/gsap/ScrollToPlugin.min.js',
+					'asset/src/js/vendor/gsap/CSSPlugin.min.js',	
 					'asset/src/js/vendor/gsap/EasePack.min.js',
-					'asset/src/js/module/*.js',
-					'asset/src/js/script/init.js'],
+					// MODULES
+					'asset/src/js/module/tracking.js',
+					'asset/src/js/module/ajaxLoader.js',
+					'asset/src/js/module/heroLoader.js',
+					'asset/src/js/module/parallax.js'],
 				dest: 'asset/src/js/bundle.js'
 			}
 		},
