@@ -70,7 +70,8 @@ h1 {
 
 		.icon {
 			width: 100%;
-			height: 70%;
+			// height: 70%; retina ipads go crazy with this
+			height: 70px;
 			position: absolute;
 			top: 15%;
 			left: 0;
