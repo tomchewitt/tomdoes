@@ -229,6 +229,10 @@ nav.main-nav {
 	font-size: 1.2em;
 	letter-spacing: 0.05em;
 
+	@include breakpoint("max-width: 40em") {
+		width: 80%;
+	}
+
 	.accent {
 		font-weight: 200;
 		font-style: normal;
