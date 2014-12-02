@@ -3,6 +3,8 @@
 // *****************************************************************
 var tracking = (function() {
 
+	var tracking = {};
+
 	function init() {
 		var links = document.querySelectorAll('.ajax-nav'), i;
 
