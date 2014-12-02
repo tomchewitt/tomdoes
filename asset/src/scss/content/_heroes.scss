@@ -131,7 +131,12 @@ $pointerHeight: 100px;
 .page-header {
 	$projectIconHeight: 21px;
 
-	position: fixed;
+	position: absolute;
+
+	@include breakpoint("min-width: 1030px") {
+		position: fixed;	
+	}
+	
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
