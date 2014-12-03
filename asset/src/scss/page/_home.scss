@@ -143,3 +143,12 @@
 		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
 	}
 }
+
+#blur {
+	$color1: #FDFFC3;
+	$color2: #874478;
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
+	}
+}

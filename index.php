@@ -156,15 +156,16 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 								</a>
 							</li>
 
-							<!-- SWAS -->
-							<li id="swas" class="nav-project">
-								<a target="_blank" href="http://startwithasquare.co.uk/are-you-a-designer-or-a-developer/" data-pageid="project">
-									<img src="/asset/dist/img/work/swas/hero.svg">
+							<!-- CP: BLUR -->
+							<li id="blur" class="nav-project">
+								<a target="_blank" href="http://codepen.io/tomchewitt/pen/MYaLWe" data-pageid="project">
+									<img src="/asset/dist/img/feed/blur.jpg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
+									<span class="icon"><svg><use xlink:href="#codepen"></use></svg></span>
 									<h2>
-										<span class="word">ARE YOU A DESIGNER OR A DEVELOPER?</span>
-										<span class="subtext">Read on startwithasquare.co.uk</span>
+										<span class="word">BLUR 2.5</span>
+										<span class="subtext">Inspect on codepen.io</span>
 									</h2>
 								</a>
 							</li>
