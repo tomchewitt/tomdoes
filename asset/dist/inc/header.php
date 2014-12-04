@@ -7,8 +7,8 @@
         <meta name="description" content="Tom Does Digital | Online Portfolio of Tom Hewitt | UX. Design. Develop.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta prefix="og: http://ogp.me/ns#" property="og:locale" content="en_GB" />
-        <!-- <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" /> -->
+        <!-- <meta prefix="og: http://ogp.me/ns#" property="og:locale" content="en_GB" />
+        <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" /> -->
         <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Tom Does Digital | Online Portfolio of Tom Hewitt | UX. Design. Develop." />
         <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Welcome to tomdoes.digital, the new home for my online portfolio. I'm multidisciplinary designer and developer with a passion for great user experiences. Have a look and get in touch." />
         <meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://tomdoes.digital" />
