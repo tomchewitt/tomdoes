@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title><?php echo $page_title ?> | Tom Does Digital | Online Portfolio of Tom Hewitt | UX. Design. Develop. | @tomchewitt</title>
         <meta name="description" content="Tom Does Digital | Online Portfolio of Tom Hewitt | UX. Design. Develop.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta prefix="og: http://ogp.me/ns#" property="og:locale" content="en_GB" />
+        <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
+        <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Tom Does Digital | Online Portfolio of Tom Hewitt | UX. Design. Develop." />
+        <meta prefix="og: http://ogp.me/ns#" property="og:description" content="..." />
+        <meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://tomdoes.digital" />
+        <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="tomdoes.digital" />
+        <meta prefix="og: http://ogp.me/ns#" property="og:image" content="http://tomdoes.digital/asset/dist/img/tdd-meta.jpg" />
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="tomdoes.digital">
+        <meta name="twitter:domain" content="http://tomdoes.digital">
+        <meta name="twitter:title" content="Tom Does Digital | Online Portfolio of Tom Hewitt | UX. Design. Develop." />
+        <meta name="twitter:description" content="..." />
+        <meta name="twitter:image:src" content="http://tomdoes.digital/asset/dist/img/tdd-meta.jpg" />
+
+        <meta itemprop="name" content="Tom Does Digital | Online Portfolio of Tom Hewitt | UX. Design. Develop.">
+        <meta itemprop="image" content="http://tomdoes.digital/asset/dist/img/tdd-meta.jpg">
+        <meta itemprop="description" content="...">
+
         <meta name="image_src" content="http://tomdoes.digital/asset/dist/img/tdd-meta.jpg" />
         <meta name="image_url" content="http://tomdoes.digital/asset/dist/img/tdd-meta.jpg" />
-
-        <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Tom Does Digital | Online Portfolio of Tom Hewitt | UX. Design. Develop." />
-        <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
-        <meta prefix="og: http://ogp.me/ns#" property="og:image" content="http://tomdoes.digital/asset/dist/img/tdd-meta.jpg" />
-        <meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://tomdoes.digital" />
 
         <link rel="icon" type="image/png" href="http://www.tomdoes.digital/asset/dist/img/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="http://www.tomdoes.digital/asset/dist/img/favicon-16x16.png" sizes="16x16" />
@@ -26,3 +38,6 @@
         <?php
             include $_SERVER['DOCUMENT_ROOT']."/asset/dist/img/svg-defs.svg";
         ?>
+
+ 
+   
