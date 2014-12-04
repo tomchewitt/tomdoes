@@ -1,5 +1,5 @@
 <?php
-$page_title = "Index page";
+$page_title = "Home";
 $as_json = false;
 
 if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
