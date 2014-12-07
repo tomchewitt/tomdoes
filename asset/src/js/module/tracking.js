@@ -23,16 +23,16 @@ var tracking = (function() {
 		for (i = 0; i < links.length; ++i) {
 			var pageid = links[i].getAttribute('data-pageid');
 			var link = links[i].getAttribute('href');
-			// _gaq.push(['_trackEvent', pageid, 'Click', link]);
-			ga('send', 'event', pageid, 'click', link);
+			links[i].onclick = function() {
+				ga('send', 'event', pageid, 'click', link);
+			}
 		}
 	}
-	
+
 	tracking.setup = function() {
 		console.log('tracking setup');
 		init();
 	}
-
 
 	// RETURN MODULE
 	return tracking;
