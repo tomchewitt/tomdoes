@@ -32,9 +32,9 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 			<section class="block lead">
 				<div class="projects">
 					<section class="best">
-						<ul>
+						<ul class="project-list">
 							<!-- KOOZAC -->
-							<li id="koozac" class="nav-project">
+							<li id="koozac" class="nav-project" data-design data-develop>
 								<a class="ajax-nav" href="koozac/" data-pageid="project">
 									<img src="/asset/dist/img/work/koozac/03.jpg">
 									<span class="gradient"></span>
@@ -47,7 +47,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 							</li>
 
 							<!-- HEROES AND GENERALS -->
-							<li id="hng" class="nav-project">
+							<li id="hng" class="nav-project" data-ux data-design data-develop>
 								<a class="ajax-nav" href="heroes-and-generals/" data-pageid="project">
 									<img src="/asset/dist/img/work/hng/hero.jpg">
 									<span class="gradient"></span>
@@ -124,7 +124,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 								</a>
 							</li>
 
-							<!-- CODENAME -->
+							<!-- GHOST BYTES MEDIA -->
 							<li id="gbm" class="nav-project">
 								<a class="ajax-nav" href="ghost-bytes-media/" data-pageid="project">
 									<img src="/asset/dist/img/work/gbm/hero.svg">
@@ -138,7 +138,6 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 							</li>
 						</ul>
 					</section>
-
 				</div>
 				
 			</section>
