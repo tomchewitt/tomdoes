@@ -27,39 +27,23 @@
 }
 
 .nav-work {
+	background: $lightestgrey;
+
 	li {
 		cursor: pointer;
-		width: 35%;
 		height: $navWorkHeight;
-		color: $black;
+		line-height: $navWorkHeight;
+		display: inline-block;
+		// float: left;
+		padding: 0 25px;
 		display: inline-block;
 		position: relative;
 		transition: all 0.3s ease-out;
 
-		&::before {
-			content: '';
-			width: 100%;
-			height: 1px;
-			display: block;
-			background: $black;
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			transition: all 0.3s ease-out;
+		&.on, &:hover {
+			color: $white;
+			background: $thered;
 		}
-
-		&.on {
-			color: $thered;
-
-			&::before {
-				height: 6px;
-				background: $thered;
-			}
-		}
-	}
-
-	li:nth-child(1) {
-		margin-right: 5%;
 	}
 }
 

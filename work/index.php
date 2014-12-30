@@ -18,6 +18,17 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 				<span class="icon"><svg><use xlink:href="#nav-work"></use></svg></span>
 			</h1>
 
+			<section class="block nav-work">
+				<nav>
+					<ul>
+						<li data-worknav="all" class="on">ALL</li>
+						<li data-worknav="ux">UX</li>
+						<li data-worknav="design">DESIGN</li>
+						<li data-worknav="develop">DEVELOP</li>
+					</ul>
+				</nav>
+			</section>
+
 			<section class="block lead">
 				<div class="projects">
 					<section class="best">

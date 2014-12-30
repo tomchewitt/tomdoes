@@ -104,7 +104,9 @@ module.exports = function(grunt) {
 	});
 
 	// CREATE TASK 'default'
-	grunt.registerTask('default', ['concat', 'uglify', 'compass', 'autoprefixer']); // 'jshint', 
+	grunt.registerTask('default', ['concat', 'uglify', 'compass', 'autoprefixer']); 
+	grunt.registerTask('style', ['compass', 'autoprefixer']);
+	grunt.registerTask('script', ['concat', 'uglify']);
 
 };
 
