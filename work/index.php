@@ -60,7 +60,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 							</li>
 
 							<!-- CTM TRAVEL -->
-							<li id="ctm-travel" class="nav-project">
+							<li id="ctm-travel" class="nav-project" data-ux data-design>
 								<a class="ajax-nav" href="compare-the-market/" data-pageid="project">
 									<img src="/asset/dist/img/work/ctm-travel/hero.jpg">
 									<span class="gradient"></span>
@@ -73,7 +73,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 							</li>
 
 							<!-- LIPSUM GENERATOR -->
-							<li id="lipsum" class="nav-project">
+							<li id="lipsum" class="nav-project" data-design data-develop>
 								<a class="ajax-nav" href="lipsum-generator/" data-pageid="project">
 									<img src="/asset/dist/img/work/lipsum/hero.jpg">
 									<span class="gradient"></span>
@@ -86,7 +86,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 							</li>
 
 							<!-- STOPCLOCK -->
-							<li id="timer" class="nav-project">
+							<li id="timer" class="nav-project" data-design data-develop>
 								<a class="ajax-nav" href="simple-timer/" data-pageid="project">
 									<img src="/asset/dist/img/work/timer/hero.jpg">
 									<span class="gradient"></span>
@@ -99,7 +99,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 							</li>
 
 							<!-- COLOURFLOOD -->
-							<li id="colourflood" class="nav-project">
+							<li id="colourflood" class="nav-project" data-design data-develop>
 								<a class="ajax-nav" href="colourflood/" data-pageid="project">
 									<img src="/asset/dist/img/work/colourflood/hero.svg">
 									<span class="gradient"></span>
@@ -112,7 +112,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 							</li>
 
 							<!-- SWAS -->
-							<li id="swas" class="nav-project">
+							<li id="swas" class="nav-project" data-ux data-design data-develop>
 								<a class="ajax-nav" href="start-with-a-square/" data-pageid="project">
 									<img src="/asset/dist/img/work/swas/hero.svg">
 									<span class="gradient"></span>
@@ -125,7 +125,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 							</li>
 
 							<!-- GHOST BYTES MEDIA -->
-							<li id="gbm" class="nav-project">
+							<li id="gbm" class="nav-project" data-ux data-design data-develop>
 								<a class="ajax-nav" href="ghost-bytes-media/" data-pageid="project">
 									<img src="/asset/dist/img/work/gbm/hero.svg">
 									<span class="gradient"></span>
