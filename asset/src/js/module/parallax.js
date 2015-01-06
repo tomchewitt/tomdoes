@@ -65,7 +65,7 @@ var parallax = (function() {
 			bNoGradient = false;
 			bGradient = true;
 			bHeader = true;
-			nPageHeaderOffset = (window.innerHeight / 2) - (document.querySelector('.page-header').offsetHeight / 2) - 40;
+			nPageHeaderOffset = (window.innerHeight / 2) - (document.querySelector('.page-header').offsetHeight / 2); //- 40;
 			nPageHeaderPosition = (window.innerHeight / 2) + nPageHeaderOffset - (document.querySelector('.header').offsetHeight);
 		}
 
@@ -107,7 +107,7 @@ var parallax = (function() {
 	window.onresize = function() {
 		// console.log('rezise header');
 		if (document.querySelector('.page-header')) {
-			nPageHeaderOffset = (window.innerHeight / 2) - (document.querySelector('.page-header').offsetHeight / 2) - 40;
+			nPageHeaderOffset = (window.innerHeight / 2) - (document.querySelector('.page-header').offsetHeight / 2); //- 40;
 			nPageHeaderPosition = (window.innerHeight / 2) + nPageHeaderOffset - (document.querySelector('.header').offsetHeight);
 		}
 
