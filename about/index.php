@@ -60,6 +60,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 					<li class="icon"><span class="word">SASS</span><svg><use xlink:href="#sass"></use></svg></li>
 					<li class="icon"><span class="word">Grunt</span><svg><use xlink:href="#grunt"></use></svg></li>
 					<li class="icon"><span class="word">Github</span><svg><use xlink:href="#githubfull"></use></svg></li>
+					<li class="icon"><span class="word">WordPress</span><svg><use xlink:href="#wordpress"></use></svg></li>
 				</ul>
 
 				<h1>BONUS</h1>

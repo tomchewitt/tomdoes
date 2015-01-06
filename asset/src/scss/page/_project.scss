@@ -291,7 +291,7 @@
 
 
 // *****************************************************************
-// SWAS
+// GBM
 // *****************************************************************
 #gbm {
 	$color1: #071F28;
@@ -331,3 +331,42 @@
 	}
 }
 
+
+// *****************************************************************
+// SARAH
+// *****************************************************************
+#sarah {
+	$color1: #E9F7F8;
+	$color2: #553C63;
+	p.headline {
+		@include textgradient($color1, $color2);
+	}
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 0%, $color2 70%);
+		// filter: saturate(3);
+	}
+	.palette {
+		.color-1 {
+			background: $color1;
+		}
+		.color-2 {
+			background: #A9C7D2;
+		}
+		.color-3 {
+			background: #7A4D8B;
+		}
+		
+	}
+	.img-wrap {
+		li:nth-child(1) {
+			background: $color2;			
+		}
+		li:nth-child(2) {
+			background: $color2;			
+		}
+	}
+	.hero {
+		background: $color1;
+	}
+}

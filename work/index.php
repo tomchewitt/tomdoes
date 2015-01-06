@@ -136,6 +136,19 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 									</h2>
 								</a>
 							</li>
+
+							<!-- SARAH -->
+							<li id="sarah" class="nav-project" data-design>
+								<a class="ajax-nav" href="sarah/" data-pageid="project">
+									<img src="/asset/dist/img/work/sarah/hero.jpg">
+									<span class="gradient"></span>
+									<span class="triangle"></span>
+									<h2>
+										<span class="word">SARAH</span>
+										<span class="subtext">Polygonal Art</span>
+									</h2>
+								</a>
+							</li>
 						</ul>
 					</section>
 				</div>
