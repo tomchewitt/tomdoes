@@ -14,7 +14,7 @@ var parallax = (function() {
 	
 	
 	function init() {
-		console.log('parallax.init');
+		// console.log('parallax.init');
 		// var nWinOffset = document.body.scrollTop;
 		var nWinOffset = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -32,7 +32,7 @@ var parallax = (function() {
 
 			if (nWinOffset < nBlockOffset) {
 				document.querySelector('.gradient').style.opacity = nPercentage;
-				console.log(nWinOffset, nBlockOffset, nPercentage);
+				// console.log(nWinOffset, nBlockOffset, nPercentage);
 			}			
 		}
 
@@ -48,7 +48,7 @@ var parallax = (function() {
 		}
 
 		if (bArrows) {
-			console.log('bArrows');
+			// console.log('bArrows');
 		}
 	}
 

@@ -16,7 +16,7 @@ var tracking = (function() {
 	var tracking = {};
 
 	function init() {
-		console.log('tracking init');
+		// console.log('tracking init');
 
 		var links = document.querySelectorAll('.ajax-nav'), i;
 
@@ -30,7 +30,7 @@ var tracking = (function() {
 	}
 
 	tracking.setup = function() {
-		console.log('tracking setup');
+		// console.log('tracking setup');
 		init();
 	}
 

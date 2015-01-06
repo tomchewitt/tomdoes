@@ -18,11 +18,12 @@ module.exports = function(grunt) {
 					'asset/src/js/vendor/gsap/CSSPlugin.min.js',	
 					'asset/src/js/vendor/gsap/EasePack.min.js',
 					// MODULES
-					'asset/src/js/module/*.js'
-					// 'asset/src/js/module/tracking.js',
-					// 'asset/src/js/module/ajaxLoader.js',
-					// 'asset/src/js/module/heroLoader.js',
-					// 'asset/src/js/module/parallax.js'
+					// 'asset/src/js/module/*.js'
+					'asset/src/js/module/tracking.js',
+					'asset/src/js/module/ajaxLoader.js',
+					'asset/src/js/module/heroLoader.js',
+					'asset/src/js/module/workNav.js',
+					'asset/src/js/module/parallax.js'
 					],
 				dest: 'asset/src/js/bundle.js'
 			}

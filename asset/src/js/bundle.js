@@ -35,6 +35,48 @@ return i},l.setRatio=function(t){var e,i,r,s=this._firstPT,n=1e-6;if(1!==t||this
  * @author: Jack Doyle, jack@greensock.com
  **/
 var _gsScope="undefined"!=typeof module&&module.exports&&"undefined"!=typeof global?global:this||window;(_gsScope._gsQueue||(_gsScope._gsQueue=[])).push(function(){"use strict";_gsScope._gsDefine("easing.Back",["easing.Ease"],function(t){var e,i,s,r=_gsScope.GreenSockGlobals||_gsScope,n=r.com.greensock,a=2*Math.PI,o=Math.PI/2,h=n._class,l=function(e,i){var s=h("easing."+e,function(){},!0),r=s.prototype=new t;return r.constructor=s,r.getRatio=i,s},_=t.register||function(){},u=function(t,e,i,s){var r=h("easing."+t,{easeOut:new e,easeIn:new i,easeInOut:new s},!0);return _(r,t),r},c=function(t,e,i){this.t=t,this.v=e,i&&(this.next=i,i.prev=this,this.c=i.v-e,this.gap=i.t-t)},p=function(e,i){var s=h("easing."+e,function(t){this._p1=t||0===t?t:1.70158,this._p2=1.525*this._p1},!0),r=s.prototype=new t;return r.constructor=s,r.getRatio=i,r.config=function(t){return new s(t)},s},f=u("Back",p("BackOut",function(t){return(t-=1)*t*((this._p1+1)*t+this._p1)+1}),p("BackIn",function(t){return t*t*((this._p1+1)*t-this._p1)}),p("BackInOut",function(t){return 1>(t*=2)?.5*t*t*((this._p2+1)*t-this._p2):.5*((t-=2)*t*((this._p2+1)*t+this._p2)+2)})),m=h("easing.SlowMo",function(t,e,i){e=e||0===e?e:.7,null==t?t=.7:t>1&&(t=1),this._p=1!==t?e:0,this._p1=(1-t)/2,this._p2=t,this._p3=this._p1+this._p2,this._calcEnd=i===!0},!0),d=m.prototype=new t;return d.constructor=m,d.getRatio=function(t){var e=t+(.5-t)*this._p;return this._p1>t?this._calcEnd?1-(t=1-t/this._p1)*t:e-(t=1-t/this._p1)*t*t*t*e:t>this._p3?this._calcEnd?1-(t=(t-this._p3)/this._p1)*t:e+(t-e)*(t=(t-this._p3)/this._p1)*t*t*t:this._calcEnd?1:e},m.ease=new m(.7,.7),d.config=m.config=function(t,e,i){return new m(t,e,i)},e=h("easing.SteppedEase",function(t){t=t||1,this._p1=1/t,this._p2=t+1},!0),d=e.prototype=new t,d.constructor=e,d.getRatio=function(t){return 0>t?t=0:t>=1&&(t=.999999999),(this._p2*t>>0)*this._p1},d.config=e.config=function(t){return new e(t)},i=h("easing.RoughEase",function(e){e=e||{};for(var i,s,r,n,a,o,h=e.taper||"none",l=[],_=0,u=0|(e.points||20),p=u,f=e.randomize!==!1,m=e.clamp===!0,d=e.template instanceof t?e.template:null,g="number"==typeof e.strength?.4*e.strength:.4;--p>-1;)i=f?Math.random():1/u*p,s=d?d.getRatio(i):i,"none"===h?r=g:"out"===h?(n=1-i,r=n*n*g):"in"===h?r=i*i*g:.5>i?(n=2*i,r=.5*n*n*g):(n=2*(1-i),r=.5*n*n*g),f?s+=Math.random()*r-.5*r:p%2?s+=.5*r:s-=.5*r,m&&(s>1?s=1:0>s&&(s=0)),l[_++]={x:i,y:s};for(l.sort(function(t,e){return t.x-e.x}),o=new c(1,1,null),p=u;--p>-1;)a=l[p],o=new c(a.x,a.y,o);this._prev=new c(0,0,0!==o.t?o:o.next)},!0),d=i.prototype=new t,d.constructor=i,d.getRatio=function(t){var e=this._prev;if(t>e.t){for(;e.next&&t>=e.t;)e=e.next;e=e.prev}else for(;e.prev&&e.t>=t;)e=e.prev;return this._prev=e,e.v+(t-e.t)/e.gap*e.c},d.config=function(t){return new i(t)},i.ease=new i,u("Bounce",l("BounceOut",function(t){return 1/2.75>t?7.5625*t*t:2/2.75>t?7.5625*(t-=1.5/2.75)*t+.75:2.5/2.75>t?7.5625*(t-=2.25/2.75)*t+.9375:7.5625*(t-=2.625/2.75)*t+.984375}),l("BounceIn",function(t){return 1/2.75>(t=1-t)?1-7.5625*t*t:2/2.75>t?1-(7.5625*(t-=1.5/2.75)*t+.75):2.5/2.75>t?1-(7.5625*(t-=2.25/2.75)*t+.9375):1-(7.5625*(t-=2.625/2.75)*t+.984375)}),l("BounceInOut",function(t){var e=.5>t;return t=e?1-2*t:2*t-1,t=1/2.75>t?7.5625*t*t:2/2.75>t?7.5625*(t-=1.5/2.75)*t+.75:2.5/2.75>t?7.5625*(t-=2.25/2.75)*t+.9375:7.5625*(t-=2.625/2.75)*t+.984375,e?.5*(1-t):.5*t+.5})),u("Circ",l("CircOut",function(t){return Math.sqrt(1-(t-=1)*t)}),l("CircIn",function(t){return-(Math.sqrt(1-t*t)-1)}),l("CircInOut",function(t){return 1>(t*=2)?-.5*(Math.sqrt(1-t*t)-1):.5*(Math.sqrt(1-(t-=2)*t)+1)})),s=function(e,i,s){var r=h("easing."+e,function(t,e){this._p1=t||1,this._p2=e||s,this._p3=this._p2/a*(Math.asin(1/this._p1)||0)},!0),n=r.prototype=new t;return n.constructor=r,n.getRatio=i,n.config=function(t,e){return new r(t,e)},r},u("Elastic",s("ElasticOut",function(t){return this._p1*Math.pow(2,-10*t)*Math.sin((t-this._p3)*a/this._p2)+1},.3),s("ElasticIn",function(t){return-(this._p1*Math.pow(2,10*(t-=1))*Math.sin((t-this._p3)*a/this._p2))},.3),s("ElasticInOut",function(t){return 1>(t*=2)?-.5*this._p1*Math.pow(2,10*(t-=1))*Math.sin((t-this._p3)*a/this._p2):.5*this._p1*Math.pow(2,-10*(t-=1))*Math.sin((t-this._p3)*a/this._p2)+1},.45)),u("Expo",l("ExpoOut",function(t){return 1-Math.pow(2,-10*t)}),l("ExpoIn",function(t){return Math.pow(2,10*(t-1))-.001}),l("ExpoInOut",function(t){return 1>(t*=2)?.5*Math.pow(2,10*(t-1)):.5*(2-Math.pow(2,-10*(t-1)))})),u("Sine",l("SineOut",function(t){return Math.sin(t*o)}),l("SineIn",function(t){return-Math.cos(t*o)+1}),l("SineInOut",function(t){return-.5*(Math.cos(Math.PI*t)-1)})),h("easing.EaseLookup",{find:function(e){return t.map[e]}},!0),_(r.SlowMo,"SlowMo","ease,"),_(i,"RoughEase","ease,"),_(e,"SteppedEase","ease,"),f},!0)}),_gsScope._gsDefine&&_gsScope._gsQueue.pop()();
+// *****************************************************************
+// TRACKING
+// *****************************************************************
+
+// GOOGLE EMBED
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-16424514-4', 'auto');
+ga('send', 'pageview');
+
+// TRACKING MODULE
+var tracking = (function() {
+
+	var tracking = {};
+
+	function init() {
+		// console.log('tracking init');
+
+		var links = document.querySelectorAll('.ajax-nav'), i;
+
+		for (i = 0; i < links.length; ++i) {
+			var pageid = links[i].getAttribute('data-pageid');
+			var link = links[i].getAttribute('href');
+			links[i].onclick = function() {
+				ga('send', 'event', pageid, 'click', link);
+			}
+		}
+	}
+
+	tracking.setup = function() {
+		// console.log('tracking setup');
+		init();
+	}
+
+	// RETURN MODULE
+	return tracking;
+
+})();
+
+
 /**
 *
 * AUTHOR: Tom Hewitt | @tomchewitt
@@ -43,7 +85,7 @@ var _gsScope="undefined"!=typeof module&&module.exports&&"undefined"!=typeof glo
 **/
 
 var ajaxLoader = (function () {
-	// console.log('ajaxLoader'); // my log
+	console.log('ajaxLoader'); // my log
 
 	var ajaxLoader = {};
 
@@ -82,7 +124,7 @@ var ajaxLoader = (function () {
 	// LISTENERS & ACTIONS
 	// *****************************************************************
 	window.onpopstate = function (oEvent) {
-		// console.log('window.onpopstate'); // my log
+		console.log('window.onpopstate'); // my log
 		bUpdateURL = false;
 		oPageInfo.title =  oEvent.state.title;
 		oPageInfo.url = oEvent.state.url;
@@ -104,14 +146,14 @@ var ajaxLoader = (function () {
 	// FUNCTIONS
 	// *****************************************************************
 	function closeReq () {
-		// console.log('closeReq'); // my log
+		console.log('closeReq'); // my log
 		bIsLoading = false;
 
 		placePage();
 	}
 
 	function abortReq () {
-		// console.log('abortReq'); // my log
+		console.log('abortReq'); // my log
 		if (!bIsLoading) {
 			return;
 		}		
@@ -120,12 +162,12 @@ var ajaxLoader = (function () {
 	}
 
 	function ajaxError () {
-		// console.log('ajaxError'); // my log
+		console.log('ajaxError'); // my log
 		alert("Unknown error.");
 	}
 
 	function ajaxLoad () {
-		// console.log('ajaxLoad'); // my log
+		console.log('ajaxLoad'); // my log
 		var nStatus = this.status;
 		switch (nStatus) {
 			case 200:
@@ -144,12 +186,12 @@ var ajaxLoader = (function () {
 	}
 
 	function filterURL (sURL, sViewMode) {
-		// console.log('filterURL'); // my log
+		console.log('filterURL'); // my log
 		return sURL.replace(rSearch, "") + ("?" + sURL.replace(rHost, "&").replace(rView, sViewMode ? "&" + sViewKey + "=" + sViewMode : "").slice(1)).replace(rEndQstMark, "");
 	}
 
 	function getPage (sPage) {
-		// console.log('getPage'); // my log
+		console.log('getPage'); // my log
 		if (bIsLoading) {
 			return;
 		}
@@ -171,7 +213,7 @@ var ajaxLoader = (function () {
 	}
 
 	function requestPage (sURL) {
-		// console.log('requestPage'); // my log
+		console.log('requestPage'); // my log
 		if (history.pushState) {
 			bUpdateURL = true;
 			getPage(sURL);
@@ -181,25 +223,39 @@ var ajaxLoader = (function () {
 		}
 	}
 
-	function processLink () {
-		// console.log('processLink'); // my log
-		if (this.className === sAjaxClass) {
+	function processLink ($thisLink) {
+		console.log('processLink'); // my log
+		// console.log(this);
+		if ($thisLink.className === sAjaxClass) {
 
 			// insert page data-pageid variable
-			vPageToLoad = this.getAttribute('data-pageid');
+			vPageToLoad = $thisLink.getAttribute('data-pageid');
 
-			requestPage(this.href);
+			requestPage($thisLink.href);
 			return false;
 		}
 		return true;
 	}
 
 	function init () {
-		// console.log('init'); // my log
+		console.log('init'); // my log
 		oPageInfo.title = document.title;
 		oPageInfo.url = filterURL(document.URL);
 		history.pushState(oPageInfo, oPageInfo.title, oPageInfo.url);
-		for (var oLink, nIdx = 0, nLen = document.links.length; nIdx < nLen; document.links[nIdx++].onclick = processLink);
+
+
+		// PREVENT DEFAULT
+		for (var nIdx = 0; nIdx < document.links.length; nIdx++) {
+			// console.log(document.links[nIdx].className, sAjaxClass);
+			if (document.links[nIdx].className === sAjaxClass) {
+				// document.links[nIdx].onclick = processLink;
+				document.links[nIdx].addEventListener( 'click', stopDefAction, false);
+				
+			}
+		}
+
+		// -- END PREVENT DEFAULT
+		// for (var oLink, nIdx = 0, nLen = document.links.length; nIdx < nLen; document.links[nIdx++].onclick = processLink);
 
 		// preload spinner
 		vPageToLoad = document.querySelector('section.content').getAttribute('data-pageid');
@@ -207,6 +263,11 @@ var ajaxLoader = (function () {
 		heroLoader.setup(vPageToLoad);
 	}
 
+	function stopDefAction(evt) {
+		// console.log(this);
+	    evt.preventDefault();
+	    processLink(this);
+	}
 
 	// *****************************************************************
 	// SPINNER FUNCTIONS
@@ -237,7 +298,17 @@ var ajaxLoader = (function () {
 				bUpdateURL = false;
 			}
 
-			for (var oLink, nIdx = 0, nLen = document.links.length; nIdx < nLen; document.links[nIdx++].onclick = processLink);
+			// PREVENT DEFAULT
+			for (var nIdx = 0; nIdx < document.links.length; nIdx++) {
+				// console.log(document.links[nIdx].className, sAjaxClass);
+				if (document.links[nIdx].className === sAjaxClass) {
+					// document.links[nIdx].onclick = processLink;
+					document.links[nIdx].addEventListener( 'click', stopDefAction, false);
+					
+				}
+			}
+			
+			// for (var oLink, nIdx = 0, nLen = document.links.length; nIdx < nLen; document.links[nIdx++].onclick = processLink);
 			
 			// console.log('ERROR REP: ' + vPageToLoad);
 
@@ -314,7 +385,7 @@ var heroLoader = (function() {
 
 		parallax.setup();
 		preloadImg(aImgs);
-		
+		workNav.setup();
 		
 	}
 
@@ -333,7 +404,7 @@ var heroLoader = (function() {
 	        oImg.src = aImgs[i];
 	        oImg.onload = heroesReady;
 
-	        console.log(oImg.src);
+	        // console.log(oImg.src);
 
 	    }
 	}
@@ -350,6 +421,7 @@ var heroLoader = (function() {
 
 	// PUBLIC FUNCTIONS
 	heroLoader.setup = function(page) {
+		console.log('heroLoader.setup');
 		vPageToLoad = page;
 		preloadHero();		
 	}
@@ -379,6 +451,95 @@ var heroLoader = (function() {
 })();
 
 // *****************************************************************
+// WORK NAVIGATION
+// *****************************************************************
+
+// TRACKING MODULE
+var workNav = (function() {
+
+	var workNav = {};
+	var oLinks, workToShow;
+	var nDelay = 0;
+	var $ = function (selector) { return document.querySelector(selector) }; // jQuery style
+
+	workNav.setup = function() {
+		console.log('navwork.setup');
+		if (document.querySelector('.nav-work')) {
+			// console.log('navwork.setup');
+			init();
+		}	
+	}
+
+	// SETUP oLINKS FOR MAIN NAV
+	function init() {		
+		oLinks = $('.nav-work').getElementsByTagName('li');
+
+		for (var i = 0; i < oLinks.length; i++) {
+			oLinks[i].onclick = switchNav;
+		}
+	}
+
+	// NAV SWITCHER FOR WORK
+	function switchNav() {
+		if (this.classList.contains('on')) {
+			return;
+		} else {
+			for (var i = 0; i < oLinks.length; i++) {
+				oLinks[i].classList.remove('on');
+			}
+			this.classList.add('on');
+		}
+		nDelay = 0;
+		workNavSwitcher(this.getAttribute('data-worknav'));
+	}
+
+	function workNavSwitcher(attr) {
+		// console.log('show ' + attr + ' work');
+
+		var projects = $('.project-list').getElementsByTagName('li');
+		var dataAttr = 'data-' + attr;
+
+		// console.log('show ' + attr + ' work | ' + dataAttr);
+
+		// fade all of them out
+		// reset their positions
+
+		for (var i = 0; i < projects.length; i++) {
+
+			var $proj = projects[i].getElementsByTagName('a');
+
+			TweenLite.to($proj, 0.3, {left: '-20%', opacity: 0, ease:Quad.easeOut, onComplete:workNavRebirth, onCompleteParams:[attr, projects[i]]});
+		}
+
+	}
+
+	function workNavRebirth(attr, $project) {
+
+		var $proj = $project.getElementsByTagName('a');
+		var dataAttr = 'data-' + attr;
+		nDelay += 50;
+
+		if (attr == 'all') {
+			$project.style.display = 'block';
+			TweenLite.to($proj, 0.3, {left: '0', opacity: 1, delay: (nDelay/1000), ease:Quad.easeOut});
+		} else {
+			if ($project.hasAttribute(dataAttr)) {
+				$project.style.display = 'block';
+				TweenLite.to($proj, 0.3, {left: '0', opacity: 1, delay: (nDelay/1000), ease:Quad.easeOut});
+			} else {
+				$project.style.display = 'none';
+			}
+		}
+	}
+
+	// init(); // for test purposes
+
+	// RETURN MODULE
+	return workNav;
+
+})();
+
+// *****************************************************************
 // PARALLAX ANIMATIONS
 // *****************************************************************
 var parallax = (function() {
@@ -394,7 +555,7 @@ var parallax = (function() {
 	
 	
 	function init() {
-		console.log('parallax.init');
+		// console.log('parallax.init');
 		// var nWinOffset = document.body.scrollTop;
 		var nWinOffset = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -412,7 +573,7 @@ var parallax = (function() {
 
 			if (nWinOffset < nBlockOffset) {
 				document.querySelector('.gradient').style.opacity = nPercentage;
-				console.log(nWinOffset, nBlockOffset, nPercentage);
+				// console.log(nWinOffset, nBlockOffset, nPercentage);
 			}			
 		}
 
@@ -428,7 +589,7 @@ var parallax = (function() {
 		}
 
 		if (bArrows) {
-			console.log('bArrows');
+			// console.log('bArrows');
 		}
 	}
 
@@ -511,116 +672,3 @@ var parallax = (function() {
 
 })();
 
-
-// *****************************************************************
-// TRACKING
-// *****************************************************************
-
-// GOOGLE EMBED
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-16424514-4', 'auto');
-ga('send', 'pageview');
-
-// TRACKING MODULE
-var tracking = (function() {
-
-	var tracking = {};
-
-	function init() {
-		console.log('tracking init');
-
-		var links = document.querySelectorAll('.ajax-nav'), i;
-
-		for (i = 0; i < links.length; ++i) {
-			var pageid = links[i].getAttribute('data-pageid');
-			var link = links[i].getAttribute('href');
-			links[i].onclick = function() {
-				ga('send', 'event', pageid, 'click', link);
-			}
-		}
-	}
-
-	tracking.setup = function() {
-		console.log('tracking setup');
-		init();
-	}
-
-	// RETURN MODULE
-	return tracking;
-
-})();
-
-
-// *****************************************************************
-// WORK NAVIGATION
-// *****************************************************************
-
-// TRACKING MODULE
-var workNav = (function() {
-
-	var workNav = {};
-	var links, workToShow;
-	var $ = function (selector) { return document.querySelector(selector) }; // jQuery style
-
-	workNav.setup = function() {
-		if (document.querySelector('.work-nav')) {
-			init();
-		}	
-	}
-
-	// SETUP LINKS FOR MAIN NAV
-	function init() {
-
-		links = $('.nav-work').getElementsByTagName('li');
-
-		for (var i = 0; i < links.length; i++) {
-			links[i].onclick = switchNav;
-		}
-	}
-
-	// NAV SWITCHER FOR WORK
-	function switchNav() {
-		if (this.classList.contains('on')) {
-			return;
-		} else {
-			for (var i = 0; i < links.length; i++) {
-				links[i].classList.remove('on');
-			}
-			this.classList.add('on');
-		}
-		workNavSwitcher(this.getAttribute('data-worknav'));
-	}
-
-	function workNavSwitcher(attr) {
-		console.log('show ' + attr + ' work');
-
-		var projects = $('.project-list').getElementsByTagName('li');
-		var dataAttr = 'data-' + attr;
-
-		console.log('show ' + attr + ' work | ' + dataAttr);
-
-		for (var i = 0; i < projects.length; i++) {
-			if (attr == 'all') {
-				projects[i].style.display = 'block';
-			} else {
-				if (projects[i].hasAttribute(dataAttr)) {
-					projects[i].style.display = 'block';
-				} else {
-					projects[i].style.display = 'none';
-				}
-			}
-			
-		}
-
-	}
-
-
-	init(); // for test purposes
-
-	// RETURN MODULE
-	return workNav;
-
-})();

@@ -49,7 +49,7 @@ var heroLoader = (function() {
 
 		parallax.setup();
 		preloadImg(aImgs);
-		
+		workNav.setup();
 		
 	}
 
@@ -68,7 +68,7 @@ var heroLoader = (function() {
 	        oImg.src = aImgs[i];
 	        oImg.onload = heroesReady;
 
-	        console.log(oImg.src);
+	        // console.log(oImg.src);
 
 	    }
 	}
@@ -85,6 +85,7 @@ var heroLoader = (function() {
 
 	// PUBLIC FUNCTIONS
 	heroLoader.setup = function(page) {
+		console.log('heroLoader.setup');
 		vPageToLoad = page;
 		preloadHero();		
 	}

@@ -6,7 +6,7 @@
 **/
 
 var ajaxLoader = (function () {
-	// console.log('ajaxLoader'); // my log
+	console.log('ajaxLoader'); // my log
 
 	var ajaxLoader = {};
 
@@ -45,7 +45,7 @@ var ajaxLoader = (function () {
 	// LISTENERS & ACTIONS
 	// *****************************************************************
 	window.onpopstate = function (oEvent) {
-		// console.log('window.onpopstate'); // my log
+		console.log('window.onpopstate'); // my log
 		bUpdateURL = false;
 		oPageInfo.title =  oEvent.state.title;
 		oPageInfo.url = oEvent.state.url;
@@ -67,14 +67,14 @@ var ajaxLoader = (function () {
 	// FUNCTIONS
 	// *****************************************************************
 	function closeReq () {
-		// console.log('closeReq'); // my log
+		console.log('closeReq'); // my log
 		bIsLoading = false;
 
 		placePage();
 	}
 
 	function abortReq () {
-		// console.log('abortReq'); // my log
+		console.log('abortReq'); // my log
 		if (!bIsLoading) {
 			return;
 		}		
@@ -83,12 +83,12 @@ var ajaxLoader = (function () {
 	}
 
 	function ajaxError () {
-		// console.log('ajaxError'); // my log
+		console.log('ajaxError'); // my log
 		alert("Unknown error.");
 	}
 
 	function ajaxLoad () {
-		// console.log('ajaxLoad'); // my log
+		console.log('ajaxLoad'); // my log
 		var nStatus = this.status;
 		switch (nStatus) {
 			case 200:
@@ -107,12 +107,12 @@ var ajaxLoader = (function () {
 	}
 
 	function filterURL (sURL, sViewMode) {
-		// console.log('filterURL'); // my log
+		console.log('filterURL'); // my log
 		return sURL.replace(rSearch, "") + ("?" + sURL.replace(rHost, "&").replace(rView, sViewMode ? "&" + sViewKey + "=" + sViewMode : "").slice(1)).replace(rEndQstMark, "");
 	}
 
 	function getPage (sPage) {
-		// console.log('getPage'); // my log
+		console.log('getPage'); // my log
 		if (bIsLoading) {
 			return;
 		}
@@ -134,7 +134,7 @@ var ajaxLoader = (function () {
 	}
 
 	function requestPage (sURL) {
-		// console.log('requestPage'); // my log
+		console.log('requestPage'); // my log
 		if (history.pushState) {
 			bUpdateURL = true;
 			getPage(sURL);
@@ -144,25 +144,39 @@ var ajaxLoader = (function () {
 		}
 	}
 
-	function processLink () {
-		// console.log('processLink'); // my log
-		if (this.className === sAjaxClass) {
+	function processLink ($thisLink) {
+		console.log('processLink'); // my log
+		// console.log(this);
+		if ($thisLink.className === sAjaxClass) {
 
 			// insert page data-pageid variable
-			vPageToLoad = this.getAttribute('data-pageid');
+			vPageToLoad = $thisLink.getAttribute('data-pageid');
 
-			requestPage(this.href);
+			requestPage($thisLink.href);
 			return false;
 		}
 		return true;
 	}
 
 	function init () {
-		// console.log('init'); // my log
+		console.log('init'); // my log
 		oPageInfo.title = document.title;
 		oPageInfo.url = filterURL(document.URL);
 		history.pushState(oPageInfo, oPageInfo.title, oPageInfo.url);
-		for (var oLink, nIdx = 0, nLen = document.links.length; nIdx < nLen; document.links[nIdx++].onclick = processLink);
+
+
+		// PREVENT DEFAULT
+		for (var nIdx = 0; nIdx < document.links.length; nIdx++) {
+			// console.log(document.links[nIdx].className, sAjaxClass);
+			if (document.links[nIdx].className === sAjaxClass) {
+				// document.links[nIdx].onclick = processLink;
+				document.links[nIdx].addEventListener( 'click', stopDefAction, false);
+				
+			}
+		}
+
+		// -- END PREVENT DEFAULT
+		// for (var oLink, nIdx = 0, nLen = document.links.length; nIdx < nLen; document.links[nIdx++].onclick = processLink);
 
 		// preload spinner
 		vPageToLoad = document.querySelector('section.content').getAttribute('data-pageid');
@@ -170,6 +184,11 @@ var ajaxLoader = (function () {
 		heroLoader.setup(vPageToLoad);
 	}
 
+	function stopDefAction(evt) {
+		// console.log(this);
+	    evt.preventDefault();
+	    processLink(this);
+	}
 
 	// *****************************************************************
 	// SPINNER FUNCTIONS
@@ -200,7 +219,17 @@ var ajaxLoader = (function () {
 				bUpdateURL = false;
 			}
 
-			for (var oLink, nIdx = 0, nLen = document.links.length; nIdx < nLen; document.links[nIdx++].onclick = processLink);
+			// PREVENT DEFAULT
+			for (var nIdx = 0; nIdx < document.links.length; nIdx++) {
+				// console.log(document.links[nIdx].className, sAjaxClass);
+				if (document.links[nIdx].className === sAjaxClass) {
+					// document.links[nIdx].onclick = processLink;
+					document.links[nIdx].addEventListener( 'click', stopDefAction, false);
+					
+				}
+			}
+			
+			// for (var oLink, nIdx = 0, nLen = document.links.length; nIdx < nLen; document.links[nIdx++].onclick = processLink);
 			
 			// console.log('ERROR REP: ' + vPageToLoad);
 
