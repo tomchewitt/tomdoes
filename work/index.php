@@ -124,15 +124,15 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 								</a>
 							</li>
 
-							<!-- GHOST BYTES MEDIA -->
-							<li id="gbm" class="nav-project" data-ux data-design data-develop>
-								<a class="ajax-nav" href="ghost-bytes-media/" data-pageid="project">
-									<img src="/asset/dist/img/work/gbm/hero.svg">
+							<!-- ANNIVERSARY -->
+							<li id="anniversary" class="nav-project" data-design>
+								<a class="ajax-nav" href="anniversary/" data-pageid="project">
+									<img src="/asset/dist/img/work/anniversary/02.jpg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
 									<h2>
-										<span class="word">GHOST BYTES MEDIA</span>
-										<span class="subtext">A sneak peak at what's coming next</span>
+										<span class="word">ANNIVERSARY</span>
+										<span class="subtext">A Paper Anniversary Poster Special</span>
 									</h2>
 								</a>
 							</li>
@@ -150,15 +150,15 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 								</a>
 							</li>
 
-							<!-- ANNIVERSARY -->
-							<li id="anniversary" class="nav-project" data-design>
-								<a class="ajax-nav" href="anniversary/" data-pageid="project">
-									<img src="/asset/dist/img/work/anniversary/02.jpg">
+							<!-- GHOST BYTES MEDIA -->
+							<li id="gbm" class="nav-project" data-ux data-design data-develop>
+								<a class="ajax-nav" href="ghost-bytes-media/" data-pageid="project">
+									<img src="/asset/dist/img/work/gbm/hero.svg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
 									<h2>
-										<span class="word">ANNIVERSARY</span>
-										<span class="subtext">A Paper Anniversary Poster Special</span>
+										<span class="word">GHOST BYTES MEDIA</span>
+										<span class="subtext">A sneak peak at what's coming next</span>
 									</h2>
 								</a>
 							</li>
@@ -176,15 +176,15 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 								</a>
 							</li>
 
-							<!-- GEODIME -->
-							<li id="geodime" class="nav-project" data-ux data-design>
-								<a class="ajax-nav" href="geodime/" data-pageid="project">
-									<img src="/asset/dist/img/work/geodime/hero.svg">
+							<!-- LESDREAMERS -->
+							<li id="lesdreamers" class="nav-project" data-develop>
+								<a class="ajax-nav" href="lesdreamers/" data-pageid="project">
+									<img src="/asset/dist/img/work/lesdreamers/hero.jpg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
 									<h2>
-										<span class="word">GEODIME</span>
-										<span class="subtext">Logo Design</span>
+										<span class="word">LES DREAMERS</span>
+										<span class="subtext">Wordpress Development</span>
 									</h2>
 								</a>
 							</li>

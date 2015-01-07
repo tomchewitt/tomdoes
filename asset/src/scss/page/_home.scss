@@ -64,15 +64,6 @@
 	}
 }
 
-#sec {
-	$color1: #552228;
-	$color2: #DDD;
-	.gradient {
-		background: $color1;
-		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
-	}
-}
-
 #drips {
 	$color1: #127DC1;
 	$color2: #2E4957;
@@ -109,15 +100,6 @@
 	}
 }
 
-#anniversary {
-	$color1: #AE434C;
-	$color2: #D0ECF4;
-	.gradient {
-		background: $color1;
-		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
-	}
-}
-
 #spinner {
 	$color1: #53B1DC;
 	$color2: #8ACFEF;
@@ -148,6 +130,24 @@
 #blur {
 	$color1: #FDFFC3;
 	$color2: #874478;
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
+	}
+}
+
+#geodime {
+	$color1: #FB5C22;
+	$color2: #008081;
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
+	}
+}
+
+#hor {
+	$color1: #171F14;
+	$color2: #5E5A41;
 	.gradient {
 		background: $color1;
 		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);

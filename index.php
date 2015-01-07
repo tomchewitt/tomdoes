@@ -44,15 +44,15 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 								</a>
 							</li>
 
-							<!-- BH: SEC -->
-							<li id="sec" class="nav-project">
-								<a target="_blank" href="https://www.behance.net/gallery/21631129/Square-Enix-Collective" data-pageid="project">
-									<img src="/asset/dist/img/feed/sec.jpg">
+							<!-- BH: GEODIME -->
+							<li id="geodime" class="nav-project">
+								<a target="_blank" href="https://www.behance.net/gallery/21628489/Geodime" data-pageid="project">
+									<img src="/asset/dist/img/work/geodime/hero.svg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
 									<span class="icon"><svg><use xlink:href="#behance"></use></svg></span>
 									<h2>
-										<span class="word">SQUARE ENIX COLLECTIVE</span>
+										<span class="word">GEODIME</span>
 										<span class="subtext">View on behance.com</span>
 									</h2>
 								</a>
@@ -128,15 +128,15 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 								</a>
 							</li>
 
-							<!-- BH: Anniversary -->
-							<li id="anniversary" class="nav-project">
-								<a target="_blank" href="https://www.behance.net/gallery/21628275/Anniversary" data-pageid="project">
-									<img src="/asset/dist/img/feed/anniversary.jpg">
+							<!-- BH: HOR -->
+							<li id="hor" class="nav-project">
+								<a target="_blank" href="https://www.behance.net/gallery/21629699/Heroes-of-Ruin" data-pageid="project">
+									<img src="/asset/dist/img/feed/hor.jpg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
 									<span class="icon"><svg><use xlink:href="#behance"></use></svg></span>
 									<h2>
-										<span class="word">ANNIVERSARY</span>
+										<span class="word">HEROES OF RUIN</span>
 										<span class="subtext">View on behance.com</span>
 									</h2>
 								</a>
