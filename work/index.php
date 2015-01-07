@@ -175,6 +175,19 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 									</h2>
 								</a>
 							</li>
+
+							<!-- GEODIME -->
+							<li id="geodime" class="nav-project" data-ux data-design>
+								<a class="ajax-nav" href="geodime/" data-pageid="project">
+									<img src="/asset/dist/img/work/geodime/hero.svg">
+									<span class="gradient"></span>
+									<span class="triangle"></span>
+									<h2>
+										<span class="word">GEODIME</span>
+										<span class="subtext">Logo Design</span>
+									</h2>
+								</a>
+							</li>
 						</ul>
 					</section>
 				</div>
