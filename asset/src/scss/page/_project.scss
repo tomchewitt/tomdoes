@@ -369,3 +369,88 @@
 		background: $color1;
 	}
 }
+
+// *****************************************************************
+// ANNIVERSARY
+// *****************************************************************
+#anniversary {
+	$color1: #D9F0F6;
+	$color2: #B3646F;
+	p.headline {
+		@include textgradient($color1, $color2);
+	}
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 0%, $color2 70%);
+		// filter: saturate(3);
+	}
+	.palette {
+		.color-1 {
+			background: $color1;
+		}
+		.color-2 {
+			background: #B3646F;
+		}
+		.color-3 {
+			background: #9D3A4E;
+		}
+		
+	}
+	.img-wrap {
+		li:nth-child(1) {
+			background: $color2;			
+		}
+		li:nth-child(2) {
+			background: $color2;			
+		}
+	}
+	.hero {
+		background: $color1;
+	}
+}
+
+// *****************************************************************
+// COLLECTIVE
+// *****************************************************************
+#collective {
+	$color1: #FFF;
+	$color2: #690318;
+	p.headline {
+		@include textgradient($color1, $color2);
+	}
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 0%, $color2 70%);
+		// filter: saturate(3);
+	}
+	.palette {
+		.color-1 {
+			background: #541D27;
+		}
+		.color-2 {
+			background: #272727;
+		}
+		.color-3 {
+			background: $color2;
+		}
+		
+	}
+	.img-wrap {
+		li:nth-child(1), li:nth-child(2) {
+			background: $color2;			
+		}
+		li:nth-child(3) {
+			background: #272727;			
+		}
+		li:nth-child(4), li:nth-child(5) {
+			background: #541D27;
+
+			img {
+				box-shadow: none;
+			}
+		}
+	}
+	.hero {
+		background: $color1;
+	}
+}

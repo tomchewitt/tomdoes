@@ -149,6 +149,32 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 									</h2>
 								</a>
 							</li>
+
+							<!-- ANNIVERSARY -->
+							<li id="anniversary" class="nav-project" data-design>
+								<a class="ajax-nav" href="anniversary/" data-pageid="project">
+									<img src="/asset/dist/img/work/anniversary/02.jpg">
+									<span class="gradient"></span>
+									<span class="triangle"></span>
+									<h2>
+										<span class="word">ANNIVERSARY</span>
+										<span class="subtext">A Paper Anniversary Poster Special</span>
+									</h2>
+								</a>
+							</li>
+
+							<!-- COLLECTIVE -->
+							<li id="collective" class="nav-project" data-ux data-design>
+								<a class="ajax-nav" href="collective/" data-pageid="project">
+									<img src="/asset/dist/img/work/collective/hero.jpg">
+									<span class="gradient"></span>
+									<span class="triangle"></span>
+									<h2>
+										<span class="word">SQUARE ENIX COLLECTIVE</span>
+										<span class="subtext">UX &amp; Concept design</span>
+									</h2>
+								</a>
+							</li>
 						</ul>
 					</section>
 				</div>

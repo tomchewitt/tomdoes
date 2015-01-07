@@ -15,7 +15,7 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 
 			<section class="hero">
 				<div class="gradient"></div>
-				<img src="/asset/dist/img/home-hero.jpg"> 
+				<img src="/asset/dist/img/home-hero-2.jpg"> 
 				<header class="page-header">
 					<h1 class="title">TOM HEWITT</h1>
 					<span class="icon-wrap">

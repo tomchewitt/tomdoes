@@ -65,8 +65,8 @@ var parallax = (function() {
 			bNoGradient = false;
 			bGradient = true;
 			bHeader = true;
-			nPageHeaderOffset = (window.innerHeight / 2) - (document.querySelector('.page-header').offsetHeight / 2); //- 40;
-			nPageHeaderPosition = (window.innerHeight / 2) + nPageHeaderOffset - (document.querySelector('.header').offsetHeight);
+			nPageHeaderOffset = (window.innerHeight / 2) - (document.querySelector('.page-header').offsetHeight / 2) - 40;
+			nPageHeaderPosition = (window.innerHeight / 2) + nPageHeaderOffset; // - (document.querySelector('.header').offsetHeight);
 		}
 
 		if (document.querySelector('.about')) {
@@ -107,8 +107,8 @@ var parallax = (function() {
 	window.onresize = function() {
 		// console.log('rezise header');
 		if (document.querySelector('.page-header')) {
-			nPageHeaderOffset = (window.innerHeight / 2) - (document.querySelector('.page-header').offsetHeight / 2); //- 40;
-			nPageHeaderPosition = (window.innerHeight / 2) + nPageHeaderOffset - (document.querySelector('.header').offsetHeight);
+			nPageHeaderOffset = (window.innerHeight / 2) - (document.querySelector('.page-header').offsetHeight / 2) - 40;
+			nPageHeaderPosition = (window.innerHeight / 2) + nPageHeaderOffset; // - (document.querySelector('.header').offsetHeight);
 		}
 
 		if (document.querySelector('section.hero')) {
