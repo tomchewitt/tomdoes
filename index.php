@@ -115,15 +115,16 @@ if (isset($_GET["view_as"]) && $_GET["view_as"] == "json") {
 							</li>
 
 
-							<!-- SWAS -->
-							<li id="swas" class="nav-project">
-								<a target="_blank" href="http://startwithasquare.co.uk/do-you-still-need-creative-cloud/" data-pageid="project">
-									<img src="/asset/dist/img/work/swas/hero.svg">
+							<!-- CP: Funky -->
+							<li id="funky" class="nav-project">
+								<a target="_blank" href="http://codepen.io/tomchewitt/pen/EaXYPQ" data-pageid="project">
+									<img src="/asset/dist/img/feed/funky.jpg">
 									<span class="gradient"></span>
 									<span class="triangle"></span>
+									<span class="icon"><svg><use xlink:href="#codepen"></use></svg></span>
 									<h2>
-										<span class="word">DO YOU STILL NEED CREATIVE CLOUD?</span>
-										<span class="subtext">Read on startwithasquare.co.uk</span>
+										<span class="word">FUNKY BUTTON</span>
+										<span class="subtext">Inspect on codepen.io</span>
 									</h2>
 								</a>
 							</li>

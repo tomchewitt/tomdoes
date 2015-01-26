@@ -153,3 +153,12 @@
 		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
 	}
 }
+
+#funky {
+	$color1: #666;
+	$color2: #333;
+	.gradient {
+		background: $color1;
+		background-image: linear-gradient(to top right, $color1 10%, $color2 100%);
+	}
+}
